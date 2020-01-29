@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <style name="BrowserActivityTheme" parent="android:Theme.Holo.Light.NoActionBar">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textColorHighlight">@color/blue_200</item>
+        <item name="android:windowBackground">@color/background_dark</item>
+        <item name="android:drawSelectorOnTop">true</item>
+
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="BrowserActivityTheme2" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textColorHighlight">@color/blue_200</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:drawSelectorOnTop">true</item>
+
+    </style>
+
+    <style name="BrowserActivityTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/gray_divider</item>
+    </style>
+    <style name="SettingActivityTheme" parent="android:Theme.Holo.Light">
+        <item name="android:textColor">@color/blue_200</item>
+        <item name="android:colorPrimaryDark">@color/blue_200</item>
+        <item name="android:textColorHighlight">@color/blue_200</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:drawSelectorOnTop">true</item>
+    </style>
+
+    <style name="WhitelistActivityTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textColorHighlight">@color/blue_200</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:drawSelectorOnTop">true</item>
+    </style>
+
+    <style name="TokenActivityTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textColorHighlight">@color/blue_200</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:drawSelectorOnTop">true</item>
+    </style>
+
+    <style name="ClearActivityTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textColorHighlight">@color/blue_200</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:drawSelectorOnTop">true</item>
+    </style>
+
+
+    <style name="MyCustomTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:textStyle">normal</item>
+
+    </style>
+
+    <style name="EditTextTheme" >
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:textColor">@color/blue_500</item>
+        <item name="android:textSize">@dimen/sp16</item>
+        <item name="android:paddingLeft">@dimen/dp2</item>
+    </style>
+
+</resources>

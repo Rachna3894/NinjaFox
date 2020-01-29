@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mojodigi.ninjafox">
+    <!-- Permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:name=".Application.MyApplication"
+        android:allowBackup="true"
+        android:enabled="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/ic_launcher_round"
+        android:usesCleartextTraffic="true">
+
+        <activity android:name=".Activity.SignInActivity" android:screenOrientation="portrait" android:theme="@style/BrowserActivityTheme2"></activity>
+        <activity android:name=".Activity.SignUpActivity" android:screenOrientation="portrait" android:theme="@style/BrowserActivityTheme2"/>
+
+        <activity
+            android:name=".Activity.SuggestedAppsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BrowserActivityTheme" />
+        <activity
+            android:name=".Activity.HolderActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@style/BrowserActivityTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/app_scheme_http" />
+                <data android:scheme="@string/app_scheme_https" />
+            </intent-filter>
+        </activity> <!-- HolderService -->
+        <service
+            android:name=".Service.HolderService"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name" /> <!-- MainActivity -->
+        <activity
+            android:name=".Activity.SplashActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- android:windowSoftInputMode="adjustResize" -->
+        <!--android:launchMode="singleInstance"    from mainActivity-->
+        <activity
+            android:name=".Activity.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:theme="@style/BrowserActivityTheme2"
+            android:windowSoftInputMode="adjustNothing">
+            <intent-filter>
+
+                <!-- <action android:name="android.intent.action.MAIN"/> -->
+                <action android:name="android.intent.action.WEB_SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- <category android:name="android.intent.category.LAUNCHER"/> -->
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity> <!-- SettingActivity -->
+        <activity
+            android:name=".Activity.SettingActivity"
+            android:label="@string/setting_label"
+            android:screenOrientation="portrait"
+            android:theme="@style/SettingActivityTheme" />
+        <activity
+            android:name=".Activity.DownLoadSettingActivity"
+            android:label="@string/download_settings_label"
+            android:theme="@style/SettingActivityTheme" />
+        <activity
+            android:name=".Activity.FeedBackActivity"
+            android:label="Feedback"
+            android:screenOrientation="portrait"
+            android:theme="@style/SettingActivityTheme" />
+        <activity
+            android:name=".Activity.RecentListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BrowserActivityTheme" />
+        <activity
+            android:name=".Activity.MostVisistedActiity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BrowserActivityTheme" />
+        <activity
+            android:name=".Activity.BlockListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BrowserActivityTheme" />
+        <activity
+            android:name=".Activity.LanguagePrefsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BrowserActivityTheme" />
+
+        <activity
+            android:name="com.facebook.ads.AudienceNetworkActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" /> <!-- to  show  interesitial adds uisng smaato -->
+        <!-- WhitelistActivity -->
+        <activity
+            android:name=".Activity.WhitelistActivity"
+            android:label="@string/whitelist_label"
+            android:theme="@style/WhitelistActivityTheme" /> <!-- TokenActivity -->
+        <activity
+            android:name=".Activity.TokenActivity"
+            android:label="@string/token_label"
+            android:theme="@style/TokenActivityTheme" /> <!-- ClearActivity -->
+        <activity
+            android:name=".Activity.ClearActivity"
+            android:label="@string/clear_label"
+            android:theme="@style/ClearActivityTheme" /> <!-- ClearService -->
+        <service
+            android:name=".Service.ClearService"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name" /> <!-- firebase  messaging -->
+        <service
+            android:name=".firebase.MyFirebaseMessagingService"
+            android:enabled="true"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <!--for pushNotification-->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_fcm_icon" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/color_icon" />
+
+        <!--for pushNotification-->
+
+        <!--for google location api-->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_api_key"/>
+
+        <service
+            android:name=".Service.GetAddressIntentService"
+            android:exported="false"/>
+        <!--for google location api-->
+
+         <!--for job intent class-->
+        <service
+            android:name=".Service.getAddressJobIntentService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <receiver android:name=".BroadCast.DownloadReceiver" android:label="DownloadReceiver" >
+
+
+        </receiver>
+
+        <service
+            android:name=".DownlaodModule.DownloadService"
+            android:enabled="true"
+            android:exported="true"></service>
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_corner_shape_light">
+
+     <LinearLayout
+         android:orientation="vertical"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_margin="@dimen/layout_margin_16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+           <ImageView
+               android:layout_marginTop="@dimen/layout_margin_4dp"
+               android:layout_alignParentLeft="true"
+               android:id="@+id/icon_clean"
+               android:src="@drawable/ic_launcher_round"
+               android:layout_width="@dimen/layout_width_40dp"
+               android:layout_height="@dimen/layout_height_40dp" />
+            <LinearLayout
+                android:paddingLeft="@dimen/layout_margin_8dp"
+                android:layout_alignBaseline="@+id/icon_clean"
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/icon_clean"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:id="@+id/titleTxt"
+                    android:layout_toRightOf="@+id/icon_clean"
+                    android:textSize="@dimen/text_size_18sp"
+                    android:textColor="@color/black"
+                    android:gravity="left"
+                    android:text="@string/clean_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/clean_desc_Txt"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:gravity="left"
+                    android:text="@string/delete_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_marginLeft="-4dp"
+                    android:layout_width="wrap_content"
+                    android:text="@string/ask_again"
+                    android:textColor="@color/black"
+                    android:buttonTint="@color/black"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+        <View
+            android:background="@color/gray_600"
+            android:layout_marginLeft="@dimen/layout_margin_8dp"
+            android:layout_marginRight="@dimen/layout_margin_8dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"></View>
+
+         <LinearLayout
+             android:weightSum="2"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/layout_height_40dp">
+             <TextView
+                 android:id="@+id/clean_Txt"
+                 android:background="@drawable/ripple"
+                 android:padding="@dimen/layout_margin_8dp"
+                 android:gravity="center"
+                 android:layout_weight="1"
+                 android:text="@string/exit"
+                 android:layout_width="0dp"
+                 android:layout_height="@dimen/layout_height_40dp" />
+             <TextView
+                 android:id="@+id/clean_Exit_Txt"
+                 android:background="@drawable/ripple"
+                 android:textColor="@color/title_back_color"
+                 android:padding="@dimen/layout_margin_8dp"
+                 android:gravity="center"
+                 android:layout_weight="1"
+                 android:text="@string/clean_exit"
+                 android:layout_width="0dp"
+                 android:layout_height="@dimen/layout_height_40dp" />
+         </LinearLayout>
+     </LinearLayout>
+
+
+</FrameLayout>

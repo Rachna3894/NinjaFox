@@ -1,0 +1,79 @@
+<RelativeLayout
+    android:id="@+id/parentLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/navigation_back"
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="50dp">
+
+    <LinearLayout
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/nav_home"
+            android:background="@drawable/ripple"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:padding="@dimen/layout_margin_4dp"
+                android:src="@drawable/bottom_home_ic"
+                android:layout_width="@dimen/layout_height_32dp"
+                android:layout_height="@dimen/layout_height_32dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/ripple"
+            android:id="@+id/nav_menu"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:padding="@dimen/layout_margin_4dp"
+                android:layout_weight="1"
+                android:src="@drawable/bottom_menu_ic"
+                android:layout_width="@dimen/layout_height_32dp"
+                android:layout_height="@dimen/layout_height_32dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:padding="@dimen/layout_margin_4dp"
+            android:background="@drawable/ripple"
+            android:id="@+id/tabCountLayout"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:gravity="center"
+                android:background="@drawable/border_tab_count"
+                android:padding="@dimen/elevation_2dp"
+                android:layout_width="25dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/omniTabCount"
+                    android:layout_gravity="center"
+                    android:text="1"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

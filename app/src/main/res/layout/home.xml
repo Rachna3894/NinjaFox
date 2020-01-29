@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mojodigi.ninjafox.View.jmmRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/screen_background">
+
+    <android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:background="@color/screen_background"
+        android:layout_above="@+id/parentLayout"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true">
+
+            <RelativeLayout
+                android:id="@+id/immediateChildAppbar"
+                app:layout_scrollFlags="scroll|enterAlways"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.mojodigi.ninjafox.org.developer.dynamicgrid.DynamicGridView
+                    android:id="@+id/home_grid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_16dp"
+                    android:clipToPadding="false"
+                    android:gravity="center"
+                    android:columnWidth="@dimen/layout_width_156dp"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="@dimen/layout_height_12dp"
+                    android:numColumns="auto_fit"
+                    android:scrollbars="none">
+                </com.mojodigi.ninjafox.org.developer.dynamicgrid.DynamicGridView>
+
+
+
+                <TextView android:id="@+id/home_about_blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/layout_margin_8dp"
+                    android:gravity="center"
+                    android:text="@string/main_about_blank"
+                    android:textColor="@color/hint"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:visibility="gone">
+                </TextView>
+
+                <!--contains speed dial  layout-->
+                <ScrollView
+
+                    android:id="@+id/dweb"
+                    android:background="@color/screen_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.nex3z.flowlayout.FlowLayout
+                        android:id="@+id/socialLayout"
+                        android:background="@color/screen_background"
+                        android:layout_alignParentTop="true"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:flChildSpacing="auto"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:scrollbars="vertical"
+                        android:overScrollMode="always"
+                        app:flChildSpacingForLastRow="align"
+                        app:flRowSpacing="2dp">
+                    </com.nex3z.flowlayout.FlowLayout>
+
+                </ScrollView>
+                <!-- android:layout_below="@id/socialLayout"-->
+
+                <LinearLayout
+                    android:background="@color/screen_background"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_below="@+id/dweb"
+                    android:orientation="horizontal"
+                    android:id="@+id/scoreLayout"
+                    android:layout_width="match_parent"
+                  >
+                        <!--  android:layout_height="wrap_content"-->
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/score_recycler_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <!--contains tab-->
+            <LinearLayout
+                android:background="@color/screen_background"
+                android:id="@+id/newsTabsLLayout"
+                android:layout_below="@+id/scoreLayout"
+                android:layout_above="@+id/parentLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+                <!--display  facebook banner adds-->
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:background="@drawable/fb_adds_layout_border_grey"
+                    android:id="@+id/banner_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    />
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tabLayoutLanguageTabs"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/_25sdp"
+                    app:tabTextAppearance="@style/MyCustomTextAppearance"
+                    app:tabSelectedTextColor="@color/white"
+                    app:tabBackground="@drawable/tab_selector"
+                    app:tabTextColor="@android:color/black"
+                    app:tabIndicatorColor="@color/blue_500"
+                    app:tabRippleColor="@color/ripple_gray"
+                    android:visibility="visible"
+                    app:tabIndicatorHeight="1dp"
+                    app:tabMode="scrollable"
+                    >
+                </android.support.design.widget.TabLayout>
+
+                <android.support.design.widget.TabLayout
+                    android:layout_marginTop="@dimen/dp6"
+                    android:id="@+id/tabLayoutNewsTabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_25sdp"
+                    android:background="@color/blue_500"
+                    app:tabTextAppearance="@style/MyCustomTextAppearance"
+                    app:tabSelectedTextColor="@color/white"
+                    app:tabTextColor="@android:color/black"
+                    app:tabIndicatorColor="@color/blue_500"
+                    app:tabRippleColor="@color/ripple_gray"
+                    android:visibility="visible"
+                    app:tabMode="scrollable"
+                    >
+                </android.support.design.widget.TabLayout>
+
+            </LinearLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView android:layout_width="match_parent"
+            android:id="@+id/nesteScollView"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <android.support.v4.view.ViewPager
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:id="@+id/newsTabsViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+           </android.support.v4.widget.NestedScrollView>
+
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+    <include  layout="@layout/bottom_nav_bar"></include>
+
+</com.mojodigi.ninjafox.View.jmmRelativeLayout>

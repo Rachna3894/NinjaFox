@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!-- AndroidAgo -->
+    <string name="android_ago_just_now">
+       এক্ষুনি
+    </string>
+
+    <!-- Album -->
+    <string name="album_title_bookmarks">
+        বুকমার্ক
+    </string>
+    <string name="album_title_history">
+        ইতিহাস
+    </string>
+    <string name="album_title_home">
+        বাড়ি
+    </string>
+
+    <string   name="album_title_home_incog">
+        হোম (ছদ্মবেশী)
+    </string>
+    <string name="album_untitled">
+        শিরোনামহীন
+    </string>
+
+    <!-- Clear -->
+    <string name="clear_label">
+        স্পষ্ট
+    </string>
+    <string name="clear_menu_done_all">
+        সব শেষ
+    </string>
+    <string name="clear_title_quit">
+       অ্যাপ্লিকেশনটি প্রস্থান করার সময় সাফ করুন
+    </string>
+    <string name="clear_title_bookmarks">
+        বুকমার্ক সাফ করুন
+    </string>
+    <string name="clear_title_cache">
+        ক্যাশে সাফ করুন
+    </string>
+    <string name="clear_title_cookie">
+        কুকিজগুলো পরিষ্কার করো
+    </string>
+    <string name="clear_title_form_data">
+        ফর্ম ডেটা সাফ করুন
+    </string>
+    <string name="clear_title_history">
+
+ইতিহাস সাফ করুন
+    </string>
+    <string name="clear_title_passwords">
+       পাসওয়ার্ড সাফ করুন
+    </string>
+
+    <!-- Dialog -->
+    <string name="dialog_title_hint">
+        ইনপুট শিরোনাম
+    </string>
+
+    <string name="dialog_sign_in_username">
+        ব্যবহারকারীর নাম
+    </string>
+    <string name="dialog_sign_in_password">
+        পাসওয়ার্ড
+    </string>
+    <string name="dialog_button_positive">
+
+ঠিক আছে
+    </string>
+    <string name="dialog_button_negative">
+        বাতিল
+    </string>
+    <string name="dialog_button_custom">
+        প্রথা
+    </string>
+    <string name="dialog_title_download">
+        আপনি কি ফাইলটি ডাউনলোড করতে চান?
+    </string>
+    <string name="dialog_title_resubmission">
+        পুনরায় জমা
+    </string>
+    <string name="dialog_title_warning">
+        সতর্কতা
+
+    </string>
+    <string name="dialog_title_sign_in">
+
+সাইন ইন করুন
+    </string>
+    <string name="dialog_content_resubmission">
+        আপনি কি আপনার ডেটা পুনরায় জমা দিতে চান?
+    </string>
+    <string name="dialog_content_ssl_error">
+
+সাইটের শংসাপত্র বিশ্বস্ত নয়। যাহাই হউক না কেন এগিয়ে?
+    </string>
+    <string name="dialog_content_upload">
+
+বর্তমানে ফাইল আপলোড কেবলমাত্র অ্যান্ড্রয়েড 5.0 এবং উপরের উপর সমর্থিত।
+    </string>
+
+
+    ======
+
+    <!-- List -->
+    <string name="list_empty">
+       বর্তমান তালিকাটি খালি
+    </string>
+
+    <!-- Main -->
+    <string name="main_menu_new_tab">
+        নতুন ট্যাব
+    </string>
+    <string name="main_menu_copy_link">
+
+লিংক কপি করুন
+    </string>
+    <string  name="main_menu_download">
+        ডাউনলোড
+    </string>
+    <string name="main_omnibox_input_hint">
+        ইউআরএল অনুসন্ধান বা টাইপ করুন
+    </string>
+    <string name="main_relayout_ok">
+
+ঠিক আছে
+    </string>
+    <string name="main_about_blank">
+       কাস্টম সামগ্রী এখানে প্রদর্শিত হবে
+    </string>
+
+    <string   name="incogTextHeading">
+       আপনি ছদ্মবেশে চলে গেছেন
+    </string>
+    <string  name="incogdesc">
+   এখন আপনি ব্যক্তিগতভাবে ব্রাউজ করতে পারেন এবং এই ডিভাইসটি ব্যবহার করেন এমন অন্যান্য ব্যক্তিরা আপনার ক্রিয়াকলাপটি দেখতে পাবেন না। \n তবে ডাউনলোড এবং বুকমার্কগুলি সংরক্ষণ করা হবে। । \nঅ্যাপ্লিকেশন নিম্নলিখিত তথ্যগুলি সংরক্ষণ করবে না:।\n
+      -আপনার ব্রাউজিং ইতিহাস\n
+      -কুকিজ এবং সাইটের ডেটা।\n
+      -তথ্য ফর্ম প্রবেশ করানো
+  </string>
+    <!-- Notification -->
+    <string name="notification_content_holder">
+       পৃষ্ঠাগুলি দেখতে ক্লিক করুন
+    </string>
+
+    <!-- Readability -->
+
+    <!-- Search -->
+    <string name="search_hint">
+        অনুসন্ধান
+    </string>
+    <!-- Settings -->
+    <string name="setting_label">
+
+সেটিংস
+    </string>
+    <!--download settings-->
+    <string name="download_settings_label" >ডাউনলোড</string>
+    <!--download settings-->
+
+    <!-- Browser setting -->
+    <string name="setting_title_browser">
+        Browser Settings
+    </string>
+
+    <string name="setting_title_location">
+        অবস্থান
+    </string>
+    <string name="setting_summary_location">
+       ওয়েবসাইটগুলিকে আপনার অবস্থান অ্যাক্সেস করার অনুমতি দিন
+    </string>
+
+    <string name="setting_title_data">
+        উপাত্ত
+    </string>
+    <!-- Passwords -->
+    <string name="settings_clear_data" >উপাত্ত মুছে ফেল</string>
+    <!-- Bookmarks -->
+    <string name="bookmarks_filename">
+        NinjaBookmarks
+    </string>
+    <!-- Clear -->
+    <!-- Others setting -->
+    <string name="setting_title_about" >
+        সম্পর্কিত
+    </string>
+    <string name="setting_title_download" >
+        ডাউনলোড
+    </string>
+
+    <!-- Version -->
+    <string name="setting_title_version">
+
+সংস্করণ
+    </string>
+    <!--contactEmail-->
+    <string name="setting_title_contact" >
+    যোগাযোগ
+    </string>
+
+    <string name="setting_title_feedback" >
+    প্রতিক্রিয়া
+    </string>
+
+    <string name="setting_feedback_summary" >
+   আমাদের আপনার মূল্যবান প্রতিক্রিয়া লিখুন
+    </string>
+
+    <string name="setting_title_default_browser" >
+   ডিফল্ট ব্রাউজার হিসাবে সেট করুন
+    </string>
+
+    <string name="setting_default_browser_summary" >
+    আপনার ডিফল্ট ব্রাউজারে নিনজা ফক্স সেট করুন
+    </string>
+
+    <string name="privacy_policy" >
+       গোপনীয়তা নীতি
+    </string>
+
+    <!-- Toast -->
+    <string name="toast_add_bookmark_successful">
+       বুকমার্ক সফলভাবে যুক্ত হয়েছে
+    </string>
+    <string name="toast_add_bookmark_failed">
+        বুকমার্কে এই পৃষ্ঠাটি যুক্ত করতে পারে না
+    </string>
+    <string name="toast_add_to_home_successful">
+        সফলভাবে হোমটিতে যুক্ত হয়েছে
+    </string>
+    <string name="toast_add_to_home_failed">
+        হোম যোগ করতে ব্যর্থ
+
+    </string>
+
+    <string name="toast_add_whitelist_successful">
+        সফলভাবে ডোমেন যুক্ত হয়েছে
+    </string>
+    <string name="toast_already_exist_in_home">
+       ইতিমধ্যে বাড়িতে বিদ্যমান
+    </string>
+    <string name="toast_clear_successful">
+        সাফল্যের সাথে সাফ করা হয়েছে
+    </string>
+    <string name="toast_copy_successful">
+        সাফল্যের সাথে অনুলিপি করা হয়েছে
+    </string>
+    <string name="toast_delete_bookmark_successful">
+        সাফল্যের সাথে মুছে ফেলা বুকমার্ক
+    </string>
+    <string name="can_not_delete">
+
+ডেটা মুছতে পারে না
+    </string>
+    <string name="toast_delete_successful">
+       সফলভাবে মোছা হয়েছে
+    </string>
+    <string name="toast_domain_already_exists">
+
+ডোমেন ইতিমধ্যে বিদ্যমান
+    </string>
+    <string name="toast_double_taps_quit">
+       প্রস্থান করতে আবার চাপুন
+    </string>
+
+
+    <string name="toast_input_empty">
+
+আপনার কিছু ইনপুট নেই
+    </string>
+    <string name="toast_invalid_domain">
+       অবৈধ ডোমেন
+    </string>
+    <string name="toast_load_error">
+        এই URL টি লোড করা যায় না
+    </string>
+    <string name="toast_new_tab_successful">
+        সফলভাবে একটি নতুন ট্যাবে খোলা হয়েছে
+    </string>
+    <string name="toast_open_file_manager_failed">
+        ফাইল পরিচালককে খুলতে ব্যর্থ
+    </string>
+    <string name="toast_refresh_failed">
+        এই পৃষ্ঠাটি রিফ্রেশ করা যায় না
+    </string>
+
+
+
+    <string name="toast_share_failed">
+        এই পৃষ্ঠাটি ভাগ করা যায় না
+    </string>
+    <string name="share_using">
+        ব্যবহার করে ভাগ করুন
+    </string>
+    <string name="invalid_link">
+        অবৈধ লিঙ্ক
+    </string>
+    <string name="prompt_valid_url">
+
+বৈধ url লিখুন দয়া করে
+   </string>
+    <string name="promt_title">
+
+শিরোনাম এবং url লিখুন দয়া করে
+    </string>
+    <string name="toast_start_download">
+        ডাউনলোড শুরু হচ্ছে
+    </string>
+
+    <string name="toast_wait_a_minute">
+       অনুগ্রহ করে কিছুক্ষণ অপেক্ষা করুন
+    </string>
+
+    <!-- Token -->
+    <string name="token_label">
+        টোকেন
+    </string>
+
+    <string name="token_add">
+
+যোগ
+    </string>
+
+    <string name="bookmark" >বুকমার্ক</string>
+    <string name="History" >ইতিহাস</string>
+    <string name="download_setting_both" >উভয়</string>
+    <string name="download_setting_wifi" >
+শুধুমাত্র ওয়াইফাই</string>
+    <string name="download_setting_mobile" >
+কেবলমাত্র মোবাইল ডেটা</string>
+
+    <string name="donwload_setiings_msg_wifi" >আপনার বর্তমান সেটিংস ডাউনলোডের অনুমতি দেয় না। দয়া করে ওয়াইফাই সক্ষম করুন</string>
+    <string name="donwload_setiings_msg_mobile" >আপনার বর্তমান সেটিংস ডাউনলোডের অনুমতি দেয় না। দয়া করে মোবাইল ডেটা সক্ষম করুন</string>
+    <string name="download_dialog_title" >
+ডেটা / ওয়াইফাইতে ফাইলগুলি ডাউনলোড করুন</string>
+    <string name="show_image_title" >চিত্রগুলি দেখান</string>
+
+    <string name="show_image_always" >সর্বদা</string>
+        <string name="show_image_wifi" >কেবলমাত্র Wi-Fi এর উপরে</string>
+    <string name="show_image_blocked" >অবরুদ্ধ</string>
+
+    <string name="default_set_msg" >
+            ব্রাউজার অ্যাপ্লিকেশন আলতো চাপুন এবং নিনজা ফক্স নির্বাচন করুন</string>
+    <string  name="gray_900">#212121</string>
+
+    <string name="menu_new_incog_tab" >নতুন ইনকোগ ট্যাব</string>
+    <string name="menu_new_most_recent" >সাম্প্রতিক</string>
+    <string name="menu_new_find_in_page" >পৃষ্ঠায় সন্ধান করুন</string>
+
+    <string name="menu_new_bookmark" >বুকমার্ক</string>
+    <string name="menu_new_history" >ইতিহাস</string>
+    <string name="menu_new_recent" >সাম্প্রতিক</string>
+    <string name="menu_new_most_visited" >সর্বাদিক ভ্রমনকৃত</string>
+
+    <string name="menu_new_setting" >
+সেটিংস</string>
+    <string name="menu_new_share" >ভাগ</string>
+
+    <string name="menu_new_delete" >মুছে ফেলা</string>
+    <string  name="clean_exit" >পরিষ্কার এবং প্রস্থান করুন</string>
+    <string  name="exit" >বাহির</string>
+    <string  name="cancel" >বাতিল</string>
+    <string  name="set_default" >ডিফল্ট সেট করুন</string>
+    <string  name="ask_again" >আমাকে আবার জিজ্ঞাসা করবেন না</string>
+    <string  name="delete_desc" >
+-হিসটরি\n-লোকেশন তথ্য \nক্যাশেড ডেটা\n-কুকি</string>
+    <string  name="clean_title" >প্রস্থান করার সময় নিম্নলিখিত \n ব্রাউজিং ডেটা পরিষ্কার করুন</string>
+
+
+    <string name="title">শিরোনাম</string>
+    <string name="url">ইউআরএল</string>
+    <string name="add">যোগ</string>
+    <string name="remove_site">সাইট সরান</string>
+    <string name="remove">
+অপসারণ</string>
+
+    <string name="download_path_0">
+       পথ
+    </string>
+    <string name="clear_all">  সব পরিষ্কার করে দাও  </string>
+    <string name="current_default_browser">বর্তমান ডিফল্ট ব্রাউজার : </string>
+
+    <string name="need_permission">
+অনুমতি প্রয়োজন</string>
+    <string name="custom_ui">কাস্টম ইউআই দ্বারা প্রয়োজনীয় কিছু স্ট্যান্ডার্ড অনুমতিগুলি অক্ষম করে</string>
+    <string name="need_enable">
+আপনি তাদের জন্য সক্ষম করা প্রয়োজন</string>
+    <string name="towork">কাজ করতে.</string>
+    <string name="default_browser_error">এই ডিভাইসে সেট করা যায় না</string>
+
+
+
+
+    <string name="can_not_perform">এই ডিভাইসে পারফর্ম করতে পারবেন না</string>
+    <string name="unable_get_permission">অনুমতি পেতে অক্ষম</string>
+    <string name="permission_required">
+অনুমতি প্রয়োজন</string>
+
+    <string name="grant">
+প্রদান</string>
+    <string name="storage_needed">অ্যাপ্লিকেশন সঠিকভাবে কাজ করার অনুমতি প্রয়োজন।</string>
+
+    <string name="storage_permission">
+অ্যাপ্লিকেশন স্টোরেজ অনুমতি প্রয়োজন।</string>
+    <string name="call_permission">
+অ্যাপ্লিকেশন ফোন কল অনুমতি প্রয়োজন।</string>
+    <string name="grant_storage">স্টোরেজ অ্যাক্সেস মঞ্জুর করতে অনুমতিগুলিতে যান</string>
+    <string name="call_us">আমাদের ফোন করুন</string>
+    <string name="email_str">
+আমাদেরকে ইমেইল করুন</string>
+    <string name="suggested_apps" >প্রস্তাবিত অ্যাপস</string>
+
+
+    <string name="menu_new_blocked_list">অবরুদ্ধ সাইটগুলি</string>
+    <string name="unblock_heading">সাইটটিকে অবরোধ মুক্ত করুন</string>
+    <string name="unblock_site">অবরোধ মুক্ত</string>
+    <string name="block_site_title">ব্লক ওয়েবসাইট</string>
+    <string name="blocked_site_title">অবরুদ্ধ ওয়েবসাইটসমূহ</string>
+    <string name="add_site">ওয়েবসাইট যুক্ত করুন </string>
+    <string name="access_block_site">অবরুদ্ধ ওয়েবসাইটগুলি অ্যাক্সেস করুন</string>
+    <string name="unblock_all">  সমস্ত অবরোধ মুক্ত করুন  </string>
+    <string name="blocked_url">  এই ইউআরএল অবরুদ্ধ  </string>
+    <string name="set_password">ব্লক সাইট অ্যাক্সেস সুরক্ষিত করতে পাসওয়ার্ড সেট করুন</string>
+    <string name="password">পাসওয়ার্ড</string>
+    <string name="new_password">নতুন পাসওয়ার্ড</string>
+    <string name="write_password_error">পাসওয়ার্ড লিখুন দয়া করে!</string>
+    <string name="confirm_password">পাসওয়ার্ড কনফার্ম করুন</string>
+    <string name="set">সেট</string>
+    <string name="passwordnotmatch">পাসওয়ার্ড মেলে না</string>
+    <string name="type_password">একটি গোপন নাম্বার লিখ</string>
+    <string name="incrct_pswd">ভুল পাসওয়ার্ড৤</string>
+    <string name="filenotcreated">ফাইল তৈরি করা হয়নি</string>
+    <string name="password_create_error">পাসওয়ার্ড তৈরি করা যায় না</string>
+    <string name="change_password">রিসেট</string>
+    <string name="show_hindi">হিন্দি</string>
+    <string name="show_english">ইংরেজি</string>
+
+
+
+
+
+    <!--today-->
+
+    <string name="forgot_password"><u>পাসওয়ার্ড ভুলে গেছেন</u></string>
+    <string name="signup"><u>নিবন্ধন করুন</u></string>
+    <string name="signup2">নিবন্ধন করুন</string>
+    <string name="sign_up_with_google">Gmail এর সাথে সাইনআপ</string>
+    <string name="invalid_email">অবৈধ ইমেল</string>
+    <string name="fill_details">বিশদ পূরণ করুন</string>
+    <string name="password_not_match">পাসওয়ার্ড মেলে না</string>
+    <string name="login">লগইন</string>
+    <string name="logout">প্রস্থান</string>
+    <string name="msg_loading">বোঝাই...</string>
+    <string name="login_msg">যাচাই করা হচ্ছে...</string>
+    <string name="create_user">নিবন্ধীকরণ...</string>
+    <string name="address_error">বর্তমান ঠিকানা খুঁজে পাওয়া যায় না</string>
+    <string name="msg_wait">অপেক্ষা করুন...</string>
+    <string name="internet_msg">আপনার ইন্টারনেট সংযোগ যাচাই করুন</string>
+    <string name="hint_user_name">ইমেল আইডি বা মোবাইল</string>
+    <string name="hint_name">নাম</string>
+    <string name="hint_mobile">মোবাইল</string>
+
+
+    <string name="setting_title_log_out">প্রস্থান</string>
+    <string name="setting_title_delete_account">হিসাব মুছে ফেলা</string>
+    <string name="log_out_summary">নিনজা ফক্স থেকে লগ আউট করুন</string>
+    <string name="delete_account_summary">নিনজা ফক্স থেকে আপনার অ্যাকাউন্ট মুছুন</string>
+
+    <string name="txt_done">সম্পন্ন</string>
+    <string name="txt_password_set_success">
+পাসওয়ার্ড সফলভাবে সেট</string>
+    <string name="gps_msg">আপনার জিপিএস অক্ষম বলে মনে হচ্ছে, আপনি কি এটি সক্ষম করতে চান?</string>
+
+    <string name="txt_yes">
+হাঁ</string>
+    <string name="txt_no">না</string>
+    <string name="txt_fill_fields">সব ক্ষেত্রগুলি পূরণ করুন</string>
+
+
+    <string name="hint_email">ইমেইল</string>
+    <string name="write_email">ইমেল লিখুন দয়া করে।</string>
+    <string name="menu_new_sign_in">প্রবেশ কর</string>
+    <string name="menu_new_sign_up">নিবন্ধন করুন</string>
+    <string name="menu_new_language_prefs">সংবাদ ভাষা</string>
+    <string name="save_language">সংরক্ষণ করুন</string>
+
+
+
+    <string name="setting_title_Language">ভাষা</string>
+    <string name="setting_sub_title_Language" >খবরের ভাষা সেট করুন</string>
+
+    <string name="setting_title_newscategory" >সংবাদ বিভাগ</string>
+    <string name="setting_sub_title_newscategory">সংবাদ বিভাগ নির্বাচন করুন</string>
+
+
+
+</resources>

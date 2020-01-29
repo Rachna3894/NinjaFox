@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_10sdp"
+        android:src="@drawable/ic_launcher_round"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"></ImageView>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/TextAppearance.Compat.Notification.Title"
+            android:text="FileName"
+            android:id="@+id/downLoadFileaName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+        <ProgressBar
+            android:id="@+id/download_progress"
+            android:layout_width="match_parent"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_height="wrap_content"></ProgressBar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/TextAppearance.Compat.Notification.Title"
+                android:text="Downloading"
+                android:id="@+id/statusText"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+            <TextView
+                style="@style/TextAppearance.Compat.Notification.Title"
+                android:text="10kb/100kb"
+                android:id="@+id/bytedispText"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:padding="@dimen/_5sdp"
+                style="@style/TextAppearance.Compat.Notification.Title"
+                android:text="Pause"
+                android:id="@+id/pauseDownload"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+            <TextView
+                android:layout_toRightOf="@+id/pauseDownload"
+                android:padding="@dimen/_5sdp"
+                android:id="@+id/cancelDownload"
+                style="@style/TextAppearance.Compat.Notification.Title"
+                android:text="@string/cancel"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

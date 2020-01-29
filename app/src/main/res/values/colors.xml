@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <color name="blue_700">#1976D2</color>
+    <color name="blue_500">#2196F3</color>
+    <color name="blue_200">#90CAF9</color>
+
+    <color name="gray_900">#212121</color>
+    <color name="gray_600">#757575</color>
+    <color name="gray_100">#F5F5F5</color>
+    <color name="gray_divider">#c2c2c2</color>
+    <color name="black">#000000</color>
+    <color name="red">#ff0000</color>
+    <color name="shadow_light">#44212121</color>
+    <color name="ripple_gray">#cbcbcb</color>
+    <color name="background_dark">@color/gray_900</color>
+    <color name="background_light">@color/gray_100</color>
+    <color name="light">#F3F3F3</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">@android:color/transparent</color>
+
+    <color name="text">#212121</color>
+    <color name="text_secondary">#727272</color>
+    <color name="text_hint">#727272</color>
+    <color name="hint">#B8B8B8</color>
+    <color name="dividers">#DADADA</color>
+    <color name="incog_back">#323639</color>
+
+    <color name="sign_in_bg_color">#eaeaee</color>
+
+    <color name="actionbar_wood">#ffb3aa86</color>
+
+
+    <color name="screen_background">#eae9eb</color>
+    <color name="navigation_back">#EBEBED</color>
+    <color name="clear_all_back_color">#e9e9ea</color>
+
+   <!-- <color name="title_back_color">#b1661b</color>-->
+    <color name="title_back_color">#e38629</color>
+
+    <color name="album_select_indicator">#b1661b</color>
+    <color name="color_teel">#2c919f</color>
+
+    <color name="color_icon">#26A69A</color>
+</resources>

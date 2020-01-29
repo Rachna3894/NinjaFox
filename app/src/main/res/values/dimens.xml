@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!-- DynamicGrid -->
+    <dimen name="dgv_overlap_if_switch_straight_line">16dp</dimen>
+
+    <dimen name="layout_width_156dp">156dp</dimen>
+    <dimen name="layout_width_144dp">144dp</dimen>
+
+
+    <dimen name="layout_width_50dp">80dp</dimen>
+    <dimen name="layout_height_50dp">80dp</dimen>
+
+    <dimen name="layout_width_60dp">60dp</dimen>
+    <dimen name="layout_height_60dp">60dp</dimen>
+
+    <dimen name="layout_width_40dp">40dp</dimen>
+    <dimen name="layout_height_40dp">40dp</dimen>
+
+    <dimen name="layout_height_141dp">141dp</dimen>
+    <dimen name="layout_height_117dp">117dp</dimen>
+    <dimen name="layout_height_108dp">108dp</dimen>
+    <dimen name="layout_height_48dp">48dp</dimen>
+    <dimen name="layout_height_45dp">45dp</dimen>
+    <dimen name="layout_height_36dp">36dp</dimen>
+    <dimen name="layout_height_32dp">32dp</dimen>
+    <dimen name="layout_height_25dp">25dp</dimen>
+    <dimen name="layout_height_12dp">12dp</dimen>
+    <dimen name="layout_height_6dp">6dp</dimen>
+    <dimen name="layout_height_2dp">2dp</dimen>
+    <dimen name="layout_height_4dp">4dp</dimen>
+    <dimen name="layout_height_1dp">1dp</dimen>
+
+    <dimen name="layout_margin_48dp">48dp</dimen>
+    <dimen name="layout_margin_20dp">20dp</dimen>
+    <dimen name="layout_margin_10dp">20dp</dimen>
+    <dimen name="layout_margin_16dp">16dp</dimen>
+    <dimen name="layout_margin_12dp">12dp</dimen>
+    <dimen name="layout_margin_8dp">8dp</dimen>
+    <dimen name="layout_margin_4dp">4dp</dimen>
+    <dimen name="layout_margin_2dp">2dp</dimen>
+
+
+    <dimen name="padding_16dp">16dp</dimen>
+    <dimen name="padding_8dp">8dp</dimen>
+    <dimen name="padding_4dp">4dp</dimen>
+
+
+
+    <dimen name="text_size_12sp">12sp</dimen>
+    <dimen name="text_size_14sp">14sp</dimen>
+    <dimen name="text_size_16sp">16sp</dimen>
+    <dimen name="text_size_18sp">18sp</dimen>
+
+    <dimen name="text_size_22sp">22sp</dimen>
+    <dimen name="text_size_24sp">24sp</dimen>
+
+
+    <dimen name="divider_height_1dp">1dp</dimen>
+    <dimen name="elevation_2dp">2dp</dimen>
+    <dimen name="elevation_1dp">1dp</dimen>
+    <dimen name="elevation_6dp">1dp</dimen>
+    <dimen name="radius_2dp">2dp</dimen>
+    <dimen name="radius_1dp">1dp</dimen>
+
+
+    <dimen name="_5sdp">5.00dp</dimen>
+    <dimen name="_65sdp">65.00dp</dimen>
+    <dimen name="_50sdp">50.00dp</dimen>
+    <dimen name="dp4">4dp</dimen>
+    <dimen name="_14sdp">14.00dp</dimen>
+
+
+    <dimen name="dp6">6dp</dimen>
+    <dimen name="dp8">8dp</dimen>
+    <dimen name="dp5">5dp</dimen>
+    <dimen name="dp10">10dp</dimen>
+    <dimen name="dp12">12dp</dimen>
+    <dimen name="dp14">14dp</dimen>
+    <dimen name="dp15">15dp</dimen>
+    <dimen name="dp16">16dp</dimen>
+    <dimen name="dp20">20dp</dimen>
+    <dimen name="dp30">30dp</dimen>
+    <dimen name="dp40">40dp</dimen>
+    <dimen name="dp50">50dp</dimen>
+
+    <dimen name="dp2">2sp</dimen>
+    <dimen name="sp14">14sp</dimen>
+    <dimen name="sp16">16sp</dimen>
+    <dimen name="sp18">18sp</dimen>
+    <dimen name="sp20">20sp</dimen>
+    <dimen name="sp28">28sp</dimen>
+    <dimen name="sp38">38sp</dimen>
+    <dimen name="sp48">48sp</dimen>
+    <dimen name="sp58">58sp</dimen>
+
+
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center">
+
+
+        <LinearLayout
+            android:padding="@dimen/dp10"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="@string/setting_sub_title_newscategory"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_18sp"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/newsCategoryRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/dp10"
+                android:weightSum="2"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                >
+
+                <TextView
+                    android:id="@+id/newsCategoryCancel"
+                    android:background="@drawable/ripple"
+                    android:text="@string/cancel"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_18sp"
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+
+
+
+                <TextView
+                    android:id="@+id/newsCategoryDone"
+                    android:background="@drawable/ripple"
+                    android:text="@string/main_relayout_done"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_18sp"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>

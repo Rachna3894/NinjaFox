@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!-- Holder -->
+
+    <!-- List -->
+    <string-array name="list_menu">
+        <item>New tab</item>
+        <item>Copy link</item>
+        <item>Share</item>
+       <!-- <item>Edit</item>-->
+        <item>Delete</item>
+    </string-array>
+
+    <!-- Main -->
+    <string-array name="main_overflow">
+        <item>Go to top</item>
+        <item>Add to home</item>
+        <item>Find in page</item>
+        <item>Screenshot</item>
+        <item>Readability</item>
+        <item>Share</item>
+        <item>Relayout</item>
+        <item>Quit</item>
+    </string-array>
+
+    <!-- Search engine -->
+
+
+
+
+
+
+    <string-array name="setting_entries_download">
+        <item>@string/download_setting_both</item>
+        <item>@string/download_setting_wifi</item>
+        <item>@string/download_setting_mobile</item>
+    </string-array>
+    <string-array name="setting_values_downlaod">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!--show languages -->
+<!--
+    <string-array name="setting_entries_languages">
+        <item>@string/show_hindi</item>
+        <item>@string/show_english</item>
+        <item>@string/show_punjabi</item>
+        <item>@string/show_marathi</item>
+        <item>@string/show_tamil</item>
+    </string-array>
+    <string-array name="setting_values_languages">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+-->
+
+
+<!--show images -->
+    <string-array name="setting_entries_show_images">
+        <item>@string/show_image_always</item>
+        <item>@string/show_image_wifi</item>
+        <item>@string/show_image_blocked</item>
+    </string-array>
+
+
+    <string-array name="setting_values_show_images">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+<!--show images -->
+
+    <string-array name="entries_clear_data">
+        <item>@string/clear_title_form_data</item>
+        <item>@string/clear_title_history</item>
+        <item>@string/clear_title_bookmarks</item>
+        <item>@string/clear_title_cookie</item>
+        <item>@string/clear_title_cache</item>
+    </string-array>
+
+    <string-array name="values_clear_data">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <!--initilize with  blank  array to  keep all unselected-->
+    <string-array name="values_clear_data_default">
+
+    </string-array>
+
+
+
+</resources>

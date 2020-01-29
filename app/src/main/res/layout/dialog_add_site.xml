@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/white"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.v7.widget.CardView
+        android:elevation="@dimen/elevation_6dp"
+        android:layout_width="match_parent"
+        app:cardBackgroundColor="@color/white"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:padding="@dimen/padding_16dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/ic_launcher_round"
+                android:layout_width="@dimen/layout_width_50dp"
+                android:layout_height="@dimen/layout_width_50dp"/>
+
+
+            <EditText
+                android:id="@+id/edit_Title"
+                android:textColor="@color/black"
+                android:hint="@string/title"
+                android:textColorHint="@color/black"
+                android:layout_margin="@dimen/padding_8dp"
+                android:background="@drawable/layout_border"
+                android:padding="@dimen/padding_8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/edit_Url"
+                android:textColor="@color/black"
+                android:hint="@string/url"
+                android:textColorHint="@color/black"
+                android:gravity="left"
+                android:layout_margin="@dimen/padding_8dp"
+                android:background="@drawable/layout_border"
+                android:padding="@dimen/padding_8dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+           <LinearLayout
+               android:layout_marginTop="@dimen/padding_16dp"
+               android:weightSum="2"
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <TextView
+                   android:id="@+id/addSite"
+                   android:background="@drawable/ripple"
+                   android:text="@string/add"
+                   android:textColor="@color/black"
+                   android:textSize="@dimen/text_size_18sp"
+                   android:gravity="center"
+                   android:padding="@dimen/padding_8dp"
+                   android:layout_weight="1"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content" />
+
+               <TextView
+                   android:id="@+id/cancel_txt"
+                   android:background="@drawable/ripple"
+                   android:text="@string/cancel"
+                   android:textColor="@color/black"
+                   android:textSize="@dimen/text_size_18sp"
+                   android:gravity="center"
+                   android:padding="@dimen/padding_8dp"
+                   android:layout_weight="1"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content" />
+           </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+</LinearLayout>

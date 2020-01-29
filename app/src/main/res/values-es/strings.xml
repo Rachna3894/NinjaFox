@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+
+    <!-- AndroidAgo -->
+    <string name="android_ago_just_now">
+        Justo ahora
+    </string>
+
+    <!-- Album -->
+    <string name="album_title_bookmarks">
+       Marcadores
+    </string>
+    <string name="album_title_history">
+        Historia
+    </string>
+    <string name="album_title_home">
+        Casa
+    </string>
+
+    <string name="album_title_home_incog">
+        Inicio (incógnito)
+    </string>
+    <string name="album_untitled">
+
+Intitulado
+    </string>
+
+    <!-- Clear -->
+    <string name="clear_label">
+        Clara
+    </string>
+    <string name="clear_menu_done_all">
+
+Hecho todo
+    </string>
+    <string name="clear_title_quit">
+       Borrar cuando la aplicación salga
+    </string>
+    <string name="clear_title_bookmarks">
+
+Borrar marcadores
+    </string>
+    <string name="clear_title_cache">
+        Limpiar cache
+    </string>
+    <string name="clear_title_cookie">
+
+Eliminar cookies
+    </string>
+    <string name="clear_title_form_data">
+
+Borrar datos del formulario
+    </string>
+    <string name="clear_title_history">
+
+Borrar historia
+    </string>
+    <string name="clear_title_passwords">
+        Borrar contraseñas
+    </string>
+
+    <!-- Dialog -->
+    <string name="dialog_title_hint">
+        Título de entrada
+    </string>
+
+    <string name="dialog_sign_in_username">
+        Nombre de usuario
+    </string>
+    <string name="dialog_sign_in_password">
+        Contraseña
+    </string>
+    <string name="dialog_button_positive">
+       Okay
+    </string>
+    <string name="dialog_button_negative">
+        Cancelar
+    </string>
+    <string name="dialog_button_custom">
+        cambiado
+    </string>
+    <string name="dialog_title_download">
+        quieres descargar el archivo
+    </string>
+    <string name="dialog_title_resubmission">
+        Reenviar
+    </string>
+    <string name="dialog_title_warning">
+
+Advertencia
+    </string>
+    <string name="dialog_title_sign_in">
+        Registrarse
+    </string>
+    <string name="dialog_content_resubmission">
+        ¿Desea volver a enviar sus datos?
+    </string>
+    <string name="dialog_content_ssl_error">
+
+El certificado del sitio no es de confianza. ¿Procede de todas maneras?
+    </string>
+    <string name="dialog_content_upload">
+        Actualmente, la carga de archivos solo es compatible con Android 5.0 y superior.
+    </string>
+
+    <!-- List -->
+    <string name="list_empty">
+        La lista actual está vacía.
+    </string>
+
+    <!-- Main -->
+    <string name="main_menu_new_tab">
+
+Nueva pestaña
+    </string>
+    <string name="main_menu_copy_link">
+        Copiar link
+    </string>
+    <string name="main_menu_download">
+        Descargar
+    </string>
+    <string name="main_omnibox_input_hint">
+        Buscar o escribir URL
+    </string>
+    <string name="main_relayout_ok">
+        okay
+    </string>
+    <string name="main_about_blank">
+       El contenido personalizado aparecerá aquí
+    </string>
+
+    <string name="incogTextHeading">
+       Te has ido de incógnito
+    </string>
+    <string name="incogdesc">
+     Ahora puede navegar en privado, y otras personas que usan este dispositivo no verán su actividad.\nSin embargo, las descargas y los marcadores se guardarán.\nNinja fox no guardará la siguiente información:\n
+      - Tu historial de navegación\n
+      - Cookies y datos del sitio\n
+      - Información ingresada en formularios
+  </string>
+    <!-- Notification -->
+    <string name="notification_content_holder">
+        Haga clic para ver las páginas
+    </string>
+
+    <!-- Readability -->
+
+    <!-- Search -->
+    <string name="search_hint">
+        Buscar
+    </string>
+
+    <!-- Settings -->
+    <string name="setting_label">
+        Configuraciones
+    </string>
+    <!--download settings-->
+    <string name="download_settings_label">Descargar</string>
+    <!--download settings-->
+
+    <!-- Browser setting -->
+    <string name="setting_title_browser">
+        Configuración del navegador
+    </string>
+
+    <string name="setting_title_location">
+
+Ubicación
+    </string>
+    <string name="setting_summary_location">
+
+Permita que los sitios web accedan a su ubicación
+    </string>
+
+    <string name="setting_title_data">
+        Datos
+    </string>
+    <!-- Passwords -->
+    <string name="settings_clear_data">
+Borrar datos</string>
+    <!-- Bookmarks -->
+
+
+    <string name="setting_title_about">
+
+Acerca de
+    </string>
+    <string name="setting_title_download">
+        Downlaods
+    </string>
+
+    <!-- Version -->
+    <string name="setting_title_version">
+        Versión
+    </string>
+    <!--contactEmail-->
+    <string name="setting_title_contact">
+    Contacto
+    </string>
+
+    <string name="setting_title_feedback">
+   Realimentación
+    </string>
+
+    <string name="setting_feedback_summary">
+
+Escríbanos sus valiosos comentarios
+    </string>
+
+    <string name="setting_title_default_browser">
+
+Establecer como navegador predeterminado
+    </string>
+
+    <string name="setting_default_browser_summary">
+    Configure ninja fox su navegador predeterminado
+    </string>
+
+    <string name="privacy_policy">
+        Política de privacidad
+    </string>
+
+
+    <string name="toast_add_bookmark_successful">
+       Marcador agregado con éxito
+    </string>
+    <string name="toast_add_bookmark_failed">
+
+No se puede agregar esta página al marcador
+
+    </string>
+    <string name="toast_add_to_home_successful">
+       Agregado exitosamente a Inicio
+    </string>
+    <string name="toast_add_to_home_failed">
+
+Error al agregar a Inicio
+    </string>
+
+    <string name="toast_add_whitelist_successful">
+       Dominio agregado con éxito
+    </string>
+    <string name="toast_already_exist_in_home">
+       Ya existe en casa
+    </string>
+    <string name="toast_clear_successful">
+        Despejado con éxito
+    </string>
+    <string name="toast_copy_successful">
+
+Copiado con éxito
+    </string>
+    <string name="toast_delete_bookmark_successful">
+        Marcador eliminado correctamente
+    </string>
+    <string name="can_not_delete">
+        No se pueden eliminar datos
+    </string>
+    <string name="toast_delete_successful">
+
+Eliminado exitosamente
+    </string>
+    <string name="toast_domain_already_exists">
+        El dominio ya existe
+    </string>
+    <string name="toast_double_taps_quit">
+       Presione nuevamente para salir
+    </string>
+
+
+    <string name="toast_input_empty">
+      No has ingresado nada
+    </string>
+    <string name="toast_invalid_domain">
+        Dominio inválido
+    </string>
+    <string name="toast_load_error">
+       No se puede cargar esta URL
+    </string>
+    <string name="toast_new_tab_successful">
+        Se abrió con éxito en una nueva pestaña
+    </string>
+    <string name="toast_open_file_manager_failed">
+        Error al abrir el Administrador de archivos
+    </string>
+    <string name="toast_refresh_failed">
+
+No se puede actualizar esta página
+    </string>
+
+
+    <string name="toast_share_failed">
+        No puedo compartir esta página
+    </string>
+    <string name="share_using">
+        Compartir usando
+    </string>
+    <string name="invalid_link">
+        enlace inválido
+    </string>
+    <string name="prompt_valid_url">
+
+por favor escriba url válida
+   </string>
+    <string name="promt_title">
+      por favor escriba título y url
+    </string>
+    <string name="toast_start_download">
+
+Descarga Puesta en marcha
+    </string>
+===========================================================================================================
+
+    <string name="toast_wait_a_minute">
+     Espere un momento por favor
+    </string>
+
+    <!-- Token -->
+    <string name="token_label">
+       Simbólica
+    </string>
+
+    <string name="token_add">
+        Añadir
+    </string>
+
+
+    <string name="bookmark">Marcadores</string>
+    <string name="History">Historia</string>
+    <string name="download_setting_both">Ambas</string>
+    <string name="download_setting_wifi">Sólo wifi</string>
+    <string name="download_setting_mobile">Solo datos móviles</string>
+
+
+    <string name="donwload_setiings_msg_wifi">su configuración actual no permite la descarga. por favor habilite wifi</string>
+    <string name="donwload_setiings_msg_mobile">
+su configuración actual no permite la descarga. por favor habilite los datos móviles</string>
+    <string name="download_dialog_title">Descargar archivos en Datos / Wifi</string>
+    <string name="show_image_title">Mostrar imagenes</string>
+
+    <string name="show_image_always">Siempre</string>
+    <string name="show_image_wifi">Solo por wifi</string>
+    <string name="show_image_blocked">Obstruido</string>
+
+    <string name="default_set_msg">toca la aplicación del navegador y selecciona ninja fox</string>
+
+    <string name="gray_900">#212121</string>
+
+    <string name="menu_new_incog_tab">
+Nueva pestaña de incógnito</string>
+    <string name="menu_new_most_recent">Reciente</string>
+    <string name="menu_new_find_in_page">Encontrar en la página</string>
+    <string name="menu_new_bookmark">Marcadores</string>
+    <string name="menu_new_history">Historia
+</string>
+    <string name="menu_new_recent">Reciente</string>
+    <string name="menu_new_most_visited">Más visitado</string>
+
+    <string name="menu_new_setting">Configuraciones</string>
+    <string name="menu_new_share">Compartir</string>
+
+
+    <string name="menu_new_delete">Borrar</string>
+    <string name="clean_exit">
+Limpiar y salir</string>
+    <string name="exit">Salida</string>
+    <string name="cancel">Cancelar</string>
+    <string name="set_default">Establecer predeterminado</string>
+    <string name="ask_again">
+No me preguntes de nuevo</string>
+    <string name="delete_desc">
+-Historia\n-Información de ubicación\n-Datos en caché\n-Cookies</string>
+    <string name="clean_title">¿Limpiar los siguientes datos de navegación al salir?</string>
+
+
+    <string name="title">Título</string>
+    <string name="url">Url</string>
+    <string name="add">Añadir</string>
+    <string name="remove_site">Eliminar sitio</string>
+    <string name="remove">retirar</string>
+
+    <string name="download_path_0">
+        Camino
+    </string>
+    <string name="clear_all">
+LIMPIAR TODO  </string>
+    <string name="current_default_browser">
+Navegador predeterminado actual : </string>
+
+
+    <string name="need_permission">
+Necesita permisos</string>
+    <string name="custom_ui">
+La interfaz de usuario personalizada deshabilita ciertos permisos estándar necesarios para</string>
+    <string name="need_enable">
+necesita habilitarlos para</string>
+    <string name="towork">trabajar.</string>
+    <string name="default_browser_error">no se puede configurar en este dispositivo</string>
+
+
+    ============
+
+
+    <string name="can_not_perform">
+no se puede realizar en este dispositivo</string>
+    <string name="unable_get_permission">
+No se puede obtener el permiso</string>
+    <string name="permission_required">Necesita permisos</string>
+
+    <string name="grant">Conceder</string>
+    <string name="storage_needed">La aplicación necesita permisos para funcionar correctamente.</string>
+
+    <string name="storage_permission">La aplicación necesita permiso de almacenamiento.</string>
+    <string name="call_permission">La aplicación necesita permiso de llamada telefónica.</string>
+    <string name="grant_storage">Vaya a Permisos para otorgar acceso al almacenamiento</string>
+    <string name="call_us">Llamanos</string>
+    <string name="email_str">Envíanos un correo electrónico</string>
+
+    <string name="suggested_apps" >Aplicaciones sugeridas</string>
+
+    <string name="menu_new_blocked_list">Sitios bloqueados</string>
+
+
+    <!--***************************-->
+    <string name="unblock_heading">Desbloquear sitio</string>
+    <string name="unblock_site">Desatascar</string>
+    <string name="block_site_title">Bloquear sitio web</string>
+    <string name="blocked_site_title">Sitios web bloqueados</string>
+    <string name="add_site">Agregar sitio web </string>
+    <string name="access_block_site">Acceda a los sitios web bloqueados</string>
+    <string name="unblock_all">  Desbloquear todo  </string>
+    <string name="blocked_url">  esta url está bloqueada  </string>
+    <string name="set_password">establecer contraseña para bloquear el acceso al sitio</string>
+    <string name="password">Contraseña</string>
+    <string name="new_password">Nueva contraseña</string>
+    <string name="write_password_error">Por favor escriba la contraseña!</string>
+    <string name="confirm_password">Confirmar contraseña</string>
+    <string name="set">Conjunto</string>
+    <string name="passwordnotmatch">Las contraseñas no coinciden</string>
+    <string name="type_password">teclea una contraseña</string>
+    <string name="incrct_pswd">Contraseña incorrecta</string>
+    <string name="filenotcreated">archivo no creado</string>
+    <string name="password_create_error">no puedo crear contraseña</string>
+    <string name="change_password">Reiniciar</string>
+    <string name="show_hindi">hindi</string>
+    <string name="show_english">Inglés</string>
+
+
+
+
+
+    <!--today-->
+
+    <string name="forgot_password"><u>Se te olvidó tu contraseña</u></string>
+    <string name="signup"><u>Regístrate</u></string>
+    <string name="signup2">Regístrate</string>
+    <string name="sign_up_with_google">Regístrese con Gmail</string>
+    <string name="invalid_email">Email inválido</string>
+    <string name="fill_details">Por favor complete los detalles</string>
+    <string name="password_not_match">Las contraseñas no coinciden</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="logout">Cerrar sesión</string>
+    <string name="msg_loading">Cargando...</string>
+    <string name="login_msg">Validar...</string>
+    <string name="create_user">Registrarse...</string>
+    <string name="address_error">
+No puedo encontrar la dirección actual</string>
+    <string name="msg_wait">Espere...</string>
+
+    <string name="internet_msg">
+Comprueba tu conexión a Internet</string>
+    <string name="hint_user_name">
+ID de correo electrónico o móvil</string>
+    <string name="hint_name">Nombre</string>
+    <string name="hint_mobile">Móvil</string>
+
+
+    <string name="setting_title_log_out">Cerrar sesión</string>
+    <string name="setting_title_delete_account">Borrar cuenta</string>
+    <string name="log_out_summary">Cerrar sesión de Ninja Fox</string>
+    <string name="delete_account_summary">Eliminar tu cuenta de Ninja Fox</string>
+
+    <string name="txt_done">Hecho</string>
+    <string name="txt_password_set_success">contraseña establecida con éxito</string>
+    <string name="gps_msg">Su GPS parece estar deshabilitado, ¿desea habilitarlo?</string>
+
+    <string name="txt_yes">Sí</string>
+    <string name="txt_no">No</string>
+    <string name="txt_fill_fields">
+por favor llena todos los espacios</string>
+
+
+    <string name="hint_email">Email</string>
+    <string name="write_email">por favor escriba un correo electrónico</string>
+
+    <string name="menu_new_sign_in">Registrarse</string>
+    <string name="menu_new_sign_up">Regístrate</string>
+    <string name="menu_new_language_prefs">Noticias Idiomas</string>
+    <string name="save_language">Salvar</string>
+
+
+    <string name="setting_title_Language">Idioma</string>
+    <string name="setting_sub_title_Language" >Establecer idioma de noticias</string>
+
+    <string name="setting_title_newscategory" >
+Categoría de noticias</string>
+    <string name="setting_sub_title_newscategory">
+Seleccionar categorías de noticias</string>
+
+
+
+
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!-- Scheme -->
+    <string translatable="false" name="app_scheme_http">
+        http
+    </string>
+    <string translatable="false" name="app_scheme_https">
+        https
+    </string>
+
+    <!-- Info -->
+    <string name="app_name" translatable="false">
+        NinjaFox</string>
+
+    <string name="app_version" translatable="false">
+        1.0
+    </string>
+
+    <string name="download_path" translatable="false">
+        /storage/emulated/0/Download
+    </string>
+
+
+    <!--ContactEmail-->
+    <string name="contact_email" translatable="false">contact@mojodigitech.com
+</string>
+
+
+
+</resources>

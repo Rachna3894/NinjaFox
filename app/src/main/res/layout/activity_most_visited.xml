@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/toolbar"
+        app:cardElevation="@dimen/padding_4dp"
+        app:cardBackgroundColor="@color/clear_all_back_color"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:background="@drawable/ripple"
+            android:id="@+id/backButton"
+            android:padding="@dimen/layout_margin_2dp"
+            android:gravity="left"
+            android:layout_gravity="left|center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/ic_chevron_left_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:gravity="center"
+                android:id="@+id/title_txt"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_18sp"
+                android:text="@string/menu_new_most_visited"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <ListView android:id="@+id/record_list"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/addhoster"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:drawSelectorOnTop="true">
+    </ListView>
+    <TextView android:id="@+id/record_list_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/list_empty"
+        android:textColor="@color/hint"
+        android:textSize="@dimen/text_size_14sp"
+        android:singleLine="true"
+        android:ellipsize="none"
+        >
+    </TextView>
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/addhoster"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_margin="@dimen/_2sdp"
+            android:background="@drawable/fb_adds_layout_border_grey"
+            android:id="@+id/banner_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

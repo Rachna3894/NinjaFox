@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+
+    <!-- AndroidAgo -->
+    <string name="android_ago_just_now">
+        अभी
+    </string>
+
+    <!-- Album -->
+    <string name="album_title_bookmarks">
+
+बुकमार्क
+    </string>
+    <string name="album_title_history">
+        इतिहास
+    </string>
+    <string name="album_title_home">
+        होम
+    </string>
+
+    <string   name="album_title_home_incog">
+
+होम (गुप्त)
+    </string>
+    <string name="album_untitled">
+        शीर्षकहीन
+    </string>
+
+    <!-- Clear -->
+    <string name="clear_label">
+        साफ़
+    </string>
+    <string name="clear_menu_done_all">
+       सब हो गया
+    </string>
+    <string name="clear_title_quit">
+        आवेदन से बाहर आने पर साफ़ करें
+    </string>
+    <string name="clear_title_bookmarks">
+        बुकमार्क साफ़ करें
+    </string>
+    <string name="clear_title_cache">
+        कैश को साफ़ करें
+    </string>
+    <string name="clear_title_cookie">
+       कुकी साफ़ करें
+    </string>
+    <string name="clear_title_form_data">
+
+प्रपत्र डेटा साफ़ करें
+    </string>
+    <string name="clear_title_history">
+        इतिहास मिटा दें
+    </string>
+    <string name="clear_title_passwords">
+       पासवर्ड साफ़ करें
+    </string>
+
+    <!-- Dialog -->
+    <string name="dialog_title_hint">
+        इनपुट शीर्षक
+    </string>
+    <string translatable="false" name="dialog_se_hint">
+        https://www.google.com/search?q=
+    </string>
+    <string  translatable="false" name="dialog_ua_hint">
+        Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36
+    </string>
+    <string name="dialog_sign_in_username">
+      प्रयोक्ता नाम
+    </string>
+    <string name="dialog_sign_in_password">
+        पारण शब्द
+    </string>
+    <string name="dialog_button_positive">
+        ठीक
+    </string>
+    <string name="dialog_button_negative">
+        रद्द करें
+    </string>
+    <string name="dialog_button_custom">
+        बदलो
+    </string>
+    <string name="dialog_title_download">
+        क्या आप फ़ाइल डाउनलोड करना चाहते हैं?
+    </string>
+    <string name="dialog_title_resubmission">
+        पुनः सबमिट करें
+    </string>
+    <string name="dialog_title_warning">
+        चेतावनी
+    </string>
+    <string name="dialog_title_sign_in">
+        साइन इन करें
+    </string>
+    <string name="dialog_content_resubmission">
+
+क्या आप अपना डेटा पुनः सबमिट करना चाहेंगे?
+    </string>
+    <string name="dialog_content_ssl_error">
+
+साइट के प्रमाण पत्र पर भरोसा नहीं किया जाता है। कोई बात नहीं आगे बढ़ो?
+    </string>
+    <string name="dialog_content_upload">
+       वर्तमान में, फ़ाइल अपलोड केवल Android 5.0 और इसके बाद के संस्करण पर समर्थित है।
+    </string>
+
+    <!-- List -->
+    <string name="list_empty">
+        वर्तमान सूची खाली है
+    </string>
+
+    <!-- Main -->
+    <string name="main_menu_new_tab">
+
+नया टैब
+    </string>
+    <string name="main_menu_copy_link">
+
+प्रतिरूप जोड़ना
+    </string>
+    <string  name="main_menu_download">
+        डाउनलोड
+    </string>
+    <string name="main_omnibox_input_hint">
+
+URL खोजें या लिखें
+    </string>
+    <string name="main_relayout_ok">
+       ठीक
+    </string>
+    <string name="main_about_blank">
+       कस्टम सामग्री यहां दिखाई देगी
+    </string>
+
+    <string   name="incogTextHeading">
+       आप गुप्त हो गए हैं
+    </string>
+    <string  name="incogdesc">
+    अब आप निजी तौर पर ब्राउज़ कर सकते हैं, और अन्य लोग जो इस उपकरण का उपयोग करते हैं, वे आपकी गतिविधि को नहीं देखेंगे। \n जो भी हो, डाउनलोड और बुकमार्क सहेजे जाएँगे। \n ninjafox निम्नलिखित जानकारी को नहीं बचाएगा: \n
+      - आपका ब्राउज़िंग इतिहास \n
+      - कुकीज़ और साइट डेटा \n
+      - सूचना रूपों में दर्ज की गई
+  </string>
+    <!-- Notification -->
+    <string name="notification_content_holder">
+       पृष्ठ देखने के लिए क्लिक करें
+    </string>
+
+
+    <string name="search_hint">
+        खोज करें
+    </string>
+
+    <!-- Settings -->
+    <string name="setting_label">
+        सेटिंग्स
+    </string>
+    <!--download settings-->
+    <string name="download_settings_label" >डाउनलोड</string>
+
+    <string name="setting_title_browser">
+        ब्राउज़र सेटिंग्स
+    </string>
+
+
+    <string name="setting_title_location">
+
+स्थान
+    </string>
+    <string name="setting_summary_location">
+      वेबसाइटों को आपके स्थान तक पहुंचने की अनुमति दें
+    </string>
+
+    <string name="whilelist_filename">
+        निंजा श्वेत सूची
+    </string>
+
+    <string name="setting_title_data">
+
+डेटा
+    </string>
+    <!-- Passwords -->
+    <string name="settings_clear_data" >डेटा हटाएं</string>
+    <!-- Bookmarks -->
+    <string name="bookmarks_filename">
+
+निंजा बुकमार्क
+    </string>
+
+    <string name="setting_title_about" >
+      NinjaFox के बारे में
+    </string>
+    <string name="setting_title_download" >
+        डाउनलोड
+    </string>
+
+    <!-- Version -->
+    <string name="setting_title_version">
+        संस्करण
+    </string>
+    <!--contactEmail-->
+    <string name="setting_title_contact" >
+    संपर्क करें
+    </string>
+
+    <string name="setting_title_feedback" >
+
+प्रतिक्रिया दें
+    </string>
+
+    <string name="setting_feedback_summary" >
+    हमें अपनी बहुमूल्य प्रतिक्रिया लिखें
+    </string>
+
+    <string name="setting_title_default_browser" >
+
+डिफ़ॉल्ट ब्राउज़र के रूप में सेट करें
+    </string>
+
+    <string name="setting_default_browser_summary" >
+    NinjaFox को अपना डिफ़ॉल्ट ब्राउज़र सेट करें
+    </string>
+
+    <string name="privacy_policy" >
+
+गोपनीयता नीति
+    </string>
+    <string translatable="false" name="url_privacy" >
+        http://mojodigitech.com/privacy-policy-ninja-fox/
+    </string>
+
+
+    <!-- Toast -->
+    <string name="toast_add_bookmark_successful">
+        बुकमार्क सफलतापूर्वक जोड़ा गया
+    </string>
+    <string name="toast_add_bookmark_failed">
+        इस पृष्ठ को बुकमार्क में नहीं जोड़ सकते
+    </string>
+    <string name="toast_add_to_home_successful">
+        होम स्क्रीन पर सफलतापूर्वक जोड़ा गया
+    </string>
+    <string name="toast_add_to_home_failed">
+
+होम स्क्रीन पर जोड़ने में विफल
+    </string>
+    <string  translatable="false" name="toast_add_token_successful">
+        Successfully added Readability API
+    </string>
+    <string name="toast_add_whitelist_successful">
+        डोमेन सफलतापूर्वक जोड़ा गया
+    </string>
+    <string name="toast_already_exist_in_home">
+       होम स्क्रीन में पहले से मौजूद है
+    </string>
+    <string name="toast_clear_successful">
+        सफलतापूर्वक साफ़ हो गया
+    </string>
+    <string name="toast_copy_successful">
+        सफलतापूर्वक नकल की गई
+    </string>
+    <string name="toast_delete_bookmark_successful">
+        सफलतापूर्वक हटाए गए बुकमार्क
+    </string>
+    <string name="can_not_delete">
+       डेटा को नष्ट नहीं कर सकता
+    </string>
+    <string name="toast_delete_successful">
+        सफलतापूर्वक हटा दिया गया
+    </string>
+    <string name="toast_domain_already_exists">
+        डोमेन पहले से मौजूद है
+    </string>
+    <string name="toast_double_taps_quit">
+
+बाहर निकलने के लिए फिर से दबाएं
+    </string>
+    <string  translatable="false" name="toast_export_bookmarks_successful">
+        Exported bookmarks file at:&#160;
+    </string>
+    <string translatable="false" name="toast_export_bookmarks_failed">
+        Failed to export Bookmarks
+    </string>
+    <string translatable="false" name="toast_export_whitelist_successful">
+        Exported whitelist file at:&#160;
+    </string>
+    <string  translatable="false" name="toast_export_whitelist_failed">
+        Failed to export Whitelist
+    </string>
+    <string  translatable="false" name="toast_import_bookmarks_successful">
+        Imported bookmarks count:&#160;
+    </string>
+    <string translatable="false" name="toast_import_bookmarks_failed">
+        Failed to import Bookmarks
+    </string>
+    <string  translatable="false" name="toast_import_whitelist_successful">
+        Imported domains count:&#160;
+    </string>
+    <string translatable="false" name="toast_import_whitelist_failed">
+        Failed to import Whitelist
+    </string>
+    <string name="toast_input_empty">
+      आपने कुछ भी इनपुट नहीं किया है
+    </string>
+    <string name="toast_invalid_domain">
+        अमान्य डोमेन
+    </string>
+    <string name="toast_load_error">
+        इस URL को लोड नहीं कर सकता
+    </string>
+    <string name="toast_new_tab_successful">
+
+नए टैब में सफलतापूर्वक खोला गया
+    </string>
+    <string name="toast_open_file_manager_failed">
+       फ़ाइल प्रबंधक खोलने में विफल
+    </string>
+    <string name="toast_refresh_failed">
+        इस पृष्ठ को ताज़ा नहीं कर सकता
+    </string>
+
+    <string name="toast_share_failed">
+
+यह पृष्ठ साझा नहीं कर सकता
+    </string>
+    <string name="share_using">
+
+का उपयोग कर साझा करें
+    </string>
+    <string name="invalid_link">
+        अमान्य लिंक
+    </string>
+    <string name="prompt_valid_url">
+       कृपया मान्य url लिखें
+   </string>
+    <string name="promt_title">
+        कृपया शीर्षक और url लिखें
+    </string>
+    <string name="toast_start_download">
+        डाउनलोड प्रारम्भ हो रहा है
+    </string>
+
+    <string name="toast_wait_a_minute">
+       कृप्या कुछ क्षण प्रतीक्षा करें
+    </string>
+
+    <!-- Token -->
+    <string name="token_label">
+        टोकन
+    </string>
+    <string  translatable="false" name="token_edit_hint">
+        Readability token
+    </string>
+    <string name="token_add">
+        जोड़ें
+    </string>
+
+
+
+
+    <string name="bookmark" >बुकमार्क</string>
+    <string name="History" >इतिहास</string>
+    <string name="download_setting_both" >दोनों</string>
+    <string name="download_setting_wifi" >केवल वाई - फाई</string>
+    <string name="download_setting_mobile" >
+केवल मोबाइल डेटा</string>
+
+
+
+    <string name="donwload_setiings_msg_wifi" >आपकी वर्तमान सेटिंग्स डाउनलोड की अनुमति नहीं देती हैं। वाईफ़ाई सक्षम करें</string>
+    <string name="donwload_setiings_msg_mobile" >आपकी वर्तमान सेटिंग्स डाउनलोड की अनुमति नहीं देती हैं। कृपया मोबाइल डेटा सक्षम करें</string>
+    <string name="download_dialog_title" >डेटा / वाईफ़ाई पर फ़ाइलें डाउनलोड करें</string>
+    <string name="show_image_title" >
+चित्र दिखाओ</string>
+
+    <string name="show_image_always" >
+हमेशा</string>
+    <string name="show_image_wifi" >केवल वाई-फाई पर</string>
+    <string name="show_image_blocked" >अवरोधित</string>
+
+    <string name="default_set_msg" >ब्राउज़र ऐप टैप करें और NinjaFox चुनें</string>
+
+    <string  name="gray_900">#212121</string>
+
+    <string name="menu_new_incog_tab" >
+नया इंकॉग टैब</string>
+    <string name="menu_new_most_recent" >ताज़ा</string>
+    <string name="menu_new_find_in_page" >पृष्ठ में खोजें</string>
+    <string name="menu_new_bookmark" >बुकमार्क</string>
+    <string name="menu_new_history" >
+इतिहास</string>
+    <string name="menu_new_recent" >ताज़ा</string>
+    <string name="menu_new_most_visited" >सर्वाधिक देखा गया</string>
+
+    <string name="menu_new_setting" >सेटिंग्स</string>
+    <string name="menu_new_share" >वितरित करें</string>
+
+    <string name="menu_new_delete" >मिटा दे</string>
+    <string  name="clean_exit" >साफ और बाहर निकलें</string>
+    <string  name="exit" >बाहर जाएं</string>
+    <string  name="cancel" >
+रद्द करें</string>
+    <string  name="set_default" >
+डिफॉल्ट सेट करें</string>
+    <string  name="ask_again" >मुझे फिर से मत पूछो</string>
+    <string  name="delete_desc" >-
+इतिहास \n-स्थान की जानकारी\n-कैश किया गया डेटा\n-कुकीज़</string>
+    <string  name="clean_title" >
+बाहर निकलने पर निम्न\n browsing डेटा को साफ़ करें?</string>
+
+
+    <string name="title">शीर्षक</string>
+    <string name="url">Url</string>
+    <string name="add">जोड़ें</string>
+    <string name="remove_site">साइट निकालें</string>
+    <string name="remove">निकालें</string>
+
+    <string name="download_path_0">
+        मार्ग
+    </string>
+    <string name="clear_all"> सभी साफ करें  </string>
+
+    <string name="current_default_browser">वर्तमान डिफ़ॉल्ट ब्राउज़र : </string>
+
+
+
+    <string name="need_permission">अनुमतियाँ चाहिए</string>
+    <string name="custom_ui">
+कस्टम UI द्वारा आवश्यक कुछ मानक अनुमतियों को अक्षम करता है</string>
+    <string name="need_enable">आपको उन्हें सक्षम करने की आवश्यकता है</string>
+    <string name="towork">काम करने के लिए।</string>
+    <string name="default_browser_error">इस उपकरण पर सेट नहीं किया जा सकता है</string>
+
+
+
+
+
+    <string name="can_not_perform">इस उपकरण पर नहीं कर सकते</string>
+    <string name="unable_get_permission">अनुमति प्राप्त करने में असमर्थ</string>
+    <string name="permission_required">अनुमतियाँ चाहिए</string>
+
+    <string name="grant">दें</string>
+    <string name="storage_needed">
+एप्लिकेशन को ठीक से काम करने के लिए अनुमतियां चाहिए।</string>
+
+    <string name="storage_permission">ऐप को स्टोरेज की अनुमति चाहिए।</string>
+    <string name="call_permission">ऐप को फोन कॉल की अनुमति चाहिए।</string>
+    <string name="grant_storage">स्टोरेज एक्सेस एक्सेस करने के लिए अनुमतियाँ पर जाएँ</string>
+    <string name="call_us">हमें फोन करें</string>
+    <string name="email_str">हमे ईमेल करे</string>
+
+    <string name="suggested_apps" >सुझाए गए एप्लिकेशन</string>
+
+    <string name="menu_new_blocked_list">अवरुद्ध साइटें</string>
+    <string name="unblock_heading">साइट अनब्लॉक करें</string>
+    <string name="unblock_site">अनब्लॉक</string>
+    <string name="block_site_title">ब्लॉक वेबसाइट</string>
+    <string name="blocked_site_title">अवरुद्ध वेबसाइटें</string>
+    <string name="add_site">वेबसाइट जोड़ें </string>
+    <string name="access_block_site">अवरुद्ध वेबसाइटों तक पहुँचें</string>
+    <string name="unblock_all">  सभी को अनब्लॉक करें  </string>
+    <string name="blocked_url">  यह url अवरुद्ध है  </string>
+    <string name="set_password">ब्लॉक साइट एक्सेस को सुरक्षित करने के लिए पासवर्ड सेट करें</string>
+    <string name="password">पारण शब्द</string>
+    <string name="new_password">नया पासवर्ड</string>
+    <string name="write_password_error">कृपया पासवर्ड लिखें!</string>
+    <string name="confirm_password">पासवर्ड की पुष्टि करें</string>
+    <string name="set">सेट</string>
+    <string name="passwordnotmatch">पासवर्ड मैच नहीं कर रहा है</string>
+    <string name="type_password">एक पासवर्ड टाइप करें</string>
+    <string name="incrct_pswd">गलत पासवर्ड</string>
+    <string name="filenotcreated">फ़ाइल नहीं बनाई गई</string>
+    <string name="password_create_error">पासवर्ड नहीं बना सकते</string>
+    <string name="change_password">रीसेट</string>
+    <string name="show_hindi">हिंदी</string>
+    <string name="show_english">अंग्रेज़ी</string>
+
+
+
+
+
+    <string name="forgot_password"><u>पासवर्ड भूल गए</u></string>
+    <string name="signup"><u>साइन अप करें</u></string>
+    <string name="signup2">साइन अप करें</string>
+    <string name="sign_up_with_google">जीमेल के साथ साइन अप करें</string>
+    <string name="invalid_email">गलत ईमेल</string>
+    <string name="fill_details">कृपया विवरण भरें</string>
+    <string name="password_not_match">पासवर्ड मैच नहीं कर रहा है</string>
+    <string name="login">लॉग इन करें</string>
+    <string name="logout">लोग आउट करें</string>
+
+    <string name="msg_loading">लोड हो रहा है...</string>
+    <string name="login_msg">सत्यापित किया जा रहा...</string>
+    <string name="create_user">पंजीयन िया जा रहा...</string>
+    <string name="address_error">वर्तमान पता नहीं ढूँढ सकता</string>
+    <string name="msg_wait">कृपया प्रतीक्षा करें...</string>
+
+
+    <string name="internet_msg">अपना इंटरनेट संपर्क जांचे</string>
+    <string name="hint_user_name">ईमेल आईडी या मोबाइल लिखें</string>
+    <string name="hint_name">नाम लिखें</string>
+    <string name="hint_mobile">मोबाइल नंबर लिखें</string>
+
+
+    <string name="setting_title_log_out">लॉग आउट करें</string>
+    <string name="setting_title_delete_account">खाता हटाएं</string>
+    <string name="log_out_summary">निंजा फॉक्स से लॉग आउट करें</string>
+    <string name="delete_account_summary">अपने खाते को निंजा फॉक्स से हटाएं</string>
+
+    <string name="txt_done">कीजिए</string>
+    <string name="txt_password_set_success">पासवर्ड सफलतापूर्वक सेट किया गया</string>
+    <string name="gps_msg">आपका GPS अक्षम होने लगता है, क्या आप इसे सक्षम करना चाहते हैं</string>
+
+    <string name="txt_yes">हाँ</string>
+    <string name="txt_no">नहीं</string>
+    <string name="txt_fill_fields">कृपया सभी स्थाान भरे</string>
+
+
+    <string name="hint_email">ईमेल</string>
+    <string name="write_email">कृपया ईमेल लिखें</string>
+
+    <string name="menu_new_sign_in">साइन इन करें</string>
+    <string name="menu_new_sign_up">साइन अप करें</string>
+    <string name="menu_new_language_prefs">समाचर की भाषाएँ</string>
+        <string name="save_language">सुरक्षित करें</string>
+
+    <string name="setting_title_Language">भाषा</string>
+    <string name="setting_sub_title_Language" >समाचार भाषा सेट करें</string>
+
+    <string name="setting_title_newscategory" >समाचार श्रेणी</string>
+    <string name="setting_sub_title_newscategory">समाचार श्रेणियों का चयन करें</string>
+
+
+
+</resources>

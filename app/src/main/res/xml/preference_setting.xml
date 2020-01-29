@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!--android:layout="@layout/preference_settings_layout"  allows customize the font size and its color on textview  written in it-->
+
+
+    <PreferenceCategory
+        android:key="@string/sp_browser_setting"
+        android:title="@string/setting_title_browser"
+        android:layout="@layout/preference_settings_layout"
+        >
+
+
+        <CheckBoxPreference android:key="@string/sp_location"
+            android:defaultValue="true"
+            android:title="@string/setting_title_location"
+            android:summary="@string/setting_summary_location">
+        </CheckBoxPreference>
+
+        <Preference
+            android:key="@string/sp_default_browser"
+            android:title="@string/setting_title_default_browser"
+            android:summary="@string/setting_default_browser_summary"></Preference>
+
+        <ListPreference android:key="@string/sp_show_images"
+            android:defaultValue="Always"
+            android:title="@string/show_image_title"
+            android:summary="Always"
+            android:entries="@array/setting_entries_show_images"
+            android:entryValues="@array/setting_values_show_images">
+        </ListPreference>
+
+        <Preference android:key="@string/sp_block_site"
+            android:title="@string/block_site_title"
+            android:summary="@string/add_site">
+
+        </Preference>
+        <Preference android:key="@string/sp_blocked_site"
+            android:title="@string/blocked_site_title"
+            android:summary="@string/access_block_site">
+
+        </Preference>
+
+    </PreferenceCategory>
+
+
+
+
+    <PreferenceCategory
+        android:layout="@layout/preference_settings_layout"
+        android:title="@string/setting_title_data">
+
+        <!-- for the time being not required-->
+        <!--<CheckBoxPreference android:key="@string/sp_passwords"
+            android:defaultValue="true"
+            android:title="@string/setting_title_passwords"
+            android:summary="@string/setting_summary_passwords">
+        </CheckBoxPreference>-->
+        <!-- for the time being not required-->
+<!--android:positiveButtonText="@string/sp_clear_data"-->
+
+
+        <MultiSelectListPreference android:key="@string/sp_clear_data" android:title="@string/settings_clear_data"
+            android:entries="@array/entries_clear_data"
+            android:defaultValue="@array/values_clear_data_default"
+            android:positiveButtonText="@string/settings_clear_data"
+            android:entryValues="@array/values_clear_data" >
+        </MultiSelectListPreference>
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:layout="@layout/preference_settings_layout" android:title="@string/setting_title_download">
+
+        <Preference  android:key="@string/download_path_0"
+            android:title="@string/download_path_0"
+            android:summary="@string/download_path">
+        </Preference>
+
+        <ListPreference android:key="@string/sp_download"
+            android:defaultValue="Both"
+            android:title="@string/download_dialog_title"
+            android:summary="Both"
+
+            android:entries="@array/setting_entries_download"
+            android:entryValues="@array/setting_values_downlaod">
+        </ListPreference>
+
+
+    </PreferenceCategory>
+
+
+    <!--__________________Language___________________________-->
+<!--    <PreferenceCategory-->
+<!--        android:layout="@layout/preference_settings_layout"-->
+<!--        android:title="@string/setting_title_Language">-->
+
+<!--        <ListPreference-->
+<!--            android:key="@string/sp_language"-->
+<!--            android:defaultValue="English"-->
+<!--            android:title="@string/setting_sub_title_Language"-->
+<!--            android:entries="@array/setting_entries_languages"-->
+<!--            android:entryValues="@array/setting_values_languages">-->
+<!--        </ListPreference>-->
+<!--    </PreferenceCategory>-->
+
+
+    <!--_________________________News Language__________________________-->
+    <PreferenceCategory
+        android:key="@string/setting_title_Language"
+        android:title="@string/setting_title_Language">
+
+        <Preference
+            android:key="@string/sp_language"
+            android:title="@string/setting_sub_title_Language"
+            >
+        </Preference>
+
+    </PreferenceCategory>
+
+    <!--_________________________News Category___________________________-->
+   <!-- <PreferenceCategory
+        android:layout="@layout/preference_settings_layout"
+        android:title="@string/setting_title_newscategory">
+
+        <Preference
+            android:key="@string/sp_news_categies"
+            android:title="@string/setting_sub_title_newscategory"
+            >
+        </Preference>
+
+    </PreferenceCategory>-->
+
+
+
+
+
+    <PreferenceCategory android:layout="@layout/preference_settings_layout"
+        android:title="@string/setting_title_contact">
+
+        <!--call-->
+        <Preference android:key="@string/sp_place_call"  android:title="@string/call_us" android:summary="+917303201279">
+        </Preference>
+        <!--call-->
+
+        <Preference android:key="@string/email_str" android:title="@string/email_str"
+            android:summary="@string/contact_email">
+           <!-- <intent android:action="android.intent.action.SEND" android:data="@string/contact_email"></intent>-->
+        </Preference>
+
+        <!--  <Preference  android:key="@string/setting_title_feedback" android:title="@string/setting_title_feedback" android:summary="@string/setting_feedback_summary">
+
+          </Preference>-->
+
+
+    </PreferenceCategory>
+
+//Surya
+    <PreferenceCategory
+        android:title="@string/setting_title_log_out"
+        android:key="@string/sp_log_out">
+        <Preference
+            android:key="@string/sp_log_out_summary"
+            android:summary="@string/log_out_summary"></Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/setting_title_delete_account" android:key="@string/sp_delete_account">
+        <Preference android:key="@string/sp_delete_account_summary" android:summary="@string/delete_account_summary"></Preference>
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        android:layout="@layout/preference_settings_layout"
+        android:title="@string/setting_title_about">
+
+        <Preference  android:key="@string/setting_title_version"
+            android:title="@string/setting_title_version"
+            android:summary="@string/app_version">
+        </Preference>
+
+        <Preference android:title="@string/privacy_policy"
+            android:summary="@string/url_privacy">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="@string/url_privacy" />
+
+        </Preference>
+    </PreferenceCategory>
+
+
+
+</PreferenceScreen>
