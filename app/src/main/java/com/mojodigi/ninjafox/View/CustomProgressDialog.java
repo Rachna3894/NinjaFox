@@ -8,7 +8,7 @@ import android.os.Build;
 
 public class CustomProgressDialog {
 
-    private static ProgressDialog progressDialog;
+    public static ProgressDialog progressDialog;
 
     public static void show(final Context context, String messageResourceString) {
 

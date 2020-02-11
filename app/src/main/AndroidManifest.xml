@@ -24,17 +24,25 @@
         android:roundIcon="@drawable/ic_launcher_round"
         android:usesCleartextTraffic="true">
 
-        <activity android:name=".Activity.SignInActivity" android:screenOrientation="portrait" android:theme="@style/BrowserActivityTheme2"></activity>
-        <activity android:name=".Activity.SignUpActivity" android:screenOrientation="portrait" android:theme="@style/BrowserActivityTheme2"/>
+        <activity
+            android:name=".Activity.SignInActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BrowserActivityTheme2"/>
+        <activity
+            android:name=".Activity.SignUpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BrowserActivityTheme2" />
 
         <activity
             android:name=".Activity.SuggestedAppsActivity"
             android:screenOrientation="portrait"
             android:theme="@style/BrowserActivityTheme" />
+
         <activity
             android:name=".Activity.HolderActivity"
             android:label="@string/app_name"
             android:launchMode="singleTask"
+            android:screenOrientation="portrait"
             android:theme="@style/BrowserActivityTheme">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -52,6 +60,7 @@
             android:label="@string/app_name" /> <!-- MainActivity -->
         <activity
             android:name=".Activity.SplashActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -64,12 +73,11 @@
             android:name=".Activity.MainActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/app_name"
-            android:screenOrientation="portrait"
             android:launchMode="singleTop"
+            android:screenOrientation="portrait"
             android:theme="@style/BrowserActivityTheme2"
             android:windowSoftInputMode="adjustNothing">
             <intent-filter>
-
                 <!-- <action android:name="android.intent.action.MAIN"/> -->
                 <action android:name="android.intent.action.WEB_SEARCH" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -88,6 +96,7 @@
         <activity
             android:name=".Activity.DownLoadSettingActivity"
             android:label="@string/download_settings_label"
+            android:screenOrientation="portrait"
             android:theme="@style/SettingActivityTheme" />
         <activity
             android:name=".Activity.FeedBackActivity"
@@ -113,24 +122,33 @@
 
         <activity
             android:name="com.facebook.ads.AudienceNetworkActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize" /> <!-- to  show  interesitial adds uisng smaato -->
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- to  show  interesitial adds uisng smaato -->
         <!-- WhitelistActivity -->
         <activity
             android:name=".Activity.WhitelistActivity"
             android:label="@string/whitelist_label"
-            android:theme="@style/WhitelistActivityTheme" /> <!-- TokenActivity -->
+            android:screenOrientation="portrait"
+            android:theme="@style/WhitelistActivityTheme" />
+        <!-- TokenActivity -->
         <activity
             android:name=".Activity.TokenActivity"
             android:label="@string/token_label"
-            android:theme="@style/TokenActivityTheme" /> <!-- ClearActivity -->
+            android:screenOrientation="portrait"
+            android:theme="@style/TokenActivityTheme" />
+        <!-- ClearActivity -->
         <activity
             android:name=".Activity.ClearActivity"
             android:label="@string/clear_label"
-            android:theme="@style/ClearActivityTheme" /> <!-- ClearService -->
+            android:screenOrientation="portrait"
+            android:theme="@style/ClearActivityTheme" />
+        <!-- ClearService -->
         <service
             android:name=".Service.ClearService"
             android:icon="@drawable/ic_launcher"
-            android:label="@string/app_name" /> <!-- firebase  messaging -->
+            android:label="@string/app_name" />
+        <!-- firebase  messaging -->
         <service
             android:name=".firebase.MyFirebaseMessagingService"
             android:enabled="true"
@@ -157,20 +175,22 @@
             android:value="@integer/google_play_services_version" />
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_api_key"/>
+            android:value="@string/google_api_key" />
 
         <service
             android:name=".Service.GetAddressIntentService"
-            android:exported="false"/>
+            android:exported="false" />
         <!--for google location api-->
 
-         <!--for job intent class-->
+        <!--for job intent class-->
         <service
             android:name=".Service.getAddressJobIntentService"
             android:exported="false"
             android:permission="android.permission.BIND_JOB_SERVICE" />
 
-        <receiver android:name=".BroadCast.DownloadReceiver" android:label="DownloadReceiver" >
+        <receiver
+            android:name=".BroadCast.DownloadReceiver"
+            android:label="DownloadReceiver">
 
 
         </receiver>
@@ -178,7 +198,7 @@
         <service
             android:name=".DownlaodModule.DownloadService"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="false" />
 
 
     </application>

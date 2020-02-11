@@ -13,12 +13,7 @@ import com.mojodigi.ninjafox.R;
 import com.mojodigi.ninjafox.SharedPrefs.AppConstants;
 
 import static android.content.Context.NOTIFICATION_SERVICE;
-import static android.support.v4.app.NotificationCompat.DEFAULT_SOUND;
-import static android.support.v4.app.NotificationCompat.DEFAULT_VIBRATE;
 
-/**
- * Created by Jerry on 3/9/2018.
- */
 
 public class DownloadListener {
 
@@ -68,6 +63,7 @@ public class DownloadListener {
             ex.printStackTrace();
         }
     }
+
     public static final String NOTIFICATION_CHANNEL_ID = "1001";
     public static final String NOTIFICATION_CHANNEL_NAME = "Ninjafox";
 
@@ -89,8 +85,8 @@ public class DownloadListener {
             notification.setChannelId(NOTIFICATION_CHANNEL_ID);
             notificationManager.createNotificationChannel(notificationChannel);
         }
-
         notificationManager.notify(AppConstants.NOTIFICATION_ID, notification.build());
+
 
     }
 

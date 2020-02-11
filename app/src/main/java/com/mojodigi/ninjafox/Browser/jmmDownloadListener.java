@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.ServiceConnection;
+import android.os.Build;
 import android.os.IBinder;
 import android.webkit.DownloadListener;
 import android.webkit.URLUtil;
@@ -22,13 +23,19 @@ import static android.content.Context.BIND_AUTO_CREATE;
 
 
 public class jmmDownloadListener implements DownloadListener {
+
     private Context context;
     private DownloadBinder downloadBinder = null;
+
+
     public jmmDownloadListener(Context context) {
         super();
         this.context = context;
-        startAndBindDownloadService();
+
+         //startAndBindDownloadService();
     }
+
+
     private ServiceConnection serviceConnection = new ServiceConnection() {
         @Override
         public void onServiceConnected(ComponentName name, IBinder service) {
@@ -41,27 +48,35 @@ public class jmmDownloadListener implements DownloadListener {
         }
     };
 
+
+
+
     private void startAndBindDownloadService() {
         Intent downloadIntent = new Intent(context, DownloadService.class);
-        context.startService(downloadIntent);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            context.startForegroundService(downloadIntent);
+        } else {
+            context.startService(downloadIntent);
+        }
         context.bindService(downloadIntent, serviceConnection, BIND_AUTO_CREATE);
+
     }
+
+
+
 
     @Override
     public void onDownloadStart(final String url, String userAgent, final String contentDisposition, final String mimeType, long contentLength) {
+        startAndBindDownloadService();
         // code to download file from link
         final Context holder = IntentUtility.getContext();
         if (holder == null || !(holder instanceof Activity)) {
             //BrowserUtility.download(context, url, contentDisposition, mimeType);
-
             //DownLoadUtility downLoadUtility=new DownLoadUtility(context);
             //downLoadUtility.download(context, url, contentDisposition, mimeType);
-
             if(downloadBinder!=null) {
                 downloadBinder.startDownload(context,url, 0);
             }
-
-
             return;
         }
 
@@ -76,14 +91,12 @@ public class jmmDownloadListener implements DownloadListener {
             public void onClick(DialogInterface dialog, int which) {
 
                 //BrowserUtility.download(holder, url, contentDisposition, mimeType);
-
                // DownLoadUtility downLoadUtility=new DownLoadUtility(holder);
                 //downLoadUtility.download(holder, url, contentDisposition, mimeType);
 
                 if(downloadBinder!=null) {
                     downloadBinder.startDownload(context,url, 0);
                 }
-
             }
         });
 

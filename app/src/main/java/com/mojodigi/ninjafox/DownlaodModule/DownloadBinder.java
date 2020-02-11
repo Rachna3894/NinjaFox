@@ -1,15 +1,19 @@
 package com.mojodigi.ninjafox.DownlaodModule;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
+import android.content.ComponentName;
 import android.content.Context;
+import android.content.Intent;
+import android.content.ServiceConnection;
 import android.os.Binder;
 import android.os.Build;
+import android.os.IBinder;
 import android.support.v4.app.NotificationCompat;
 import android.text.TextUtils;
 
-import com.mojodigi.ninjafox.R;
 import com.mojodigi.ninjafox.SharedPrefs.AppConstants;
 
+import static android.content.Context.BIND_AUTO_CREATE;
 import static android.content.Context.NOTIFICATION_SERVICE;
 
 
@@ -19,11 +23,16 @@ public class DownloadBinder extends Binder {
 
     private DownloadListener downloadListener = null;
 
+
     public static final String NOTIFICATION_CHANNEL_ID = "1001";
     public static final String NOTIFICATION_CHANNEL_NAME = "Ninjafox";
+
     private String currDownloadUrl = "";
 
-   Context mContext;
+    Context mContext;
+
+    private DownloadBinder downloadBinder = null;
+
     public DownloadManager getDownloadManager() {
         return downloadManager;
     }
@@ -34,10 +43,16 @@ public class DownloadBinder extends Binder {
         {
             downloadListener = new DownloadListener();
         }
+
+
     }
+
+
+
 
     public void startDownload(Context mContext,String downloadUrl, int progress)
     {
+
         /* Because downloadManager is a subclass of AsyncTask, and AsyncTask can only be executed once,
          * So each download need a new downloadManager. */
         downloadManager = new DownloadManager(downloadListener);
@@ -58,7 +73,7 @@ public class DownloadBinder extends Binder {
         notificationManager.cancel(AppConstants.NOTIFICATION_ID);
         String str = "NinjaFox";
         this.mContext=mContext;
-        startChannel(mContext, notification,notificationManager,str);
+        startChannel(mContext, notification,  notificationManager,   str);
         downloadListener.getDownloadService().startForeground(1, notification.build());
     }
     /* startChannel */
@@ -85,9 +100,39 @@ public class DownloadBinder extends Binder {
         {
             int lastDownloadProgress = downloadManager.getLastDownloadProgress();
             if(mContext!=null)
-            startDownload(mContext,currDownloadUrl, lastDownloadProgress);
+
+            startAndBindDownloadService();
+
+            startDownload(mContext, currDownloadUrl, lastDownloadProgress);
+
         }
     }
+
+    private synchronized void startAndBindDownloadService() {
+
+        Intent downloadIntent = new Intent(mContext, DownloadService.class);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            mContext.startForegroundService(downloadIntent);
+        } else {
+            mContext.startService(downloadIntent);
+        }
+        mContext.bindService(downloadIntent, serviceConnection, BIND_AUTO_CREATE);
+    }
+
+    private ServiceConnection serviceConnection = new ServiceConnection() {
+        @Override
+        public void onServiceConnected(ComponentName name, IBinder service) {
+            downloadBinder = (DownloadBinder) service;
+        }
+
+        @Override
+        public void onServiceDisconnected(ComponentName name) {
+
+        }
+    };
+
+
+
 
     public void cancelDownload()
     {

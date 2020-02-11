@@ -9,6 +9,7 @@ import android.webkit.WebView;
 import com.downloader.PRDownloader;
 import com.downloader.PRDownloaderConfig;
 import com.facebook.ads.AudienceNetworkAds;
+import com.mojodigi.ninjafox.Analytics.AnalyticsTrackers;
 import com.mojodigi.ninjafox.Unit.CommonUtility;
 import com.yandex.metrica.YandexMetrica;
 import com.yandex.metrica.YandexMetricaConfig;
@@ -25,21 +26,14 @@ public class MyApplication  extends android.support.multidex.MultiDexApplication
                 .build();
         PRDownloader.initialize(this, dconfig);
 
-        //App mertrica sdk
-
-        // Creating an extended library configuration.
-
         //Api key in appMetrica Dashboard settings  is tracking key--
-
         YandexMetricaConfig config = YandexMetricaConfig.newConfigBuilder(CommonUtility.APPMETRICA_KEY).build();
         // Initializing the AppMetrica SDK.
-
         YandexMetrica.activate(getApplicationContext(), config);   // uncommnet  it
         // Automatic tracking of user activity.
         YandexMetrica.enableActivityAutoTracking(this);   // uncommnet  it
 
         //App mertrica sdk
-
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
 
             String processName = getProcessName(this);
@@ -50,13 +44,13 @@ public class MyApplication  extends android.support.multidex.MultiDexApplication
 
         }
 
-
-
         //for fb adds
         //https://developers.facebook.com/docs/audience-network/reference/android/com/facebook/ads/audiencenetworkads.html/
         AudienceNetworkAds.initialize(getApplicationContext());
         AudienceNetworkAds.isInAdsProcess(getApplicationContext());
 
+        AnalyticsTrackers.initialize(this);
+        AnalyticsTrackers.getInstance().get(AnalyticsTrackers.Target.APP);
 
     }
 

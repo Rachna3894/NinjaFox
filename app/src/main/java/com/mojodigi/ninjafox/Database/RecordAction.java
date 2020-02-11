@@ -190,15 +190,17 @@ public class RecordAction {
                 null
         );
 
-        if (cursor != null) {
-            boolean result = false;
-            if (cursor.moveToFirst()) {
-                result = true;
-            }
-            cursor.close();
+        try {
+            if (cursor != null) {
+                boolean result = false;
+                if (cursor.moveToFirst()) {
+                    result = true;
+                }
+                cursor.close();
 
-            return result;
-        }
+                return result;
+            }
+        }catch (Exception e){}
 
         return false;
     }

@@ -222,63 +222,71 @@ public class SwitcherPanel extends ViewGroup {
     }
 
     @Override
-    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        if (MeasureSpec.getMode(widthMeasureSpec) != MeasureSpec.EXACTLY) {
-            throw new IllegalStateException("Width must have an exact value or MATCH_PARENT.");
-        } else if (MeasureSpec.getMode(heightMeasureSpec) != MeasureSpec.EXACTLY) {
-            throw new IllegalStateException("Height must have an exact value or MATCH_PARENT.");
-        } else if (getChildCount() != 2) {
-            throw new IllegalStateException("SwitcherPanel layout must have exactly 2 children!");
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec)
+    {
+        try {
+
+
+            if (MeasureSpec.getMode(widthMeasureSpec) != MeasureSpec.EXACTLY) {
+                throw new IllegalStateException("Width must have an exact value or MATCH_PARENT.");
+            } else if (MeasureSpec.getMode(heightMeasureSpec) != MeasureSpec.EXACTLY) {
+                throw new IllegalStateException("Height must have an exact value or MATCH_PARENT.");
+            } else if (getChildCount() != 2) {
+                throw new IllegalStateException("SwitcherPanel layout must have exactly 2 children!");
+            }
+
+            switcherView = getChildAt(0);
+            mainView = getChildAt(1);
+            omnibox = (RelativeLayout) mainView.findViewById(R.id.main_omnibox);
+
+            int widthSize = MeasureSpec.getSize(widthMeasureSpec);
+            int heightSize = MeasureSpec.getSize(heightMeasureSpec);
+            int layoutWidth = widthSize - getPaddingLeft() - getPaddingRight();
+            int layoutHeight = heightSize - getPaddingTop() - getPaddingBottom();
+
+            for (int i = 0; i < getChildCount(); i++) {
+                View child = getChildAt(i);
+                LayoutParams layoutParams = (LayoutParams) child.getLayoutParams();
+
+                int width = layoutWidth;
+                int height = layoutHeight;
+                if (child == switcherView) {
+                    height = (int) (height - coverHeight);
+                    width = width - layoutParams.leftMargin - layoutParams.rightMargin;
+                } else if (child == mainView) {
+                    height = height - layoutParams.topMargin;
+                }
+
+                int childWidthSpec;
+                if (layoutParams.width == ViewGroup.LayoutParams.WRAP_CONTENT) {
+                    childWidthSpec = MeasureSpec.makeMeasureSpec(width, MeasureSpec.AT_MOST);
+                } else if (layoutParams.width == ViewGroup.LayoutParams.MATCH_PARENT) {
+                    childWidthSpec = MeasureSpec.makeMeasureSpec(width, MeasureSpec.EXACTLY);
+                } else {
+                    childWidthSpec = MeasureSpec.makeMeasureSpec(layoutParams.width, MeasureSpec.EXACTLY);
+                }
+
+                int childHeightSpec;
+                if (layoutParams.height == ViewGroup.LayoutParams.WRAP_CONTENT) {
+                    childHeightSpec = MeasureSpec.makeMeasureSpec(height, MeasureSpec.AT_MOST);
+                } else if (layoutParams.height == ViewGroup.LayoutParams.MATCH_PARENT) {
+                    childHeightSpec = MeasureSpec.makeMeasureSpec(height, MeasureSpec.EXACTLY);
+                } else {
+                    childHeightSpec = MeasureSpec.makeMeasureSpec(layoutParams.height, MeasureSpec.EXACTLY);
+                }
+
+                child.measure(childWidthSpec, childHeightSpec);
+                if (child == mainView) {
+                    slideRange = mainView.getMeasuredHeight() - coverHeight;
+                }
+            }
+
+            setMeasuredDimension(widthSize, heightSize);
+            keyBoardShowing = heightSize < getHeight(); ///
+        }catch (Exception ex)
+        {
+            ex.printStackTrace();
         }
-
-        switcherView = getChildAt(0);
-        mainView = getChildAt(1);
-        omnibox = (RelativeLayout) mainView.findViewById(R.id.main_omnibox);
-
-        int widthSize = MeasureSpec.getSize(widthMeasureSpec);
-        int heightSize = MeasureSpec.getSize(heightMeasureSpec);
-        int layoutWidth = widthSize - getPaddingLeft() - getPaddingRight();
-        int layoutHeight = heightSize - getPaddingTop() - getPaddingBottom();
-
-        for (int i = 0; i < getChildCount(); i++) {
-            View child = getChildAt(i);
-            LayoutParams layoutParams = (LayoutParams) child.getLayoutParams();
-
-            int width = layoutWidth;
-            int height = layoutHeight;
-            if (child == switcherView) {
-                height = (int) (height - coverHeight);
-                width = width - layoutParams.leftMargin - layoutParams.rightMargin;
-            } else if (child == mainView) {
-                height = height - layoutParams.topMargin;
-            }
-
-            int childWidthSpec;
-            if (layoutParams.width == ViewGroup.LayoutParams.WRAP_CONTENT) {
-                childWidthSpec = MeasureSpec.makeMeasureSpec(width, MeasureSpec.AT_MOST);
-            } else if (layoutParams.width == ViewGroup.LayoutParams.MATCH_PARENT) {
-                childWidthSpec = MeasureSpec.makeMeasureSpec(width, MeasureSpec.EXACTLY);
-            } else {
-                childWidthSpec = MeasureSpec.makeMeasureSpec(layoutParams.width, MeasureSpec.EXACTLY);
-            }
-
-            int childHeightSpec;
-            if (layoutParams.height == ViewGroup.LayoutParams.WRAP_CONTENT) {
-                childHeightSpec = MeasureSpec.makeMeasureSpec(height, MeasureSpec.AT_MOST);
-            } else if (layoutParams.height == ViewGroup.LayoutParams.MATCH_PARENT) {
-                childHeightSpec = MeasureSpec.makeMeasureSpec(height, MeasureSpec.EXACTLY);
-            } else {
-                childHeightSpec = MeasureSpec.makeMeasureSpec(layoutParams.height, MeasureSpec.EXACTLY);
-            }
-
-            child.measure(childWidthSpec, childHeightSpec);
-            if (child == mainView) {
-                slideRange = mainView.getMeasuredHeight() - coverHeight;
-            }
-        }
-
-        setMeasuredDimension(widthSize, heightSize);
-        keyBoardShowing = heightSize < getHeight(); ///
     }
 
     @Override

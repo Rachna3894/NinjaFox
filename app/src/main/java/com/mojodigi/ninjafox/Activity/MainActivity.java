@@ -4,7 +4,6 @@ import android.Manifest;
 import android.animation.ObjectAnimator;
 import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.app.ActivityManager;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DownloadManager;
@@ -587,11 +586,15 @@ public class MainActivity extends AppCompatActivity implements BrowserController
     };
 
     private synchronized void startAndBindDownloadService() {
-
-        Intent downloadIntent = new Intent(this, DownloadService.class);
-        startService(downloadIntent);
+        Intent downloadIntent = new Intent(mContext, DownloadService.class);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            mContext.startForegroundService(downloadIntent);
+        } else {
+            mContext.startService(downloadIntent);
+        }
         bindService(downloadIntent, serviceConnection, BIND_AUTO_CREATE);
     }
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -683,7 +686,8 @@ public class MainActivity extends AppCompatActivity implements BrowserController
 
         getPushToken();
 
-        startAndBindDownloadService();
+        //startAndBindDownloadService();
+
         JSONObject detailsObj=CommonUtility.prepareAddJsonRequest(mContext);
         new ApiRequestTask(mContext, this, CommonUtility.FB_ADD_URL, false, false, null, detailsObj.toString(), AppConstants.addDetailsApiCode).execute();
     }
@@ -701,13 +705,13 @@ public class MainActivity extends AppCompatActivity implements BrowserController
             // The user has previously signed in with Google Sign-In. Silently
             // sign in the user with the same ID.
             // See https://developers.google.com/identity/sign-in/android/
-            GoogleSignInOptions gso =
-                    new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+            GoogleSignInOptions gso =  new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                             .requestEmail()
                             .build();
 
             GoogleSignInClient signInClient = GoogleSignIn.getClient(this, gso);
             Task<GoogleSignInAccount> task = signInClient.silentSignIn();
+
             // ...
         }
         //added
@@ -901,12 +905,33 @@ public class MainActivity extends AppCompatActivity implements BrowserController
         Intent toHolderService = new Intent(this, HolderService.class);
         IntentUtility.setClear(true);
         stopService(toHolderService);
+
         boolean exit = true;
 
         /*added in build3.1*/
         if(serviceConnection!=null) {
-            unbindService(serviceConnection);
+            try {
+                unbindService(serviceConnection);
+            }catch (IllegalArgumentException iae){
+                iae.printStackTrace();
+            }catch (Exception ex){
+                ex.printStackTrace();
+            }
         }
+
+
+      /*  if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            Intent intent = new Intent(mContext, DownloadService.class);
+            intent.setAction(DownloadService.ACTION_STOP_FOREGROUND_SERVICE);
+            startService(intent);
+        }
+        else {
+            Intent downloadIntent = new Intent(mContext, DownloadService.class);
+            stopService(downloadIntent);
+       }
+*/
+
+
 
         /* to  clear  the  data  on app  exit  if prefence is set to  true */
        /* SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
@@ -929,11 +954,11 @@ public class MainActivity extends AppCompatActivity implements BrowserController
 
         moveTaskToBack(true);// allow launch of  the qpp from home screen  if in background;
 
-
         // stop  the service call when activity goes to pause state;
         if(fusedLocationClient!=null && locationCallback !=null) {
             fusedLocationClient.removeLocationUpdates(locationCallback);
         }
+
 
     }
 
@@ -1558,19 +1583,22 @@ public class MainActivity extends AppCompatActivity implements BrowserController
         });
 
 
-        mLanguageTabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+        mLanguageTabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
 
-                currentTabPosition=tab.getPosition();
-                currentPosition=0;  // set news viewpager  position to 0 everytime on tab selection;
-                //final NewsViewPagerAdapter adapter = new NewsViewPagerAdapter(getSupportFragmentManager(), newsMainModelList.size(), newsMainModelList, mInstance);
-                final NewsViewPagerAdapter adapter = new NewsViewPagerAdapter(getSupportFragmentManager(), newsSuperParentModelArrayList.get(tab.getPosition()).getCategoryList().size(), newsSuperParentModelArrayList.get(tab.getPosition()).getCategoryList(), mInstance);
-                mPager.setAdapter(adapter);
-                mPager.setCurrentItem(currentPosition);
-                mPager.setOffscreenPageLimit(2);
-                mTabLayout.setupWithViewPager(mPager);
-                changeTabsFont(mTabLayout);
+                try {
+                    currentTabPosition = tab.getPosition();
+                    currentPosition = 0;  // set news viewpager  position to 0 everytime on tab selection;
+                    //final NewsViewPagerAdapter adapter = new NewsViewPagerAdapter(getSupportFragmentManager(), newsMainModelList.size(), newsMainModelList, mInstance);
+                    final NewsViewPagerAdapter adapter = new NewsViewPagerAdapter(getSupportFragmentManager(), newsSuperParentModelArrayList.get(tab.getPosition()).getCategoryList().size(), newsSuperParentModelArrayList.get(tab.getPosition()).getCategoryList(), mInstance);
+                    mPager.setAdapter(adapter);
+                    mPager.setCurrentItem(currentPosition);
+                    mPager.setOffscreenPageLimit(2);
+                    mTabLayout.setupWithViewPager(mPager);
+                    changeTabsFont(mTabLayout);
+                }catch (Exception e)
+                {}
             }
 
             @Override
@@ -1583,6 +1611,9 @@ public class MainActivity extends AppCompatActivity implements BrowserController
 
             }
         });
+
+
+
 
 
     }
@@ -1800,17 +1831,22 @@ public class MainActivity extends AppCompatActivity implements BrowserController
         });
 
 
-        mLanguageTabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+        mLanguageTabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
-                currentTabPosition=tab.getPosition();
-                currentPosition=0;  // set news viewpager  position to 0 everytime on tab selection;
-                final NewsViewPagerAdapter adapter = new NewsViewPagerAdapter(getSupportFragmentManager(), newsSuperParentModelArrayList.get(tab.getPosition()).getCategoryList().size(), newsSuperParentModelArrayList.get(tab.getPosition()).getCategoryList(), mInstance);
-                mPager.setAdapter(adapter);
-                mPager.setCurrentItem(currentPosition);
-                mPager.setOffscreenPageLimit(2);
-                mTabLayout.setupWithViewPager(mPager);
-                changeTabsFont(mTabLayout);
+                try {
+                    currentTabPosition = tab.getPosition();
+                    currentPosition = 0;  // set news viewpager  position to 0 everytime on tab selection;
+                    final NewsViewPagerAdapter adapter = new NewsViewPagerAdapter(getSupportFragmentManager(), newsSuperParentModelArrayList.get(tab.getPosition()).getCategoryList().size(), newsSuperParentModelArrayList.get(tab.getPosition()).getCategoryList(), mInstance);
+                    mPager.setAdapter(adapter);
+                    mPager.setCurrentItem(currentPosition);
+                    mPager.setOffscreenPageLimit(2);
+                    mTabLayout.setupWithViewPager(mPager);
+                    changeTabsFont(mTabLayout);
+                }catch (Exception e)
+                {
+
+                }
             }
 
             @Override
@@ -4381,12 +4417,12 @@ public class MainActivity extends AppCompatActivity implements BrowserController
                    // DownLoadUtility downLoadUtility=new DownLoadUtility(mContext);
                    // downLoadUtility.download(mContext, target, target, BrowserUtility.MIME_TYPE_IMAGE);
 
+                    startAndBindDownloadService();
+
                     if(downloadBinder!=null) {
-                     downloadBinder.startDownload(mContext,target, 0);
+                     downloadBinder.startDownload(mContext, target, 0);
                      //downloadBinder.startDownload("http://bdigimedia.com/development/callrecorder/Screenshot_20200114-144304.png", 0);
                  }
-
-
                 }
 
                 dialog.hide();

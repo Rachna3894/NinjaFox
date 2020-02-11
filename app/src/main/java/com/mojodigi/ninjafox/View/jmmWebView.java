@@ -108,7 +108,9 @@ public class jmmWebView extends WebView implements AlbumController {
         this.album = new Album(this.context, this, this.browserController);
         this.webViewClient = new NinjaWebViewClient(this);
         this.webChromeClient = new NinjaWebChromeClient(this);
+
         this.downloadListener = new jmmDownloadListener(this.context);
+
         this.clickHandler = new NinjaClickHandler(this);
         this.gestureDetector = new GestureDetector(context, new NinjaGestureListener(this));
 

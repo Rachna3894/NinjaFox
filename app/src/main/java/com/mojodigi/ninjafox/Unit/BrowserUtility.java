@@ -344,12 +344,7 @@ public class BrowserUtility   {
                 final RemoteViews collapsedView = new RemoteViews(context.getPackageName(), R.layout.notification_small);
                 final RemoteViews strechedView = new RemoteViews(context.getPackageName(), R.layout.notification_large);
 
-
-
-
-
                 final String finalFilename = filename;
-
                 String dpath=CommonUtility.getRootDirPath(context);
                 System.out.print(""+dpath);
 
@@ -475,12 +470,7 @@ public class BrowserUtility   {
                                 jmmToast.show(context, errMsg);
                             }
 
-
                         });
-
-
-
-
             }
 
         }

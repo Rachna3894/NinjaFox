@@ -1,42 +1,34 @@
 {
   "project_info": {
-    "project_number": "354470898316",
-    "firebase_url": "https://ninjafox-f0fb0.firebaseio.com",
-    "project_id": "ninjafox-f0fb0",
-    "storage_bucket": "ninjafox-f0fb0.appspot.com"
+    "project_number": "973525050368",
+    "firebase_url": "https://nonjafox.firebaseio.com",
+    "project_id": "nonjafox",
+    "storage_bucket": "nonjafox.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:354470898316:android:ade27ee1e3cdc6163aa9a9",
+        "mobilesdk_app_id": "1:973525050368:android:03beff8882170118f8e4e5",
         "android_client_info": {
           "package_name": "com.mojodigi.ninjafox"
         }
       },
       "oauth_client": [
         {
-          "client_id": "354470898316-56c5mj292679ujlgng9ptqimml45ja5p.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.mojodigi.ninjafox",
-            "certificate_hash": "dc43b134ec26ba402ba388b663448a02601dcbdf"
-          }
-        },
-        {
-          "client_id": "354470898316-66q6c8por0pbol1v9qe5g60mdvrdvv5n.apps.googleusercontent.com",
+          "client_id": "973525050368-nqve5oujh727bl4g702v4994kd0k1g38.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBn2iJyUGZ570mD09CtZUfsTRj-AaqwN-8"
+          "current_key": "AIzaSyC1y0Z1xwCkYzH2-NaysIBKbwq08GXqXEo"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "354470898316-66q6c8por0pbol1v9qe5g60mdvrdvv5n.apps.googleusercontent.com",
+              "client_id": "973525050368-nqve5oujh727bl4g702v4994kd0k1g38.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

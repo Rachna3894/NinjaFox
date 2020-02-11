@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "G:\\WorkingDirectory\\NinjaFoxSurya\\NinjaFox\\JmmBrowser\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-fr\\values-fr.xml",
+            "outputFile": "G:\\LiveFileHunt Backup\\NinjaFox\\Live 10-02-2020\\NinjaFox\\JmmBrowser\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-fr\\values-fr.xml",
             "map": [
                 {
                     "source": "C:\\Users\\user55\\.gradle\\caches\\transforms-2\\files-2.1\\b9ffff42fac733baed479ce77a508552\\play-services-base-16.0.1\\res\\values-fr\\values.xml",
@@ -55,7 +55,7 @@
                     }
                 },
                 {
-                    "source": "G:\\WorkingDirectory\\NinjaFoxSurya\\NinjaFox\\JmmBrowser\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "source": "G:\\LiveFileHunt Backup\\NinjaFox\\Live 10-02-2020\\NinjaFox\\JmmBrowser\\app\\src\\main\\res\\values-fr\\strings.xml",
                     "from": {
                         "startLines": "337,435,386,434,471,11,14,17,21,26,6,377,432,433,437,336,420,422,261,410,375,449,373,379,393,31,34,40,44,48,51,54,57,37,442,470,394,398,402,357,484,378,81,78,75,97,100,103,69,66,84,62,87,93,90,346,345,347,390,338,340,339,162,424,374,447,462,457,488,414,421,359,495,477,476,475,134,139,446,474,461,303,108,483,464,467,465,130,118,120,113,125,428,364,372,363,365,361,500,362,367,366,369,370,498,499,466,472,399,397,440,146,439,448,463,444,412,224,306,310,388,387,501,153,443,376,438,220,212,158,506,509,173,504,186,166,199,177,216,482,190,207,170,480,508,195,181,300,452,451,353,355,348,354,460,458,459,415,418,426,384,232,229,239,235,243,246,250,253,256,264,267,270,274,277,280,284,288,291,297,313,318,327,323,400,486,492,491,487,490,445,411,436,430,431,385,496,441",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -91,7 +91,7 @@
                     }
                 },
                 {
-                    "source": "G:\\WorkingDirectory\\NinjaFoxSurya\\NinjaFox\\JmmBrowser\\app\\src\\main\\res\\values-fr\\arrays.xml",
+                    "source": "G:\\LiveFileHunt Backup\\NinjaFox\\Live 10-02-2020\\NinjaFox\\JmmBrowser\\app\\src\\main\\res\\values-fr\\arrays.xml",
                     "from": {
                         "startLines": "7,16",
                         "startColumns": "4,4",

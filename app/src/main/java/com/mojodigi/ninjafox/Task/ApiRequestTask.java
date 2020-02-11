@@ -1,5 +1,6 @@
 package com.mojodigi.ninjafox.Task;
 
+import android.app.Activity;
 import android.content.Context;
 import android.os.AsyncTask;
 
@@ -80,7 +81,12 @@ public class ApiRequestTask extends AsyncTask<String,String,String>{
                 listener.onLoadFailed("Code "+responseCode);
             }
 
-            CustomProgressDialog.dismiss();
+
+            try {
+                if (dispProgress && msg != null) {
+                    CustomProgressDialog.dismiss();
+                }
+            }catch (Exception e){}
 
         }
     }

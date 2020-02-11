@@ -22,6 +22,7 @@ public class DownloadReceiver extends BroadcastReceiver {
     public static final String ACTION_RESUME = "ACTION_RESUME";
 
     downlaodListener listener;
+
     @Override
     public void onReceive(Context context, Intent intent) {
         BrowserUtility utility=new BrowserUtility(context);

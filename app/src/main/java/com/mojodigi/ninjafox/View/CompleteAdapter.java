@@ -181,14 +181,18 @@ public class CompleteAdapter extends BaseAdapter implements Filterable {
         } else {
             holder = (Holder) view.getTag();
         }
+     try {
 
-        CompleteItem item = resultList.get(position);
-        holder.titleView.setText(item.getTitle());
-        if (item.getURL() != null) {
-            holder.urlView.setText(Html.fromHtml(BrowserUtility.urlWrapper(item.getURL())), TextView.BufferType.SPANNABLE);
-        } else {
-            holder.urlView.setText(item.getURL());
-        }
+
+         CompleteItem item = resultList.get(position);
+         holder.titleView.setText(item.getTitle());
+         if (item.getURL() != null) {
+             holder.urlView.setText(Html.fromHtml(BrowserUtility.urlWrapper(item.getURL())), TextView.BufferType.SPANNABLE);
+         } else {
+             holder.urlView.setText(item.getURL());
+         }
+     }catch (IndexOutOfBoundsException e){}
+     catch (Exception e){}
 
         return view;
     }

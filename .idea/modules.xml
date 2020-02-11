@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/JmmBrowser.iml" filepath="$PROJECT_DIR$/JmmBrowser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/andi_ninjafox_mojo.iml" filepath="$PROJECT_DIR$/andi_ninjafox_mojo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

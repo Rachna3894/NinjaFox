@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mojodigi.ninjafox"
     android:targetSandboxVersion="2"
-    android:versionCode="22"
-    android:versionName="3.1" >
+    android:versionCode="27"
+    android:versionName="3.6" >
 
     <uses-sdk
         android:minSdkVersion="21"
@@ -19,8 +19,11 @@
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <!-- Optional permission for Analytics to run. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
 
     <application
@@ -50,6 +53,7 @@
             android:name="com.mojodigi.ninjafox.Activity.HolderActivity"
             android:label="@string/app_name"
             android:launchMode="singleTask"
+            android:screenOrientation="portrait"
             android:theme="@style/BrowserActivityTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -67,6 +71,7 @@
             android:label="@string/app_name" /> <!-- MainActivity -->
         <activity
             android:name="com.mojodigi.ninjafox.Activity.SplashActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -105,6 +110,7 @@
         <activity
             android:name="com.mojodigi.ninjafox.Activity.DownLoadSettingActivity"
             android:label="@string/download_settings_label"
+            android:screenOrientation="portrait"
             android:theme="@style/SettingActivityTheme" />
         <activity
             android:name="com.mojodigi.ninjafox.Activity.FeedBackActivity"
@@ -131,24 +137,33 @@
             android:name="com.facebook.ads.AudienceNetworkActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:exported="false"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- to  show  interesitial adds uisng smaato -->
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- to  show  interesitial adds uisng smaato -->
         <!-- WhitelistActivity -->
         <activity
             android:name="com.mojodigi.ninjafox.Activity.WhitelistActivity"
             android:label="@string/whitelist_label"
-            android:theme="@style/WhitelistActivityTheme" /> <!-- TokenActivity -->
+            android:screenOrientation="portrait"
+            android:theme="@style/WhitelistActivityTheme" />
+        <!-- TokenActivity -->
         <activity
             android:name="com.mojodigi.ninjafox.Activity.TokenActivity"
             android:label="@string/token_label"
-            android:theme="@style/TokenActivityTheme" /> <!-- ClearActivity -->
+            android:screenOrientation="portrait"
+            android:theme="@style/TokenActivityTheme" />
+        <!-- ClearActivity -->
         <activity
             android:name="com.mojodigi.ninjafox.Activity.ClearActivity"
             android:label="@string/clear_label"
-            android:theme="@style/ClearActivityTheme" /> <!-- ClearService -->
+            android:screenOrientation="portrait"
+            android:theme="@style/ClearActivityTheme" />
+        <!-- ClearService -->
         <service
             android:name="com.mojodigi.ninjafox.Service.ClearService"
             android:icon="@drawable/ic_launcher"
-            android:label="@string/app_name" /> <!-- firebase  messaging -->
+            android:label="@string/app_name" />
+        <!-- firebase  messaging -->
         <service
             android:name="com.mojodigi.ninjafox.firebase.MyFirebaseMessagingService"
             android:enabled="true"
@@ -198,7 +213,7 @@
         <service
             android:name="com.mojodigi.ninjafox.DownlaodModule.DownloadService"
             android:enabled="true"
-            android:exported="true" />
+            android:exported="false" />
 
         <!--
              FirebaseMessagingService performs security checks at runtime,
@@ -211,6 +226,22 @@
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
+
+        <receiver
+            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+            android:enabled="true"
+            android:exported="false" >
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.analytics.AnalyticsService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.gms.analytics.AnalyticsJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
 
         <activity
             android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
@@ -309,7 +340,12 @@
         <service
             android:name="com.facebook.ads.internal.ipc.AdsMessengerService"
             android:exported="false"
-            android:process=":adnw" /> <!-- The activity will be merged into the manifest of the hosting app. -->
+            android:process=":adnw" />
+
+        <provider
+            android:name="com.facebook.ads.AudienceNetworkContentProvider"
+            android:authorities="com.mojodigi.ninjafox.AudienceNetworkContentProvider"
+            android:exported="false" /> <!-- The activity will be merged into the manifest of the hosting app. -->
         <activity
             android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity"
             android:enabled="false"
