@@ -482,7 +482,10 @@ public class BrowserUtility   {
     }
 
 
-    public static void download3(final Context context, String url, String contentDisposition, String mimeType)
+
+  /*not being used now in project*/
+
+   /* public static void download3(final Context context, String url, String contentDisposition, String mimeType)
     {
         try
         {
@@ -580,9 +583,11 @@ public class BrowserUtility   {
             String string=e.getMessage();
             System.out.print(""+string);
         }
-    }
+    }*/
+    /*not being used now in project*/
 
-    public static void download2(Context context, String url, String contentDisposition, String mimeType) {
+    /*not being used now in project*/
+    /*public static void download2(Context context, String url, String contentDisposition, String mimeType) {
         try {
             // to  test  download files from sample-videos.com  here various kind of files are present;
             //String extension=getFileExtension(url);
@@ -635,7 +640,12 @@ public class BrowserUtility   {
         }
 
 
-    }
+    }*/
+
+    /*not being used now in project*/
+
+
+
 
 
     private static boolean isWifiEnabled(Context context)

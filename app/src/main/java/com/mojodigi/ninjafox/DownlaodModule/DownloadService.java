@@ -39,10 +39,29 @@ public class DownloadService extends Service {
     public void onCreate() {
         super.onCreate();
 
+        /*createNotificationChannel();
+
+
+        Notification notification = new NotificationCompat.Builder(this, NOTIFICATION_CHANNEL_NAME)
+                *//* .setContentTitle(getString(R.string.app_name))*//*
+                *//*.setContentText("Your data is downloading and saving to your phone.")*//*
+                .setSmallIcon(R.drawable.ic_launcher)
+                *//*.setContentIntent(pendingIntent)*//*
+                .setContentIntent(null)
+                .setAutoCancel(true)
+                .build();
+        DownloadService.this.startForeground(NOTIFICATION_CHANNEL_ID, notification);*/
+
+
+    }
+
+    @Override
+    public int onStartCommand(Intent intent, int flags, int startId) {
+
+
         createNotificationChannel();
-//        Intent notificationIntent = new Intent(this, MainActivity.class);
-//        PendingIntent pendingIntent = PendingIntent.getActivity(this,
-//                0, notificationIntent, 0);
+
+
         Notification notification = new NotificationCompat.Builder(this, NOTIFICATION_CHANNEL_NAME)
                 /* .setContentTitle(getString(R.string.app_name))*/
                 /*.setContentText("Your data is downloading and saving to your phone.")*/
@@ -52,10 +71,8 @@ public class DownloadService extends Service {
                 .setAutoCancel(true)
                 .build();
         DownloadService.this.startForeground(NOTIFICATION_CHANNEL_ID, notification);
-    }
 
-    @Override
-    public int onStartCommand(Intent intent, int flags, int startId) {
+
 
         if (intent != null) {
             String action = intent.getAction();

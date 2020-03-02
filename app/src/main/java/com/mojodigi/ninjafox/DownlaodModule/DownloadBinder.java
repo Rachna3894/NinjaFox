@@ -113,6 +113,7 @@ public class DownloadBinder extends Binder {
         Intent downloadIntent = new Intent(mContext, DownloadService.class);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             mContext.startForegroundService(downloadIntent);
+
         } else {
             mContext.startService(downloadIntent);
         }

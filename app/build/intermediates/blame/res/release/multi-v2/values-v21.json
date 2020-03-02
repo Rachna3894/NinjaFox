@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "G:\\LiveFileHunt Backup\\NinjaFox\\Live 10-02-2020\\NinjaFox\\JmmBrowser\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-v21\\values-v21.xml",
+            "outputFile": "G:\\LiveFileHunt Backup\\NinjaFox\\Live on 11-02-2020\\NinjaFox\\JmmBrowser\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-v21\\values-v21.xml",
             "map": [
                 {
                     "source": "C:\\Users\\user55\\.gradle\\caches\\transforms-2\\files-2.1\\6c2164896ca319583b40d5b80aa35763\\design-28.0.0\\res\\values-v21\\values-v21.xml",
@@ -42,25 +42,6 @@
                     }
                 },
                 {
-                    "source": "G:\\LiveFileHunt Backup\\NinjaFox\\Live 10-02-2020\\NinjaFox\\JmmBrowser\\app\\src\\main\\res\\values-v21\\styles.xml",
-                    "from": {
-                        "startLines": "71,84,85,66,4,56,18,77,24,46,36",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "3790,4264,4355,3534,57,2958,873,4016,1097,2392,1821",
-                        "endLines": "74,84,85,69,16,64,22,82,34,54,44",
-                        "endColumns": "12,90,80,12,12,12,12,12,12,12,12",
-                        "endOffsets": "4009,4350,4431,3784,867,3528,1091,4258,1815,2952,2386"
-                    },
-                    "to": {
-                        "startLines": "6,10,11,12,235,248,257,262,306,365,374",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "354,578,668,748,17562,18377,18952,19175,21771,25369,25934",
-                        "endLines": "9,10,11,15,247,256,261,267,316,373,382",
-                        "endColumns": "12,89,79,12,12,12,12,12,12,12,12",
-                        "endOffsets": "573,663,743,998,18372,18947,19170,19417,22489,25929,26498"
-                    }
-                },
-                {
                     "source": "C:\\Users\\user55\\.gradle\\caches\\transforms-2\\files-2.1\\895559d2bf708e950c8f9daa6bb1fb41\\support-compat-28.0.0\\res\\values-v21\\values-v21.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,13",
@@ -77,6 +58,25 @@
                         "endLines": "2,3,4,5,317,318,325,329,385,390",
                         "endColumns": "103,63,66,63,115,125,125,127,12,12",
                         "endOffsets": "154,218,285,349,22605,22731,23188,23484,26670,27008"
+                    }
+                },
+                {
+                    "source": "G:\\LiveFileHunt Backup\\NinjaFox\\Live on 11-02-2020\\NinjaFox\\JmmBrowser\\app\\src\\main\\res\\values-v21\\styles.xml",
+                    "from": {
+                        "startLines": "71,84,85,66,4,56,18,77,24,46,36",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "3790,4264,4355,3534,57,2958,873,4016,1097,2392,1821",
+                        "endLines": "74,84,85,69,16,64,22,82,34,54,44",
+                        "endColumns": "12,90,80,12,12,12,12,12,12,12,12",
+                        "endOffsets": "4009,4350,4431,3784,867,3528,1091,4258,1815,2952,2386"
+                    },
+                    "to": {
+                        "startLines": "6,10,11,12,235,248,257,262,306,365,374",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "354,578,668,748,17562,18377,18952,19175,21771,25369,25934",
+                        "endLines": "9,10,11,15,247,256,261,267,316,373,382",
+                        "endColumns": "12,89,79,12,12,12,12,12,12,12,12",
+                        "endOffsets": "573,663,743,998,18372,18947,19170,19417,22489,25929,26498"
                     }
                 },
                 {

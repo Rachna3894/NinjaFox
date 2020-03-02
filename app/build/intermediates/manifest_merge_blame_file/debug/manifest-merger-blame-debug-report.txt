@@ -1,45 +1,45 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="com.mojodigi.ninjafox"
-4    android:versionCode="27"
-5    android:versionName="3.6" >
+4    android:versionCode="28"
+5    android:versionName="3.7" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml
+8-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="28" />
-9-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml
+9-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml
 10    <!-- Permission -->
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:6:5-67
-11-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:6:22-64
+11-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:6:5-67
+11-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:6:22-64
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-12-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:7:5-79
-12-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:7:22-76
+12-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:7:5-79
+12-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:7:22-76
 13    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-13-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:8:5-81
-13-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:8:22-78
+13-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:8:5-81
+13-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:8:22-78
 14    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-14-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:9:5-79
-14-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:9:22-76
+14-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:9:5-79
+14-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:9:22-76
 15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-15-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:10:5-80
-15-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:10:22-77
+15-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:10:5-80
+15-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:10:22-77
 16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-16-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:11:5-81
-16-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:11:22-78
+16-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:11:5-81
+16-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:11:22-78
 17    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-17-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:12:5-76
-17-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:12:22-73
+17-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:12:5-76
+17-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:12:22-73
 18    <uses-permission android:name="android.permission.CALL_PHONE" />
-18-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:13:5-69
-18-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:13:22-66
+18-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:13:5-69
+18-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:13:22-66
 19    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-19-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:14:5-78
-19-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:14:22-75
+19-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:14:5-78
+19-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:14:22-75
 20    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-20-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:15:5-77
-20-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:15:22-74
+20-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:15:5-77
+20-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:15:22-74
 21
 22    <!-- Optional permission for Analytics to run. -->
 23    <uses-permission android:name="android.permission.WAKE_LOCK" />
@@ -54,352 +54,352 @@
 26-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f812aa0c82fadb0bc8e1403264ebbc81\firebase-iid-17.0.4\AndroidManifest.xml:26:22-79
 27
 28    <application
-28-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:17:5-204:19
+28-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:17:5-204:19
 29        android:name="com.mojodigi.ninjafox.Application.MyApplication"
-29-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:18:9-50
+29-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:18:9-50
 30        android:allowBackup="true"
-30-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:19:9-35
+30-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:19:9-35
 31        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
 31-->[com.android.support:support-compat:28.0.0] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\895559d2bf708e950c8f9daa6bb1fb41\support-compat-28.0.0\AndroidManifest.xml:22:18-91
 32        android:debuggable="true"
 33        android:enabled="true"
-33-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:20:9-31
+33-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:20:9-31
 34        android:icon="@drawable/ic_launcher"
-34-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:21:9-45
+34-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:21:9-45
 35        android:label="@string/app_name"
-35-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:22:9-41
+35-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:22:9-41
 36        android:largeHeap="true"
-36-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:23:9-33
+36-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:23:9-33
 37        android:roundIcon="@drawable/ic_launcher_round"
-37-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:24:9-56
+37-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:24:9-56
 38        android:usesCleartextTraffic="true" >
-38-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:25:9-44
+38-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:25:9-44
 39        <activity
-39-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:27:9-30:59
+39-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:27:9-30:59
 40            android:name="com.mojodigi.ninjafox.Activity.SignInActivity"
-40-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:28:13-52
+40-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:28:13-52
 41            android:screenOrientation="portrait"
-41-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:29:13-49
+41-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:29:13-49
 42            android:theme="@style/BrowserActivityTheme2" />
-42-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:30:13-57
+42-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:30:13-57
 43        <activity
-43-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:31:9-34:60
+43-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:31:9-34:60
 44            android:name="com.mojodigi.ninjafox.Activity.SignUpActivity"
-44-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:32:13-52
+44-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:32:13-52
 45            android:screenOrientation="portrait"
-45-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:33:13-49
+45-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:33:13-49
 46            android:theme="@style/BrowserActivityTheme2" />
-46-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:34:13-57
+46-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:34:13-57
 47        <activity
-47-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:36:9-39:59
+47-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:36:9-39:59
 48            android:name="com.mojodigi.ninjafox.Activity.SuggestedAppsActivity"
-48-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:37:13-59
+48-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:37:13-59
 49            android:screenOrientation="portrait"
-49-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:38:13-49
+49-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:38:13-49
 50            android:theme="@style/BrowserActivityTheme" />
-50-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:39:13-56
+50-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:39:13-56
 51        <activity
-51-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:41:9-56:20
+51-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:41:9-56:20
 52            android:name="com.mojodigi.ninjafox.Activity.HolderActivity"
-52-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:42:13-52
+52-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:42:13-52
 53            android:label="@string/app_name"
-53-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:43:13-45
+53-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:43:13-45
 54            android:launchMode="singleTask"
-54-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:44:13-44
+54-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:44:13-44
 55            android:screenOrientation="portrait"
-55-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:45:13-49
+55-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:45:13-49
 56            android:theme="@style/BrowserActivityTheme" >
-56-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:46:13-56
+56-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:46:13-56
 57            <intent-filter>
-57-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:47:13-55:29
+57-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:47:13-55:29
 58                <action android:name="android.intent.action.VIEW" />
-58-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:48:17-69
-58-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:48:25-66
+58-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:48:17-69
+58-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:48:25-66
 59
 60                <category android:name="android.intent.category.DEFAULT" />
-60-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:50:17-76
-60-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:50:27-73
+60-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:50:17-76
+60-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:50:27-73
 61                <category android:name="android.intent.category.BROWSABLE" />
-61-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:51:17-78
-61-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:51:27-75
+61-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:51:17-78
+61-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:51:27-75
 62
 63                <data android:scheme="@string/app_scheme_http" />
-63-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:53:17-66
-63-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:53:23-63
+63-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:53:17-66
+63-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:53:23-63
 64                <data android:scheme="@string/app_scheme_https" />
-64-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:53:17-66
-64-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:53:23-63
+64-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:53:17-66
+64-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:53:23-63
 65            </intent-filter>
 66        </activity> <!-- HolderService -->
 67        <service
-67-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:57:9-60:48
+67-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:57:9-60:48
 68            android:name="com.mojodigi.ninjafox.Service.HolderService"
-68-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:58:13-50
+68-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:58:13-50
 69            android:icon="@drawable/ic_launcher"
-69-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:59:13-49
+69-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:59:13-49
 70            android:label="@string/app_name" /> <!-- MainActivity -->
-70-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:60:13-45
+70-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:60:13-45
 71        <activity
-71-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:61:9-69:20
+71-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:61:9-69:20
 72            android:name="com.mojodigi.ninjafox.Activity.SplashActivity"
-72-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:62:13-52
+72-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:62:13-52
 73            android:screenOrientation="portrait"
-73-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:63:13-49
+73-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:63:13-49
 74            android:theme="@style/Theme.AppCompat.NoActionBar" >
-74-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:64:13-63
+74-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:64:13-63
 75            <intent-filter>
-75-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:65:13-68:29
+75-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:65:13-68:29
 76                <action android:name="android.intent.action.MAIN" />
-76-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:66:17-69
-76-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:66:25-66
+76-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:66:17-69
+76-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:66:25-66
 77
 78                <category android:name="android.intent.category.LAUNCHER" />
-78-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:67:17-77
-78-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:67:27-74
+78-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:67:17-77
+78-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:67:27-74
 79            </intent-filter>
 80        </activity>
 81        <!-- android:windowSoftInputMode="adjustResize" -->
 82        <!-- android:launchMode="singleInstance"    from mainActivity -->
 83        <activity
-83-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:72:9-90:20
+83-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:72:9-90:20
 84            android:name="com.mojodigi.ninjafox.Activity.MainActivity"
-84-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:73:13-50
+84-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:73:13-50
 85            android:configChanges="orientation|keyboardHidden|screenSize"
-85-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:74:13-74
+85-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:74:13-74
 86            android:label="@string/app_name"
-86-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:75:13-45
+86-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:75:13-45
 87            android:launchMode="singleTop"
-87-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:76:13-43
+87-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:76:13-43
 88            android:screenOrientation="portrait"
-88-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:77:13-49
+88-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:77:13-49
 89            android:theme="@style/BrowserActivityTheme2"
-89-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:78:13-57
+89-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:78:13-57
 90            android:windowSoftInputMode="adjustNothing" >
-90-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:79:13-56
+90-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:79:13-56
 91            <intent-filter>
-91-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:80:13-85:29
+91-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:80:13-85:29
 92
 93                <!-- <action android:name="android.intent.action.MAIN"/> -->
 94                <action android:name="android.intent.action.WEB_SEARCH" />
-94-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:82:17-75
-94-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:82:25-72
+94-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:82:17-75
+94-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:82:25-72
 95
 96                <category android:name="android.intent.category.DEFAULT" />
-96-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:50:17-76
-96-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:50:27-73
+96-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:50:17-76
+96-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:50:27-73
 97                <!-- <category android:name="android.intent.category.LAUNCHER"/> -->
 98            </intent-filter>
 99
 100            <meta-data
-100-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:87:13-89:54
+100-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:87:13-89:54
 101                android:name="android.app.searchable"
-101-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:88:17-54
+101-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:88:17-54
 102                android:resource="@xml/searchable" />
-102-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:89:17-51
+102-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:89:17-51
 103        </activity> <!-- SettingActivity -->
 104        <activity
-104-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:91:9-95:59
+104-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:91:9-95:59
 105            android:name="com.mojodigi.ninjafox.Activity.SettingActivity"
-105-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:92:13-53
+105-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:92:13-53
 106            android:label="@string/setting_label"
-106-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:93:13-50
+106-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:93:13-50
 107            android:screenOrientation="portrait"
-107-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:94:13-49
+107-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:94:13-49
 108            android:theme="@style/SettingActivityTheme" />
-108-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:95:13-56
+108-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:95:13-56
 109        <activity
-109-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:96:9-100:59
+109-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:96:9-100:59
 110            android:name="com.mojodigi.ninjafox.Activity.DownLoadSettingActivity"
-110-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:97:13-61
+110-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:97:13-61
 111            android:label="@string/download_settings_label"
-111-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:98:13-60
+111-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:98:13-60
 112            android:screenOrientation="portrait"
-112-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:99:13-49
+112-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:99:13-49
 113            android:theme="@style/SettingActivityTheme" />
-113-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:100:13-56
+113-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:100:13-56
 114        <activity
-114-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:101:9-105:59
+114-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:101:9-105:59
 115            android:name="com.mojodigi.ninjafox.Activity.FeedBackActivity"
-115-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:102:13-54
+115-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:102:13-54
 116            android:label="Feedback"
-116-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:103:13-37
+116-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:103:13-37
 117            android:screenOrientation="portrait"
-117-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:104:13-49
+117-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:104:13-49
 118            android:theme="@style/SettingActivityTheme" />
-118-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:105:13-56
+118-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:105:13-56
 119        <activity
-119-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:106:9-109:59
+119-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:106:9-109:59
 120            android:name="com.mojodigi.ninjafox.Activity.RecentListActivity"
-120-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:107:13-56
+120-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:107:13-56
 121            android:screenOrientation="portrait"
-121-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:108:13-49
+121-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:108:13-49
 122            android:theme="@style/BrowserActivityTheme" />
-122-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:109:13-56
+122-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:109:13-56
 123        <activity
-123-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:110:9-113:59
+123-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:110:9-113:59
 124            android:name="com.mojodigi.ninjafox.Activity.MostVisistedActiity"
-124-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:111:13-57
+124-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:111:13-57
 125            android:screenOrientation="portrait"
-125-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:112:13-49
+125-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:112:13-49
 126            android:theme="@style/BrowserActivityTheme" />
-126-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:113:13-56
+126-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:113:13-56
 127        <activity
-127-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:114:9-117:59
+127-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:114:9-117:59
 128            android:name="com.mojodigi.ninjafox.Activity.BlockListActivity"
-128-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:115:13-55
+128-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:115:13-55
 129            android:screenOrientation="portrait"
-129-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:116:13-49
+129-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:116:13-49
 130            android:theme="@style/BrowserActivityTheme" />
-130-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:117:13-56
+130-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:117:13-56
 131        <activity
-131-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:118:9-121:59
+131-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:118:9-121:59
 132            android:name="com.mojodigi.ninjafox.Activity.LanguagePrefsActivity"
-132-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:119:13-59
+132-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:119:13-59
 133            android:screenOrientation="portrait"
-133-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:120:13-49
+133-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:120:13-49
 134            android:theme="@style/BrowserActivityTheme" />
-134-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:121:13-56
+134-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:121:13-56
 135        <activity
-135-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:123:9-126:52
+135-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:123:9-126:52
 136            android:name="com.facebook.ads.AudienceNetworkActivity"
-136-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:124:13-68
+136-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:124:13-68
 137            android:configChanges="keyboardHidden|orientation|screenSize"
-137-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:125:13-74
+137-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:125:13-74
 138            android:exported="false"
 138-->[com.facebook.android:audience-network-sdk:5.6.1] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\72c47fbadcc6dca0e37e26dc1c27ef75\audience-network-sdk-5.6.1\AndroidManifest.xml:18:13-37
 139            android:screenOrientation="portrait"
-139-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:126:13-49
+139-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:126:13-49
 140            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 140-->[com.facebook.android:audience-network-sdk:5.6.1] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\72c47fbadcc6dca0e37e26dc1c27ef75\audience-network-sdk-5.6.1\AndroidManifest.xml:19:13-72
 141        <!-- to  show  interesitial adds uisng smaato -->
 142        <!-- WhitelistActivity -->
 143        <activity
-143-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:129:9-133:61
+143-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:129:9-133:61
 144            android:name="com.mojodigi.ninjafox.Activity.WhitelistActivity"
-144-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:130:13-55
+144-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:130:13-55
 145            android:label="@string/whitelist_label"
-145-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:131:13-52
+145-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:131:13-52
 146            android:screenOrientation="portrait"
-146-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:132:13-49
+146-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:132:13-49
 147            android:theme="@style/WhitelistActivityTheme" />
-147-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:133:13-58
+147-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:133:13-58
 148        <!-- TokenActivity -->
 149        <activity
-149-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:135:9-139:57
+149-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:135:9-139:57
 150            android:name="com.mojodigi.ninjafox.Activity.TokenActivity"
-150-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:136:13-51
+150-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:136:13-51
 151            android:label="@string/token_label"
-151-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:137:13-48
+151-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:137:13-48
 152            android:screenOrientation="portrait"
-152-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:138:13-49
+152-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:138:13-49
 153            android:theme="@style/TokenActivityTheme" />
-153-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:139:13-54
+153-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:139:13-54
 154        <!-- ClearActivity -->
 155        <activity
-155-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:141:9-145:57
+155-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:141:9-145:57
 156            android:name="com.mojodigi.ninjafox.Activity.ClearActivity"
-156-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:142:13-51
+156-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:142:13-51
 157            android:label="@string/clear_label"
-157-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:143:13-48
+157-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:143:13-48
 158            android:screenOrientation="portrait"
-158-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:144:13-49
+158-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:144:13-49
 159            android:theme="@style/ClearActivityTheme" />
-159-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:145:13-54
+159-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:145:13-54
 160        <!-- ClearService -->
 161        <service
-161-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:147:9-150:48
+161-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:147:9-150:48
 162            android:name="com.mojodigi.ninjafox.Service.ClearService"
-162-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:148:13-49
+162-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:148:13-49
 163            android:icon="@drawable/ic_launcher"
-163-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:149:13-49
+163-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:149:13-49
 164            android:label="@string/app_name" />
-164-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:150:13-45
+164-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:150:13-45
 165        <!-- firebase  messaging -->
 166        <service
-166-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:152:9-160:19
+166-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:152:9-160:19
 167            android:name="com.mojodigi.ninjafox.firebase.MyFirebaseMessagingService"
-167-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:153:13-64
+167-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:153:13-64
 168            android:enabled="true"
-168-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:154:13-35
+168-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:154:13-35
 169            android:stopWithTask="false" >
-169-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:155:13-41
+169-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:155:13-41
 170            <intent-filter>
-170-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:156:13-159:29
+170-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:156:13-159:29
 171                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-171-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:157:17-78
-171-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:157:25-75
+171-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:157:17-78
+171-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:157:25-75
 172                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-172-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:158:17-81
-172-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:158:25-78
+172-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:158:17-81
+172-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:158:25-78
 173            </intent-filter>
 174        </service>
 175
 176        <!-- for pushNotification -->
 177        <meta-data
-177-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:163:9-165:56
+177-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:163:9-165:56
 178            android:name="com.google.firebase.messaging.default_notification_icon"
-178-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:164:13-83
+178-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:164:13-83
 179            android:resource="@drawable/ic_fcm_icon" />
-179-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:165:13-53
+179-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:165:13-53
 180        <meta-data
-180-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:166:9-168:52
+180-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:166:9-168:52
 181            android:name="com.google.firebase.messaging.default_notification_color"
-181-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:167:13-84
+181-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:167:13-84
 182            android:resource="@color/color_icon" />
-182-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:168:13-49
+182-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:168:13-49
 183
 184        <!-- for pushNotification -->
 185
 186
 187        <!-- for google location api -->
 188        <meta-data
-188-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:173:9-175:69
+188-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:173:9-175:69
 189            android:name="com.google.android.gms.version"
-189-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:174:13-58
+189-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:174:13-58
 190            android:value="@integer/google_play_services_version" />
-190-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:175:13-66
+190-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:175:13-66
 191        <meta-data
-191-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:176:9-178:54
+191-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:176:9-178:54
 192            android:name="com.google.android.geo.API_KEY"
-192-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:177:13-58
+192-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:177:13-58
 193            android:value="@string/google_api_key" />
-193-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:178:13-51
+193-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:178:13-51
 194
 195        <service
-195-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:180:9-182:40
+195-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:180:9-182:40
 196            android:name="com.mojodigi.ninjafox.Service.GetAddressIntentService"
-196-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:181:13-60
+196-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:181:13-60
 197            android:exported="false" />
-197-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:182:13-37
+197-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:182:13-37
 198        <!-- for google location api -->
 199
 200
 201        <!-- for job intent class -->
 202        <service
-202-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:186:9-189:72
+202-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:186:9-189:72
 203            android:name="com.mojodigi.ninjafox.Service.getAddressJobIntentService"
-203-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:187:13-63
+203-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:187:13-63
 204            android:exported="false"
-204-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:188:13-37
+204-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:188:13-37
 205            android:permission="android.permission.BIND_JOB_SERVICE" />
-205-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:189:13-69
+205-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:189:13-69
 206
 207        <receiver
-207-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:191:9-196:20
+207-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:191:9-196:20
 208            android:name="com.mojodigi.ninjafox.BroadCast.DownloadReceiver"
-208-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:192:13-55
+208-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:192:13-55
 209            android:label="DownloadReceiver" >
-209-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:193:13-45
+209-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:193:13-45
 210        </receiver>
 211
 212        <service
-212-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:198:9-201:40
+212-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:198:9-201:40
 213            android:name="com.mojodigi.ninjafox.DownlaodModule.DownloadService"
-213-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:199:13-59
+213-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:199:13-59
 214            android:enabled="true"
-214-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:200:13-35
+214-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:200:13-35
 215            android:exported="false" />
-215-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:201:13-37
+215-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:201:13-37
 216
 217        <!--
 218             FirebaseMessagingService performs security checks at runtime,
@@ -415,8 +415,8 @@
 224-->[com.google.firebase:firebase-messaging:17.3.4] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\867110f9d52010542d15c324d0eb9dee\firebase-messaging-17.3.4\AndroidManifest.xml:31:13-33:29
 224-->[com.google.firebase:firebase-messaging:17.3.4] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\867110f9d52010542d15c324d0eb9dee\firebase-messaging-17.3.4\AndroidManifest.xml:31:28-51
 225                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-225-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:157:17-78
-225-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:157:25-75
+225-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:157:17-78
+225-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:157:25-75
 226            </intent-filter>
 227        </service>
 228
@@ -525,16 +525,16 @@
 285            <intent-filter>
 285-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:32:13-38:29
 286                <category android:name="android.intent.category.DEFAULT" />
-286-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:50:17-76
-286-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:50:27-73
+286-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:50:17-76
+286-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:50:27-73
 287
 288                <action android:name="com.yandex.metrica.IMetricaService" />
 288-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:35:17-77
 288-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:35:25-74
 289
 290                <data android:scheme="metrica" />
-290-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:53:17-66
-290-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:53:23-63
+290-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:53:17-66
+290-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:53:23-63
 291            </intent-filter>
 292
 293            <meta-data
@@ -722,8 +722,8 @@
 392            <intent-filter>
 392-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f812aa0c82fadb0bc8e1403264ebbc81\firebase-iid-17.0.4\AndroidManifest.xml:41:13-43:29
 393                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-393-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:158:17-81
-393-->G:\WorkingDirectory\gitCommit\jmmBrowser\andi_ninjafox_mojo\app\src\main\AndroidManifest.xml:158:25-78
+393-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:158:17-81
+393-->G:\LiveFileHunt Backup\NinjaFox\Live on 11-02-2020\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:158:25-78
 394            </intent-filter>
 395        </receiver>
 396        <!--
