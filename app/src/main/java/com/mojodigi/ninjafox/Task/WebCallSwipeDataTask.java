@@ -39,9 +39,9 @@ public class WebCallSwipeDataTask extends AsyncTask<String, String, String> {
     protected String doInBackground(String... strings) {
         try {
             return OkhttpMethods.CallApi(mContext, CommonUtility.API_URL_LANGUGE_SWIPE_DATA, swipeObject);
-        } catch (Exception e) {
-            e.printStackTrace();
-            return "" + e.getMessage();
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            return "" + ex.getMessage();
         }
     }
 
@@ -49,7 +49,7 @@ public class WebCallSwipeDataTask extends AsyncTask<String, String, String> {
     @Override
     protected void onPostExecute(String s) {
         super.onPostExecute(s);
-        Log.e("WebCallSwipeDataTask", s);
+        //Log.e("WebCallSwipeDataTask", s);
         try {
             int responseCode = addprefs.getIntValue(CommonUtility.API_RESPONSE_CODE_GET_NEWS, 0);
             if (s != null && responseCode == 200) {

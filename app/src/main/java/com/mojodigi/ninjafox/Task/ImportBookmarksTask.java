@@ -14,6 +14,7 @@ import java.io.File;
 
 
 public class ImportBookmarksTask extends AsyncTask<Void, Void, Boolean> {
+
     private SettingFragment fragment;
     private Context context;
     private ProgressDialog dialog;

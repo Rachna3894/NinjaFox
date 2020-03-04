@@ -179,6 +179,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Objects;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -291,6 +292,7 @@ public class MainActivity extends AppCompatActivity implements BrowserController
     private NestedScrollView nestedScrollView;
     private boolean stopCallingService;
 
+
 //    @Override
 //    public void onNewsClicked(NewsList newsList) {
 //        //updateAlbum(newsList.getCanonicalUrl());
@@ -306,7 +308,7 @@ public class MainActivity extends AppCompatActivity implements BrowserController
     public void cricketScorejson(JSONObject obj) {
 
         System.out.print(""+obj);
-          gloablCricketScoreJson=obj;
+        gloablCricketScoreJson=obj;
         if (obj != null) {
 
             if (obj.has("data")) {
@@ -393,16 +395,16 @@ public class MainActivity extends AppCompatActivity implements BrowserController
             try {
                 JSONObject mainObj=new JSONObject(json);
 
-                  String  token= JsonParser.getkeyValue_Str(mainObj, "token");
-                  if(token!=null) {
-                      if (token.equalsIgnoreCase("") || token == null) {
-                          /*force logout if token is not returned from serwer end*/
+                String  token= JsonParser.getkeyValue_Str(mainObj, "token");
+                if(token!=null) {
+                    if (token.equalsIgnoreCase("") || token == null) {
+                        /*force logout if token is not returned from serwer end*/
 
-                          prefs.setStringValue(AppConstants.PREFS_USER_ID, "0");
-                          prefs.setStringValue(AppConstants.PREFS_TOKEN, "0");
-                          loginButton.setVisibility(View.VISIBLE);
-                      }
-                  }
+                        prefs.setStringValue(AppConstants.PREFS_USER_ID, "0");
+                        prefs.setStringValue(AppConstants.PREFS_TOKEN, "0");
+                        loginButton.setVisibility(View.VISIBLE);
+                    }
+                }
 
             } catch (JSONException e) {
                 e.printStackTrace();
@@ -538,12 +540,10 @@ public class MainActivity extends AppCompatActivity implements BrowserController
                 addAlbum(getString(R.string.album_untitled), url, false, null);
                 showAlbum(BrowserContainer.get(BrowserContainer.size() - 1), false, false, false);
                 //increaseTabCount();
-               // setTabValue();
+                // setTabValue();
                 setTabValue(BrowserContainer.size());
-
                 return;
             }
-
         }
         /*from me new*/
 
@@ -571,6 +571,7 @@ public class MainActivity extends AppCompatActivity implements BrowserController
         }
 
     }
+
 
 
     private ServiceConnection serviceConnection = new ServiceConnection() {
@@ -663,7 +664,7 @@ public class MainActivity extends AppCompatActivity implements BrowserController
         initOmnibox();
         initSearchPanel();
 
-       //android.os.Debug.waitForDebugger();    // forces app to enable debuging;
+        //android.os.Debug.waitForDebugger();    // forces app to enable debuging;
 
         relayoutOK = (Button) findViewById(R.id.main_relayout_ok);
         //contentFrame = (FrameLayout) findViewById(R.id.main_content);
@@ -706,8 +707,8 @@ public class MainActivity extends AppCompatActivity implements BrowserController
             // sign in the user with the same ID.
             // See https://developers.google.com/identity/sign-in/android/
             GoogleSignInOptions gso =  new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                            .requestEmail()
-                            .build();
+                    .requestEmail()
+                    .build();
 
             GoogleSignInClient signInClient = GoogleSignIn.getClient(this, gso);
             Task<GoogleSignInAccount> task = signInClient.silentSignIn();
@@ -741,14 +742,14 @@ public class MainActivity extends AppCompatActivity implements BrowserController
     @Override
     public void onResume() {
         super.onResume();
-         stopCallingService=false;
+        stopCallingService=false;
         if(mPager!=null) {
             currentPosition = mPager.getCurrentItem();
         }
 
         if(globalJonsData==null) {
-        new WebCallGetNewsTask(mContext, false, mInstance).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
-    }
+            new WebCallGetNewsTask(mContext, false, mInstance).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+        }
 
         if(CommonUtility.isLoggedInUser(prefs)) {
             loginButton.setVisibility(View.GONE);
@@ -783,7 +784,7 @@ public class MainActivity extends AppCompatActivity implements BrowserController
         }
 
 
-        }
+    }
 
     private JSONObject prepareDeviceDetailsJson()  {
 
@@ -799,28 +800,28 @@ public class MainActivity extends AppCompatActivity implements BrowserController
             String osName=CommonUtility.getOsDetails();
             jsonObject.put("osVersion", osName);
             String googleAddId=null;
-             String string = prefs.getStringValue(AppConstants.PREFS_GOOGLE_ADD_ID, CommonUtility.NOT_FOUND);
-             System.out.print(""+string);
+            String string = prefs.getStringValue(AppConstants.PREFS_GOOGLE_ADD_ID, CommonUtility.NOT_FOUND);
+            System.out.print(""+string);
             if(string.equalsIgnoreCase(CommonUtility.NOT_FOUND))
             {
                 CommonUtility.getGoogleAddId(mContext);
                 //googleAddId=CommonUtility.getGoogleAddId(mContext);
-               // prefs.setStringValue(AppConstants.PREFS_GOOGLE_ADD_ID, googleAddId);
+                // prefs.setStringValue(AppConstants.PREFS_GOOGLE_ADD_ID, googleAddId);
             }
             else
             {
-                 googleAddId =prefs.getStringValue(AppConstants.PREFS_GOOGLE_ADD_ID, CommonUtility.NOT_FOUND);
+                googleAddId =prefs.getStringValue(AppConstants.PREFS_GOOGLE_ADD_ID, CommonUtility.NOT_FOUND);
             }
-              if(googleAddId==null)
-              {
-                  googleAddId="Could not get googleId on device";
-              }
+            if(googleAddId==null)
+            {
+                googleAddId="Could not get googleId on device";
+            }
             jsonObject.put("googleAddId", googleAddId);
             jsonObject.put("gender", "");
             jsonObject.put("dob", "");
             jsonObject.put("lastLocation", prefs.getStringValue(AppConstants.PREFS_LOCATION, "location not found"));
-             jsonObject.put("state", prefs.getStringValue(AppConstants.PREFS_LOCATION_STATE, "delhi"));  // delhi  is the default state;
-             jsonObject.put("city", prefs.getStringValue(AppConstants.PREFS_LOCATION_CITY, "delhi"));  // delhi  is the default city;
+            jsonObject.put("state", prefs.getStringValue(AppConstants.PREFS_LOCATION_STATE, "delhi"));  // delhi  is the default state;
+            jsonObject.put("city", prefs.getStringValue(AppConstants.PREFS_LOCATION_CITY, "delhi"));  // delhi  is the default city;
 
             ArrayList<String> appsList=  CommonUtility.getInstalledApps(mContext);
 
@@ -842,7 +843,7 @@ public class MainActivity extends AppCompatActivity implements BrowserController
     }
 
 
-/**********************Cont_Tab************************************/
+    /**********************Cont_Tab************************************/
     private int getTabCount() {
         int tabCount = 1;
         if (prefs != null) {
@@ -993,7 +994,7 @@ public class MainActivity extends AppCompatActivity implements BrowserController
             }
         });
 
-         if (currentAlbumController != null && currentAlbumController instanceof jmmRelativeLayout) {
+        if (currentAlbumController != null && currentAlbumController instanceof jmmRelativeLayout) {
             jmmRelativeLayout layout = (jmmRelativeLayout) currentAlbumController;
             if (layout.getFlag() == BrowserUtility.FLAG_HOME) {
                 initHomeGrid(layout, true);
@@ -1049,21 +1050,21 @@ public class MainActivity extends AppCompatActivity implements BrowserController
     }
 
     private void initOmnibox() {
-         main_view = (LinearLayout) findViewById(R.id.main_view);
-         omnibox = (RelativeLayout) findViewById(R.id.main_omnibox);
-         inputBox = (AutoCompleteTextView) findViewById(R.id.main_omnibox_input);
-         omniboxBookmark = (ImageButton) findViewById(R.id.main_omnibox_bookmark);
-         omniboxRefresh = (ImageButton) findViewById(R.id.main_omnibox_refresh);
-         progressBar = (ProgressBar) findViewById(R.id.main_progress_bar);
-         loginButton=(TextView) findViewById(R.id.loginButton);
-         loginButton.setTypeface(CommonUtility.typeFace_Calibri_Regular(mContext));
-         loginButton.setOnClickListener(new View.OnClickListener() {
-             @Override
-             public void onClick(View v) {
-                 Intent intent=new Intent(mContext,SignInActivity.class);
-                 startActivity(intent);
-             }
-         });
+        main_view = (LinearLayout) findViewById(R.id.main_view);
+        omnibox = (RelativeLayout) findViewById(R.id.main_omnibox);
+        inputBox = (AutoCompleteTextView) findViewById(R.id.main_omnibox_input);
+        omniboxBookmark = (ImageButton) findViewById(R.id.main_omnibox_bookmark);
+        omniboxRefresh = (ImageButton) findViewById(R.id.main_omnibox_refresh);
+        progressBar = (ProgressBar) findViewById(R.id.main_progress_bar);
+        loginButton=(TextView) findViewById(R.id.loginButton);
+        loginButton.setTypeface(CommonUtility.typeFace_Calibri_Regular(mContext));
+        loginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(mContext,SignInActivity.class);
+                startActivity(intent);
+            }
+        });
 
         /*this is for swiping the  inputbox where it display  the title of the page on swipe*/
         /*inputBox.setOnTouchListener(new SwipeToBoundListener(omnibox, new SwipeToBoundListener.BoundCallback() {
@@ -1179,7 +1180,7 @@ public class MainActivity extends AppCompatActivity implements BrowserController
                 } else if (currentAlbumController instanceof jmmRelativeLayout) {
                     final jmmRelativeLayout layout = (jmmRelativeLayout) currentAlbumController;
                     if (layout.getFlag() == BrowserUtility.FLAG_HOME) {
-                          initHomeGrid(layout, true);
+                        initHomeGrid(layout, true);
                         return;
                     }
                     initBHList(layout, true);
@@ -1249,72 +1250,75 @@ public class MainActivity extends AppCompatActivity implements BrowserController
     }
 
     private void initBHList(final jmmRelativeLayout layout, boolean update) {
-        if (update) {
-            updateProgress(BrowserUtility.PROGRESS_MIN);
-        }
+        if(layout!=null) {
 
-        RecordAction action = new RecordAction(mContext);
-        action.open(false);
-        final List<Record> list;
-        if (layout.getFlag() == BrowserUtility.FLAG_BOOKMARKS) {
-            list = action.listBookmarks();
-            Collections.sort(list, new Comparator<Record>() {
+            if (update) {
+                updateProgress(BrowserUtility.PROGRESS_MIN);
+            }
+
+            RecordAction action = new RecordAction(mContext);
+            action.open(false);
+            final List<Record> list;
+            if (layout.getFlag() == BrowserUtility.FLAG_BOOKMARKS) {
+                list = action.listBookmarks();
+                Collections.sort(list, new Comparator<Record>() {
+                    @Override
+                    public int compare(Record first, Record second) {
+                        return first.getTitle().compareTo(second.getTitle());
+                    }
+                });
+            } else if (layout.getFlag() == BrowserUtility.FLAG_HISTORY) {
+                list = action.listHistory();
+            } else {
+                list = new ArrayList<>();
+            }
+            action.close();
+
+            ListView listView = (ListView) layout.findViewById(R.id.record_list);
+            TextView textView = (TextView) layout.findViewById(R.id.record_list_empty);
+            listView.setEmptyView(textView);
+
+            final RecordAdapter adapter = new RecordAdapter(mContext, R.layout.record_item, list, layout.getFlag());
+            listView.setAdapter(adapter);
+            adapter.notifyDataSetChanged();
+
+            /* Wait for adapter.notifyDataSetChanged() */
+            if (update) {
+                listView.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        layout.setAlbumCover(ViewUnit.capture(layout, dimen144dp, dimen108dp, false, Bitmap.Config.RGB_565));
+                        updateProgress(BrowserUtility.PROGRESS_MAX);
+                    }
+                }, shortAnimTime);
+            }
+
+            listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
-                public int compare(Record first, Record second) {
-                    return first.getTitle().compareTo(second.getTitle());
+                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    // get  the url  from  book mark  and history
+                    hideomnibox(false);
+                    updateAlbum(list.get(position).getURL());
+                    //increaseTabCount();
+                    //setTabValue();
+                    setTabValue(BrowserContainer.size());
+
+
                 }
             });
-        } else if (layout.getFlag() == BrowserUtility.FLAG_HISTORY) {
-            list = action.listHistory();
-        } else {
-            list = new ArrayList<>();
-        }
-        action.close();
 
-        ListView listView = (ListView) layout.findViewById(R.id.record_list);
-        TextView textView = (TextView) layout.findViewById(R.id.record_list_empty);
-        listView.setEmptyView(textView);
-
-        final RecordAdapter adapter = new RecordAdapter(mContext, R.layout.record_item, list, layout.getFlag());
-        listView.setAdapter(adapter);
-        adapter.notifyDataSetChanged();
-
-        /* Wait for adapter.notifyDataSetChanged() */
-        if (update) {
-            listView.postDelayed(new Runnable() {
+            listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
                 @Override
-                public void run() {
-                    layout.setAlbumCover(ViewUnit.capture(layout, dimen144dp, dimen108dp, false, Bitmap.Config.RGB_565));
-                    updateProgress(BrowserUtility.PROGRESS_MAX);
+                public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+
+                    //uncomment it to get more options about the particular link like share edit ,delete etc
+                    // on long click of bookmark  nad history;
+                    // showListMenu(adapter, list, position);
+
+                    return true;
                 }
-            }, shortAnimTime);
+            });
         }
-
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                // get  the url  from  book mark  and history
-                hideomnibox(false);
-                updateAlbum(list.get(position).getURL());
-                //increaseTabCount();
-                //setTabValue();
-                setTabValue(BrowserContainer.size());
-
-
-            }
-        });
-
-        listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
-            @Override
-            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
-
-                //uncomment it to get more options about the particular link like share edit ,delete etc
-                // on long click of bookmark  nad history;
-                // showListMenu(adapter, list, position);
-
-                return true;
-            }
-        });
     }
 
     private void initSearchPanel() {
@@ -1454,12 +1458,12 @@ public class MainActivity extends AppCompatActivity implements BrowserController
             initHomeGrid(layout, true);
             initSocialIcons(layout);
 
-             // on start of the  application
+            // on start of the  application
             setUpCricketScoreData(layout);
             setupNewsdata(layout);
 
-           AddMobUtils addMobUtils=CommonUtility.getAddMobInstance();
-           addMobUtils.dispFacebookBannerAdd(mContext, layout);
+            AddMobUtils addMobUtils=CommonUtility.getAddMobInstance();
+            addMobUtils.dispFacebookBannerAdd(mContext, layout);
 
         } else if (flag == BrowserUtility.FLAG_INCOG) {
             jmmRelativeLayout layout = (jmmRelativeLayout) getLayoutInflater().inflate(R.layout.home_incog_tab, null, false);
@@ -1516,7 +1520,9 @@ public class MainActivity extends AppCompatActivity implements BrowserController
 
             @Override
             public void onAnimationEnd(Animation animation) {
+
                 showAlbum(holder, false, true, true);
+
             }
         });
         albumView.startAnimation(animation);
@@ -1526,7 +1532,7 @@ public class MainActivity extends AppCompatActivity implements BrowserController
         if(addMobUtils!=null)
 
         {
-           // addMobUtils.dispFacebookBannerAdd(mContext, layout);
+            // addMobUtils.dispFacebookBannerAdd(mContext, layout);
         }
         if(layout!=null)
         {
@@ -1547,7 +1553,7 @@ public class MainActivity extends AppCompatActivity implements BrowserController
         changeTabsFont(mTabLayout);
         changeTabsFont(mLanguageTabLayout);
 
-       // mSwipeRefreshLayout = layout.findViewById(R.id.refreshNewsViewPager);
+        // mSwipeRefreshLayout = layout.findViewById(R.id.refreshNewsViewPager);
 
         /*today*/
         //nestedScrollView=(NestedScrollView) layout.findViewById(R.id.nesteScollView);
@@ -1565,22 +1571,29 @@ public class MainActivity extends AppCompatActivity implements BrowserController
 
         new WebCallGetNewsTask(mContext,true, mInstance).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
 
-        mPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
-            @Override
-            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-                //disablerefresh();
-            }
-
-            @Override
-            public void onPageSelected(int position) {
-                mPager.getAdapter().notifyDataSetChanged();
-
-            }
-
-            @Override
-            public void onPageScrollStateChanged(int state) {
-            }
-        });
+//        mPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+//            @Override
+//            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+//                //disablerefresh();
+//
+//            }
+//
+//            @Override
+//            public void onPageSelected(int position) {
+//                try {
+//                    Objects.requireNonNull(mPager.getAdapter()).notifyDataSetChanged();
+//                }catch (IllegalArgumentException iae){
+//                    iae.printStackTrace();
+//                }catch (Exception ex){
+//                    ex.printStackTrace();
+//                }
+//                //Toast.makeText(MainActivity.this,   "On Page Selected", Toast.LENGTH_SHORT).show();
+//            }
+//
+//            @Override
+//            public void onPageScrollStateChanged(int state) {
+//            }
+//        });
 
 
         mLanguageTabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
@@ -1597,8 +1610,11 @@ public class MainActivity extends AppCompatActivity implements BrowserController
                     mPager.setOffscreenPageLimit(2);
                     mTabLayout.setupWithViewPager(mPager);
                     changeTabsFont(mTabLayout);
-                }catch (Exception e)
-                {}
+
+                }catch (Exception ex)
+                {
+                    ex.printStackTrace();
+                }
             }
 
             @Override
@@ -1680,7 +1696,7 @@ public class MainActivity extends AppCompatActivity implements BrowserController
 
             if(newsTabsLLayout!=null)
 
-            newsTabsLLayout.setVisibility(View.VISIBLE);
+                newsTabsLLayout.setVisibility(View.VISIBLE);
 
             if (obj.has("newsData")) {
                 try {
@@ -1688,34 +1704,34 @@ public class MainActivity extends AppCompatActivity implements BrowserController
                     newsSuperParentModelArrayList=new ArrayList<>();
                     //prefJsonNewsCategoryListHolder=new ArrayList();
                     mLanguageTabLayout.removeAllTabs();
-                 for(int j=0;j<newsDataArray.length();j++)   {
-                     // parent loop
-                      NewsSuperParentModel newsSuperParentModel=new NewsSuperParentModel();
-                      JSONObject categoryObj = newsDataArray.getJSONObject(j);
-                      String languageCode=JsonParser.getkeyValue_Str(categoryObj, "languageCode");
-                      String languageName=JsonParser.getkeyValue_Str(categoryObj, "languageName");
+                    for(int j=0;j<newsDataArray.length();j++)   {
+                        // parent loop
+                        NewsSuperParentModel newsSuperParentModel=new NewsSuperParentModel();
+                        JSONObject categoryObj = newsDataArray.getJSONObject(j);
+                        String languageCode=JsonParser.getkeyValue_Str(categoryObj, "languageCode");
+                        String languageName=JsonParser.getkeyValue_Str(categoryObj, "languageName");
 
-                      newsSuperParentModel.setLanguageCode(languageCode);
-                      newsSuperParentModel.setLanguageName(languageName);
+                        newsSuperParentModel.setLanguageCode(languageCode);
+                        newsSuperParentModel.setLanguageName(languageName);
 
-                      //new
-                     if (categoryObj.has("category")) {
+                        //new
+                        if (categoryObj.has("category")) {
 
-                         JSONArray categoryJsonArray = new JSONArray(JsonParser.getkeyValue_Str(categoryObj, "category"));
-                         /*******************Category List************************************/
-                         ArrayList<NewsMainModel>  newsMainModelList = new ArrayList<>();
-                         //newsMainModelList2 = new ArrayList<>();
-                         //prefJsonNewsCategoryList = new ArrayList<NewsCategoryModel>();
+                            JSONArray categoryJsonArray = new JSONArray(JsonParser.getkeyValue_Str(categoryObj, "category"));
+                            /*******************Category List************************************/
+                            ArrayList<NewsMainModel>  newsMainModelList = new ArrayList<>();
+                            //newsMainModelList2 = new ArrayList<>();
+                            //prefJsonNewsCategoryList = new ArrayList<NewsCategoryModel>();
 
-                         for (int i = 0; i < categoryJsonArray.length(); i++) {
-                             JSONObject categoryJson = categoryJsonArray.getJSONObject(i);
-                             //Log.e("CategoryJson", categoryJson+"");
+                            for (int i = 0; i < categoryJsonArray.length(); i++) {
+                                JSONObject categoryJson = categoryJsonArray.getJSONObject(i);
+                                //Log.e("CategoryJson", categoryJson+"");
 
-                             NewsMainModel newsMainModel = new NewsMainModel();
-                             String categoryName = categoryJson.getString("categoryName");
-                             String categoryCode  = categoryJson.getString("categoryCode");
-                             newsMainModel.setCategoryName(categoryName);
-                             newsMainModel.setCategoryId(categoryCode );
+                                NewsMainModel newsMainModel = new NewsMainModel();
+                                String categoryName = categoryJson.getString("categoryName");
+                                String categoryCode  = categoryJson.getString("categoryCode");
+                                newsMainModel.setCategoryName(categoryName);
+                                newsMainModel.setCategoryId(categoryCode );
 
                            /*  // Start Save prefrence News Category List
                              if (i != 0) {
@@ -1724,57 +1740,57 @@ public class MainActivity extends AppCompatActivity implements BrowserController
                              }
                              // End Save prefrence News Category List*/
 
-                             /*******************News List************************************/
-                             if (categoryJson.has("newsList")) {
-                                 ArrayList<NewsList> newsArrayList = new ArrayList<>();
-                                 JSONArray newsListArray = new JSONArray(JsonParser.getkeyValue_Str(categoryJson, "newsList"));
-                                 for (int k = 0; k < newsListArray.length(); k++) {
-                                     NewsList newsListModel = new NewsList();
-                                     JSONObject newsListObj = newsListArray.getJSONObject(k);
-                                     //Log.e("newsListObj ", newsListObj+"");
-                                     String title = newsListObj.getString("title");
-                                     String canonicalUrl = newsListObj.getString("canonical_url");
-                                     String imageUrl = newsListObj.getString("image_url");
+                                /*******************News List************************************/
+                                if (categoryJson.has("newsList")) {
+                                    ArrayList<NewsList> newsArrayList = new ArrayList<>();
+                                    JSONArray newsListArray = new JSONArray(JsonParser.getkeyValue_Str(categoryJson, "newsList"));
+                                    for (int k = 0; k < newsListArray.length(); k++) {
+                                        NewsList newsListModel = new NewsList();
+                                        JSONObject newsListObj = newsListArray.getJSONObject(k);
+                                        //Log.e("newsListObj ", newsListObj+"");
+                                        String title = newsListObj.getString("title");
+                                        String canonicalUrl = newsListObj.getString("canonical_url");
+                                        String imageUrl = newsListObj.getString("image_url");
 
-                                     newsListModel.setTitle(title);
-                                     newsListModel.setCanonicalUrl(canonicalUrl);
-                                     newsListModel.setImageUrl(imageUrl);
+                                        newsListModel.setTitle(title);
+                                        newsListModel.setCanonicalUrl(canonicalUrl);
+                                        newsListModel.setImageUrl(imageUrl);
 
-                                     newsArrayList.add(newsListModel);
+                                        newsArrayList.add(newsListModel);
 
-                                 }
-                                 newsMainModel.setNewsList(newsArrayList);
-                             }
-                             newsMainModelList.add(newsMainModel);
-                         }
+                                    }
+                                    newsMainModel.setNewsList(newsArrayList);
+                                }
+                                newsMainModelList.add(newsMainModel);
+                            }
 
 
 
-                         //newsMainModelList.addAll(newsMainModelList2);
+                            //newsMainModelList.addAll(newsMainModelList2);
 
-                         newsSuperParentModel.setCategoryList(newsMainModelList);
-                         newsSuperParentModelArrayList.add(newsSuperParentModel);
+                            newsSuperParentModel.setCategoryList(newsMainModelList);
+                            newsSuperParentModelArrayList.add(newsSuperParentModel);
 
-                         mLanguageTabLayout.addTab(mLanguageTabLayout.newTab().setText(languageName));
+                            mLanguageTabLayout.addTab(mLanguageTabLayout.newTab().setText(languageName));
 
-                     }
-                     /*allow user to pick the preferred category for the perticular language*/
-                    // prefJsonNewsCategoryListHolder.add(prefJsonNewsCategoryList);
-                 }
+                        }
+                        /*allow user to pick the preferred category for the perticular language*/
+                        // prefJsonNewsCategoryListHolder.add(prefJsonNewsCategoryList);
+                    }
 
-                   if(newsSuperParentModelArrayList.size()==1)
-                   {
-                       mLanguageTabLayout.setVisibility(View.GONE);
-                       //final NewsViewPagerAdapter adapter = new NewsViewPagerAdapter(getSupportFragmentManager(), newsMainModelList.size(), newsMainModelList, mInstance);
-                       final NewsViewPagerAdapter adapter = new NewsViewPagerAdapter(getSupportFragmentManager(), newsSuperParentModelArrayList.get(0).getCategoryList().size(), newsSuperParentModelArrayList.get(0).getCategoryList(), mInstance);
-                       mPager.setAdapter(adapter);
-                       //mPager.setCurrentItem(0);
-                       mPager.setCurrentItem(currentPosition);
-                       mPager.setOffscreenPageLimit(2);
-                       mTabLayout.setupWithViewPager(mPager);
-                       changeTabsFont(mTabLayout);
+                    if(newsSuperParentModelArrayList.size()==1)
+                    {
+                        mLanguageTabLayout.setVisibility(View.GONE);
+                        //final NewsViewPagerAdapter adapter = new NewsViewPagerAdapter(getSupportFragmentManager(), newsMainModelList.size(), newsMainModelList, mInstance);
+                        final NewsViewPagerAdapter adapter = new NewsViewPagerAdapter(getSupportFragmentManager(), newsSuperParentModelArrayList.get(0).getCategoryList().size(), newsSuperParentModelArrayList.get(0).getCategoryList(), mInstance);
+                        mPager.setAdapter(adapter);
+                        //mPager.setCurrentItem(0);
+                        mPager.setCurrentItem(currentPosition);
+                        mPager.setOffscreenPageLimit(2);
+                        mTabLayout.setupWithViewPager(mPager);
+                        changeTabsFont(mTabLayout);
 
-                   }
+                    }
                     saveLastSuccessRequestTime();
                 } catch (JSONException e) {
                     String string=e.getMessage();
@@ -2209,7 +2225,7 @@ public class MainActivity extends AppCompatActivity implements BrowserController
             }
             else if (status.equalsIgnoreCase("false")  )
             {
-                Log.e("status" , status);
+                Log.e("status" , ""+status);
                 String msg=JsonParser.getkeyValue_Str(jsonObject, "message");
                 if(msg!=null)
                     jmmToast.show(mContext, msg);
@@ -2302,7 +2318,7 @@ public class MainActivity extends AppCompatActivity implements BrowserController
                             }
                     }
 
-                   // dispFbInteresTialAdds();
+                    // dispFbInteresTialAdds();
 
                     hideomnibox(false);
                 }
@@ -2403,13 +2419,13 @@ public class MainActivity extends AppCompatActivity implements BrowserController
             scrollView.setLayoutParams(new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, (int)ViewUnit.dp2px(mContext, 150)));
 
         }
-          else  if(numRows==1 && flowLayout.getChildCount()==7)
+        else  if(numRows==1 && flowLayout.getChildCount()==7)
         {
             ScrollView scrollView=layout.findViewById(R.id.dweb);
             scrollView.setLayoutParams(new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,RelativeLayout.LayoutParams.WRAP_CONTENT));
 
         }
-          else if(numRows==1 && flowLayout.getChildCount()>7)
+        else if(numRows==1 && flowLayout.getChildCount()>7)
         {
             ScrollView scrollView=layout.findViewById(R.id.dweb);
             scrollView.setLayoutParams(new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, (int)ViewUnit.dp2px(mContext, 150)));
@@ -2719,8 +2735,16 @@ public class MainActivity extends AppCompatActivity implements BrowserController
 
         currentAlbumController.activate();
 
-        switcherScroller.smoothScrollTo(currentAlbumController.getAlbumView().getLeft(), 0);
+        try {
+            switcherScroller.smoothScrollTo(currentAlbumController.getAlbumView().getLeft(), 0);
+        }catch (NullPointerException nex ){
+            nex.printStackTrace();
+        }catch (Exception  ex ){
+            ex.printStackTrace();
+        }
+
         updateOmnibox();
+
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -2807,7 +2831,7 @@ public class MainActivity extends AppCompatActivity implements BrowserController
         //setUpCricketScoreData(layout);
         setCricketDataOnHomeClick(layout,gloablCricketScoreJson);
         if(globalJonsData!=null)
-        setupNewsdataOnHomeClick(layout,globalJonsData);
+            setupNewsdataOnHomeClick(layout,globalJonsData);
 
 
         showAlbum(currentAlbumController, false, false, false);   //new
@@ -2859,8 +2883,8 @@ public class MainActivity extends AppCompatActivity implements BrowserController
         if (currentAlbumController == null) {
             return;
         }
-           boolean st1=BrowserUtility.isUrlBlocked(mContext,prefs,url);
-           System.out.print(""+st1);
+        boolean st1=BrowserUtility.isUrlBlocked(mContext,prefs,url);
+        System.out.print(""+st1);
         if(BrowserUtility.isUrlBlocked(mContext,prefs,url))
         {
             jmmToast.show(mContext, mContext.getString(R.string.blocked_url));
@@ -3039,7 +3063,7 @@ public class MainActivity extends AppCompatActivity implements BrowserController
                 startActivity(new Intent(DownloadManager.ACTION_VIEW_DOWNLOADS));
                 dialog.dismiss();
 
-               // boolean dstatus=CommonUtility.checkOrCreateDownloadDirectory(mContext);
+                // boolean dstatus=CommonUtility.checkOrCreateDownloadDirectory(mContext);
 
             /*    if(dstatus) {
                     Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
@@ -3347,11 +3371,22 @@ public class MainActivity extends AppCompatActivity implements BrowserController
             @Override
             public void onClick(View view) {
                 dismissCustDialog(dialog);
-                Intent defaultSetingsIntent = new Intent(Settings.ACTION_MANAGE_DEFAULT_APPS_SETTINGS);
-                startActivity(defaultSetingsIntent);
-                jmmToast.show(mContext, R.string.default_set_msg);
-
-
+                try{
+                    Intent defaultSetingsIntent = null;//ss
+                    if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
+                        defaultSetingsIntent = new Intent(Settings.ACTION_MANAGE_DEFAULT_APPS_SETTINGS);
+                    }
+                    startActivity(defaultSetingsIntent);
+                    jmmToast.show(mContext, getResources().getString(R.string.default_set_msg));
+                }
+                catch (ActivityNotFoundException e)
+                {
+                    jmmToast.show(mContext, getResources().getString(R.string.default_browser_error));
+                }
+                catch (Exception ex)
+                {
+                    ex.printStackTrace();
+                }
             }
         });
 
@@ -3434,7 +3469,7 @@ public class MainActivity extends AppCompatActivity implements BrowserController
                                 @Override
                                 public void onSuccess(InstanceIdResult instanceIdResult) {
                                     fcm_Token = instanceIdResult.getToken();
-                                    Log.e("New Token : ", fcm_Token);
+                                    Log.e("New Token : ", ""+fcm_Token);
 
                                     if (CommonUtility.checkIsOnline(mContext)) {
                                         Log.e("Network is available ", "PushNotification Called");
@@ -3536,10 +3571,10 @@ public class MainActivity extends AppCompatActivity implements BrowserController
         protected String doInBackground(String... strings) {
 
             try {
-                Log.e("deviceId ", deviceID);
-                Log.e("deviceName ", nameOfDevice);
-                Log.e("fcmToken ", fcm_Token);
-                Log.e("appVer ", appVersionName);
+                Log.e("deviceId ", ""+deviceID);
+                Log.e("deviceName ", ""+nameOfDevice);
+                Log.e("fcmToken ", ""+fcm_Token);
+                Log.e("appVer ", ""+appVersionName);
 
                 JSONObject requestObj = CommonUtility.prepareFcmJsonRequest(mContext, deviceID, nameOfDevice, fcm_Token , appVersionName);
                 return OkhttpMethods.CallApi(mContext, CommonUtility.API_PUSH_NOTIFICATION, requestObj.toString());
@@ -3555,7 +3590,7 @@ public class MainActivity extends AppCompatActivity implements BrowserController
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
 
-           // Log.e("Push Json Response ", s);
+            // Log.e("Push Json Response ", s);
 
             if (prefs != null)
             {
@@ -3726,7 +3761,7 @@ public class MainActivity extends AppCompatActivity implements BrowserController
             // if got the location successfully stop  the service
             if(resultCode==2)
             {
-                  stopCallingService=true;
+                stopCallingService=true;
 
                 String currentAdd = resultData.getString("address_result");// save the location in prefs  to  send in api
                 String currentCity = resultData.getString("city");// save the location in prefs  to  send in api
@@ -3762,19 +3797,18 @@ public class MainActivity extends AppCompatActivity implements BrowserController
             intent.putExtra("add_location", currentLocation);
             startService(intent);*/
 
-               if(Build.VERSION.SDK_INT>=26) {
-                   Intent intent = new Intent(this, getAddressJobIntentService.class);
-                   intent.putExtra("add_receiver", addressResultReceiver);
-                   intent.putExtra("add_location", currentLocation);
-                   getAddressJobIntentService.enqueueWork(mContext, intent);
-               }
-               else
-               {
-                   Intent intent = new Intent(this, GetAddressIntentService.class);
-                   intent.putExtra("add_receiver", addressResultReceiver);
-                   intent.putExtra("add_location", currentLocation);
-                   startService(intent);
-               }
+            if(Build.VERSION.SDK_INT>=26) {
+                Intent intent = new Intent(this, getAddressJobIntentService.class);
+                intent.putExtra("add_receiver", addressResultReceiver);
+                intent.putExtra("add_location", currentLocation);
+                getAddressJobIntentService.enqueueWork(mContext, intent);
+            }
+            else {
+                    Intent intent = new Intent(this, GetAddressIntentService.class);
+                    intent.putExtra("add_receiver", addressResultReceiver);
+                    intent.putExtra("add_location", currentLocation);
+                    startService(intent);
+            }
 
 
 
@@ -3782,8 +3816,8 @@ public class MainActivity extends AppCompatActivity implements BrowserController
 
         }catch (Exception e )
         {
-             String string = e.getMessage();
-             System.out.print(""+string);
+            String string = e.getMessage();
+            System.out.print(""+string);
         }
 
     }
@@ -3811,8 +3845,8 @@ public class MainActivity extends AppCompatActivity implements BrowserController
 
         }catch (Exception e)
         {
-               String string = e.getMessage();
-               System.out.print(""+string);
+            String string = e.getMessage();
+            System.out.print(""+string);
         }
 
     }
@@ -3832,8 +3866,8 @@ public class MainActivity extends AppCompatActivity implements BrowserController
             }
         }catch (Exception e)
         {
-               String string = e.getMessage();
-               System.out.print(""+string);
+            String string = e.getMessage();
+            System.out.print(""+string);
         }
 
     }
@@ -4073,13 +4107,13 @@ public class MainActivity extends AppCompatActivity implements BrowserController
             switcherContainer.removeView(controller.getAlbumView());
             BrowserContainer.remove(controller);
             addAlbum(BrowserUtility.FLAG_HOME);
-               // decreaseTabCount();
+            // decreaseTabCount();
             return;
         }
         if (controller != currentAlbumController) {
             switcherContainer.removeView(controller.getAlbumView());
             BrowserContainer.remove(controller);
-                //decreaseTabCount();
+            //decreaseTabCount();
         } else {
             switcherContainer.removeView(controller.getAlbumView());
             int index = BrowserContainer.indexOf(controller);
@@ -4089,7 +4123,7 @@ public class MainActivity extends AppCompatActivity implements BrowserController
             }
             showAlbum(BrowserContainer.get(index), false, false, false);
 
-             //decreaseTabCount();
+            //decreaseTabCount();
         }
     }
 
@@ -4407,22 +4441,24 @@ public class MainActivity extends AppCompatActivity implements BrowserController
                 if (s.equals(getString(R.string.main_menu_new_tab))) { // New tab
                     addAlbum(getString(R.string.album_untitled), target, false, null);
                     jmmToast.show(mContext, R.string.toast_new_tab_successful);
-                   // increaseTabCount();
+                    // increaseTabCount();
                     setTabValue(BrowserContainer.size());
                 } else if (s.equals(getString(R.string.main_menu_copy_link))) { // Copy link
                     BrowserUtility.copyURL(mContext, target);
                 } else if (s.equals(getString(R.string.main_menu_download))) { // Save
                     //BrowserUtility.download(mContext, target, target, BrowserUtility.MIME_TYPE_IMAGE);
 
-                   // DownLoadUtility downLoadUtility=new DownLoadUtility(mContext);
-                   // downLoadUtility.download(mContext, target, target, BrowserUtility.MIME_TYPE_IMAGE);
+                    // DownLoadUtility downLoadUtility=new DownLoadUtility(mContext);
+                    // downLoadUtility.download(mContext, target, target, BrowserUtility.MIME_TYPE_IMAGE);
 
                     startAndBindDownloadService();
 
-                    if(downloadBinder!=null) {
-                     downloadBinder.startDownload(mContext, target, 0);
-                     //downloadBinder.startDownload("http://bdigimedia.com/development/callrecorder/Screenshot_20200114-144304.png", 0);
-                 }
+                    if(CommonUtility.isWriteStoragePermissionGranted(MainActivity.this)){
+                        if(downloadBinder!=null) {
+                            downloadBinder.startDownload(mContext, target, 0);
+                            //downloadBinder.startDownload("http://bdigimedia.com/development/callrecorder/Screenshot_20200114-144304.png", 0);
+                        }
+                    }
                 }
 
                 dialog.hide();
@@ -4835,7 +4871,7 @@ public class MainActivity extends AppCompatActivity implements BrowserController
                     action.deleteGridItem(gridItem);
                     action.close();
                     mContext.deleteFile(gridItem.getFilename());
-               initHomeGrid((jmmRelativeLayout) currentAlbumController, true);
+                    initHomeGrid((jmmRelativeLayout) currentAlbumController, true);
                     jmmToast.show(mContext, R.string.toast_delete_successful);
                 }
 

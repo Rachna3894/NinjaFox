@@ -20,6 +20,14 @@ public class MyApplication  extends android.support.multidex.MultiDexApplication
     public void onCreate() {
         super.onCreate();
 
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+
+            String processName = getProcessName(this);
+            Log.d("ProcessName", processName);
+            if (!"com.mojodigi.ninjafox".equals(processName)) {
+                WebView.setDataDirectorySuffix(processName);
+            }
+        }
 
         PRDownloaderConfig dconfig = PRDownloaderConfig.newBuilder()
                 .setDatabaseEnabled(true)
@@ -29,20 +37,10 @@ public class MyApplication  extends android.support.multidex.MultiDexApplication
         //Api key in appMetrica Dashboard settings  is tracking key--
         YandexMetricaConfig config = YandexMetricaConfig.newConfigBuilder(CommonUtility.APPMETRICA_KEY).build();
         // Initializing the AppMetrica SDK.
-        YandexMetrica.activate(getApplicationContext(), config);   // uncommnet  it
+         YandexMetrica.activate(getApplicationContext(), config);   // uncommnet  it
         // Automatic tracking of user activity.
-        YandexMetrica.enableActivityAutoTracking(this);   // uncommnet  it
+         YandexMetrica.enableActivityAutoTracking(this);   // uncommnet  it
 
-        //App mertrica sdk
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
-
-            String processName = getProcessName(this);
-            Log.d("ProcessName", processName);
-            if (!"com.mojodigi.ninjafox".equals(processName)) {
-                WebView.setDataDirectorySuffix(processName);
-            }
-
-        }
 
         //for fb adds
         //https://developers.facebook.com/docs/audience-network/reference/android/com/facebook/ads/audiencenetworkads.html/

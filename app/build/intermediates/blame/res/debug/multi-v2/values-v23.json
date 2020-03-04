@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "G:\\LiveFileHunt Backup\\NinjaFox\\Live 10-02-2020\\NinjaFox\\JmmBrowser\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
+            "outputFile": "D:\\StudioProjects\\NinjaFox\\JmmBrowser\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\user55\\.gradle\\caches\\transforms-2\\files-2.1\\6d1ac33fa7bf63a59abf96edc65f6fce\\cardview-v7-28.0.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\JMM\\.gradle\\caches\\transforms-2\\files-2.1\\6d1ac33fa7bf63a59abf96edc65f6fce\\cardview-v7-28.0.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\user55\\.gradle\\caches\\transforms-2\\files-2.1\\b320a443effd06c78f4f9e5ddfe89b1a\\appcompat-v7-28.0.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\JMM\\.gradle\\caches\\transforms-2\\files-2.1\\b320a443effd06c78f4f9e5ddfe89b1a\\appcompat-v7-28.0.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",

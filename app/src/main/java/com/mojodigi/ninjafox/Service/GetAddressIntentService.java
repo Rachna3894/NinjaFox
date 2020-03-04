@@ -27,23 +27,24 @@ public class GetAddressIntentService extends IntentService {
     protected void onHandleIntent(@Nullable Intent intent) {
         String msg = "";
         //get result receiver from intent
-        addressResultReceiver = intent.getParcelableExtra("add_receiver");
-
+        if (intent != null) {
+            addressResultReceiver = intent.getParcelableExtra("add_receiver");
+        }
         /*if(shouldStop)
         {
             stopSelf();
             return;
         }*/
-
-
         if (addressResultReceiver == null) {
             Log.e("GetAddressIntentService",
                     "No receiver, not processing the request further");
             return;
         }
 
-
-        Location location = intent.getParcelableExtra("add_location");
+        Location location = null;
+        if (intent != null) {
+            location = intent.getParcelableExtra("add_location");
+        }
 
         //send no location error to results receiver
         if (location == null) {

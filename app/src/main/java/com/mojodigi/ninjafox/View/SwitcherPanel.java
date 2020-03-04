@@ -289,6 +289,7 @@ public class SwitcherPanel extends ViewGroup {
         }
     }
 
+
     @Override
     protected void onLayout(boolean change, int l, int t, int r, int b) {
         int paddingLeft = getPaddingLeft();
@@ -429,20 +430,24 @@ public class SwitcherPanel extends ViewGroup {
                 && event.getRawY() <= bottom;
     }
 
+
+
     public void expanded() {
-        smoothSlideTo(1f);
-        status = Status.EXPANDED;
+        try {
+            smoothSlideTo(1f);
+            status = Status.EXPANDED;
+        }catch (NullPointerException nex){
+            nex.printStackTrace();
+        }catch (Exception ex){
+            ex.printStackTrace();
+        }
     }
 
     public void collapsed() {
-
         // uncomment the code to  enable  the scroll down of the  search bar  (url  box)
-
         switcherView.setEnabled(true);
         smoothSlideTo(0f);
         status = Status.COLLAPSED;
-
-
     }
 
     private void fling(int top) {
@@ -488,16 +493,21 @@ public class SwitcherPanel extends ViewGroup {
     }
 
     private boolean smoothSlideTo(float slideOffset) {
-        if (!isEnabled()) {
-            return false;
-        }
+        try{
+            if (!isEnabled()) {
+                return false;
+            }
 
-        int top = computeTopPosition(slideOffset);
-        if (dragHelper.smoothSlideViewTo(mainView, mainView.getLeft(), top)) {
-            ViewCompat.postInvalidateOnAnimation(this);
-            return true;
+            int top = computeTopPosition(slideOffset);
+            if (dragHelper.smoothSlideViewTo(mainView, mainView.getLeft(), top)) {
+                ViewCompat.postInvalidateOnAnimation(this);
+                return true;
+            }
+        }catch (NullPointerException nex){
+            nex.printStackTrace();
+        }catch (Exception ex){
+            ex.printStackTrace();
         }
-
         return false;
     }
 

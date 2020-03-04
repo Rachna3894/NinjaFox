@@ -61,9 +61,9 @@ public class ApiRequestTask extends AsyncTask<String,String,String>{
             {
                 return  OkhttpMethods.CallApi(mContext, url, postJson);
             }
-        } catch (Exception e) {
-            e.printStackTrace();
-            return ""+e.getMessage();
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            return ""+ex.getMessage();
         }
     }
     @Override
@@ -86,7 +86,9 @@ public class ApiRequestTask extends AsyncTask<String,String,String>{
                 if (dispProgress && msg != null) {
                     CustomProgressDialog.dismiss();
                 }
-            }catch (Exception e){}
+            }catch (Exception e){
+
+            }
 
         }
     }

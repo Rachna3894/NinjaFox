@@ -159,6 +159,7 @@ public class CompleteAdapter extends BaseAdapter implements Filterable {
 
     @Override
     public Object getItem(int position) {
+
         return resultList.get(position);
     }
 
@@ -182,8 +183,6 @@ public class CompleteAdapter extends BaseAdapter implements Filterable {
             holder = (Holder) view.getTag();
         }
      try {
-
-
          CompleteItem item = resultList.get(position);
          holder.titleView.setText(item.getTitle());
          if (item.getURL() != null) {

@@ -31,14 +31,16 @@ public class NewsViewPagerAdapter extends FragmentStatePagerAdapter {
         return new NewsFragment().newInstance(parentList  , position , mainActivity);
     }
 
+
+
     @Override
     public int getItemPosition(@NonNull Object object) {
         return POSITION_NONE;
     }
 
+
     @Override
     public int getCount() {
-
         return mNumOfTabs;
     }
 

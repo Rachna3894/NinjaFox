@@ -14,6 +14,7 @@ import java.util.List;
 
 
 public class DialogAdapter extends ArrayAdapter<String> {
+
     private Context context;
     private int layoutResId;
     private List<String> list;

@@ -49,7 +49,7 @@ public class ScreenshotTask extends AsyncTask<Void, Void, Boolean> {
         try {
             Bitmap bitmap = ViewUnit.capture(webView, windowWidth, contentHeight, false, Bitmap.Config.ARGB_8888);
             path = BrowserUtility.screenshot(context, bitmap, title);
-        } catch (Exception e) {
+        } catch (Exception ex) {
             path = null;
         }
         return path != null && !path.isEmpty();

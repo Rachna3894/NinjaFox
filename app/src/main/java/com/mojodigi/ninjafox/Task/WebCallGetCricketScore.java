@@ -52,7 +52,7 @@ public class WebCallGetCricketScore extends AsyncTask<String,String,String>{
     @Override
     protected void onPostExecute(String s) {
         super.onPostExecute(s);
-        Log.e("JsonResponse", s);
+        //Log.e("JsonResponse", s);
 
         try {
             int responseCode = addprefs.getIntValue(CommonUtility.API_RESPONSE_CODE_GET_NEWS, 0);

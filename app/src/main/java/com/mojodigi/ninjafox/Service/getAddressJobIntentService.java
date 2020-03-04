@@ -37,14 +37,12 @@ public class getAddressJobIntentService extends JobIntentService {
     protected void onHandleWork(@NonNull Intent intent) {
         // We have received work to do.  The system or framework is already
         // holding a wake lock for us at this point, so we can just go.
-
         // Log.d(TAG, "Start LockScreenService called in JobService >= 26 ->>");
-        //dow your work here
-
-
         String msg = "";
         //get result receiver from intent
-        addressResultReceiver = intent.getParcelableExtra("add_receiver");
+        if(intent != null) {
+            addressResultReceiver = intent.getParcelableExtra("add_receiver");
+        }
         if (addressResultReceiver == null) {
             Log.e("GetAddressIntentService",
                     "No receiver, not processing the request further");

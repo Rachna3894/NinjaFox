@@ -19,6 +19,7 @@ import java.util.List;
 
 
 public class GridAdapter extends BaseDynamicGridAdapter {
+
     private static class Holder {
         TextView title;
         ImageView cover;

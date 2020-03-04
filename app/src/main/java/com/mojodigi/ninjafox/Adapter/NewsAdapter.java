@@ -1,7 +1,9 @@
 package com.mojodigi.ninjafox.Adapter;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 
+import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -40,21 +42,16 @@ public class NewsAdapter  extends RecyclerView.Adapter<RecyclerView.ViewHolder>
 
     public NewsAdapter(Context ctx ) {
         this.ctx=ctx;
-
     }
 
-    public NewsAdapter( Context ctx ,  List<NewsList> newsList) {
-        this.newsList = newsList;
-        this.ctx=ctx;
-
-    }
 
     public NewsAdapter(Context ctx , List<NewsList> newsList, newsListener listener ) {
         this.newsList = newsList;
         this.listener = listener;
         this.ctx=ctx;
-
     }
+
+    @NonNull
     @Override
     public  RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View  itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.news_item_view, parent, false);
@@ -63,26 +60,26 @@ public class NewsAdapter  extends RecyclerView.Adapter<RecyclerView.ViewHolder>
     }
 
 
+    @SuppressLint("SetTextI18n")
     @Override
-    public void onBindViewHolder(final RecyclerView.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull final RecyclerView.ViewHolder holder, int position) {
 
         try {
             ((NewsViewHolder) holder).newsTitle.setText(newsList.get(position).getTitle() + "");
             ((NewsViewHolder) holder).newsTitle.setSelected(true);
-            ((NewsViewHolder) holder).newsTitle.setTypeface(CommonUtility.typeFace_Calibri_Regular(ctx));
+            //((NewsViewHolder) holder).newsTitle.setTypeface(CommonUtility.typeFace_Calibri_Regular(ctx));
             ((NewsViewHolder) holder).newsTitle.requestFocus();
 
             String imagePath = newsList.get(position).getImageUrl();
-
             if (imagePath != null) {
                 Glide.with(ctx).load(imagePath)
                         .diskCacheStrategy(DiskCacheStrategy.ALL).priority(Priority.IMMEDIATE)
                         .skipMemoryCache(false).placeholder(R.drawable.image_holder).error(R.drawable.image_holder)
                         .into(((NewsViewHolder) holder).newsIcon);
             }
-        }catch (Exception e)
+        }catch (Exception ex)
         {
-            e.printStackTrace();
+            ex.printStackTrace();
         }
     }
 
@@ -103,6 +100,12 @@ public class NewsAdapter  extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         public NewsViewHolder(View view) {
             super(view);
             newsTitle = (TextView) view.findViewById(R.id.newsTitle);
+            try {
+                newsTitle.setTypeface(CommonUtility.typeFace_Calibri_Regular(ctx));
+            }catch (Exception ex)
+            {
+                ex.printStackTrace();
+            }
             newsIcon=(ImageView)view.findViewById(R.id.newsIcon);
 
 

@@ -17,6 +17,7 @@ import com.mojodigi.ninjafox.DownlaodModule.DownloadBinder;
 import com.mojodigi.ninjafox.DownlaodModule.DownloadService;
 import com.mojodigi.ninjafox.R;
 import com.mojodigi.ninjafox.Unit.BrowserUtility;
+import com.mojodigi.ninjafox.Unit.CommonUtility;
 import com.mojodigi.ninjafox.Unit.IntentUtility;
 
 import static android.content.Context.BIND_AUTO_CREATE;
@@ -74,8 +75,10 @@ public class jmmDownloadListener implements DownloadListener {
             //BrowserUtility.download(context, url, contentDisposition, mimeType);
             //DownLoadUtility downLoadUtility=new DownLoadUtility(context);
             //downLoadUtility.download(context, url, contentDisposition, mimeType);
-            if(downloadBinder!=null) {
-                downloadBinder.startDownload(context,url, 0);
+            if(CommonUtility.isWriteStoragePermissionGranted((Activity) context)) {
+                if (downloadBinder != null) {
+                    downloadBinder.startDownload(context, url, 0);
+                }
             }
             return;
         }
@@ -94,8 +97,10 @@ public class jmmDownloadListener implements DownloadListener {
                // DownLoadUtility downLoadUtility=new DownLoadUtility(holder);
                 //downLoadUtility.download(holder, url, contentDisposition, mimeType);
 
-                if(downloadBinder!=null) {
-                    downloadBinder.startDownload(context,url, 0);
+                if(CommonUtility.isWriteStoragePermissionGranted((Activity) context)) {
+                    if (downloadBinder != null) {
+                        downloadBinder.startDownload(context, url, 0);
+                    }
                 }
             }
         });

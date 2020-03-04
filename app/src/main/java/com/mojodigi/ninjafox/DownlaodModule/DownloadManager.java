@@ -126,7 +126,7 @@ public class DownloadManager extends AsyncTask<String, Integer, Integer> {
             }
         }catch(IOException ex)
         {
-            Log.e(DownloadUtil.TAG_DOWNLOAD_MANAGER, ex.getMessage(), ex);
+            Log.e(DownloadUtil.TAG_DOWNLOAD_MANAGER, ""+ex.getMessage(), ex);
         }finally {
             return ret;
         }

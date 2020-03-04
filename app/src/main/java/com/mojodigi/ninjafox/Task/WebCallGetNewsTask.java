@@ -64,9 +64,9 @@ public class WebCallGetNewsTask extends AsyncTask<String, String, String> {
                      return OkhttpMethods.CallApiGetMethodCached(mContext, CommonUtility.API_URL_STATE_NEWS_DATA + location);
             }
 
-        } catch (Exception e) {
-            e.printStackTrace();
-            return "" + e.getMessage();
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            return "" + ex.getMessage();
         }
     }
 
@@ -74,7 +74,7 @@ public class WebCallGetNewsTask extends AsyncTask<String, String, String> {
     @Override
     protected void onPostExecute(String s) {
         super.onPostExecute(s);
-        Log.e("JsonResponse", s);
+        //Log.e("JsonResponse", s);
         try {
             int responseCode = addprefs.getIntValue(CommonUtility.API_RESPONSE_CODE_GET_NEWS, 0);
             if (s != null && responseCode == 200) {

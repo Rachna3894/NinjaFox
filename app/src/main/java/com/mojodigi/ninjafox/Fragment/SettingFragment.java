@@ -180,12 +180,12 @@ public class SettingFragment extends PreferenceFragment implements SharedPrefere
             public boolean onPreferenceClick(Preference preference) {
 
                 try {
-
                     Intent defaultSetingsIntent = new Intent(Settings.ACTION_MANAGE_DEFAULT_APPS_SETTINGS);
                     //  startActivityForResult(callGPSSettingIntent,100);
                     startActivity(defaultSetingsIntent);
                     jmmToast.show(getActivity(), R.string.default_set_msg);
                 }
+
                 catch (ActivityNotFoundException e)
                 {
                     jmmToast.show(getActivity(), getActivity().getResources().getString(R.string.default_browser_error));

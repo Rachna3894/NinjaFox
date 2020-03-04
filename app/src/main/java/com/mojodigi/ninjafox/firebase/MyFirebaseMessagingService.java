@@ -79,7 +79,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
             String packageName = data.getString("packageName");
             //String timeStamp = data.getString("timestamp");
 
-            Log.e("packageName " , packageName);
+            Log.e("packageName " , ""+packageName);
 
 
             //creating MyNotificationManager object

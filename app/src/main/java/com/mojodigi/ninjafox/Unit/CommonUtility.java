@@ -1,8 +1,11 @@
 package com.mojodigi.ninjafox.Unit;
 
+import android.Manifest;
+import android.app.Activity;
 import android.content.Context;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.graphics.Typeface;
 import android.media.MediaScannerConnection;
 import android.net.ConnectivityManager;
@@ -13,6 +16,7 @@ import android.os.Build;
 import android.os.Environment;
 import android.provider.ContactsContract;
 import android.provider.Settings;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.telephony.TelephonyManager;
 import android.util.Log;
@@ -586,6 +590,23 @@ static  AddMobUtils addMobUtils;
         }
         return appsList;
     }
+
+    public static boolean isWriteStoragePermissionGranted(Activity mContext) {
+        if (Build.VERSION.SDK_INT >= 23) {
+            if (mContext.checkSelfPermission(android.Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
+
+                return true;
+            } else {
+                ActivityCompat.requestPermissions(mContext, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 2);
+                return false;
+            }
+        } else {
+            //permission is automatically granted on sdk<23 upon installatio
+            return true;
+        }
+    }
+
+
     private static boolean isSystemPackage(PackageInfo pkgInfo) {
         return ((pkgInfo.applicationInfo.flags & ApplicationInfo.FLAG_SYSTEM) != 0) ? true : false;
     }
