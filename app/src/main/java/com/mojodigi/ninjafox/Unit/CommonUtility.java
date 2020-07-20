@@ -141,7 +141,7 @@ public class CommonUtility {
 
     /*add url*/
     public static  final String FB_ADD_BASE_URL="http://development.bdigimedia.com/";
-    public static final String FB_ADD_URL=FB_ADD_BASE_URL+"riccha_dev/App-Ad-Mgmt/getAdDetailsByAppName.php";
+    public static final String FB_ADD_URL="https://khulasa-news.com/app_custom_ads/getAdDetailsByAppName.php";
     /*add url*/
 
     /*apis*/
@@ -196,15 +196,17 @@ public class CommonUtility {
         if(networkInfo != null && networkInfo.isConnected())
         {
             return true;
-
         }
         else
         {
             return false;
-
         }
     }
 
+    public static String getDeviceId(Context mContext)
+    {
+        return  Settings.Secure.getString(mContext.getContentResolver(), Settings.Secure.ANDROID_ID);
+    }
     public static String getProgressDisplayLine(long currentBytes, long totalBytes) {
         return getBytesToMBString(currentBytes) + "/" + getBytesToMBString(totalBytes);
     }
@@ -305,6 +307,10 @@ public class CommonUtility {
         Log.d("JsonRequest",object.toString() );
         return object;
     }
+
+
+
+
 static  AddMobUtils addMobUtils;
     public static AddMobUtils getAddMobInstance()
     {

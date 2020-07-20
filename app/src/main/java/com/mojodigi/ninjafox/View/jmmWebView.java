@@ -264,7 +264,7 @@ public class jmmWebView extends WebView implements AlbumController {
         int mode = Integer.valueOf(sp.getString(context.getString(R.string.sp_rendering), "0"));
         initRendering(mode);
 
-        webViewClient.enableAdBlock(sp.getBoolean(context.getString(R.string.sp_ad_block), true));
+        webViewClient.enableAdBlock(sp.getBoolean(context.getString(R.string.sp_ad_block), false));
     }
 
     private synchronized void initAlbum() {
@@ -320,8 +320,11 @@ public class jmmWebView extends WebView implements AlbumController {
             jmmToast.show(context, R.string.toast_load_error);
             return;
         }
+           //fix here the url  issue
+        /* the below line as commented to  prevent google search  for user redirect task told by vipul on  25-05-2020*/
 
-        url = BrowserUtility.queryWrapper(context, url.trim());
+        //url = BrowserUtility.queryWrapper(context, url.trim());
+
         if (url.startsWith(BrowserUtility.URL_SCHEME_MAIL_TO)) {
             Intent intent = IntentUtility.getEmailIntent(MailTo.parse(url));
             context.startActivity(intent);

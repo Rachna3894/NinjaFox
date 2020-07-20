@@ -1981,6 +1981,7 @@ drawable flag_ic_sri_lanka
 drawable flag_ic_united_arab_emi
 drawable flag_ic_westindies
 drawable flag_ic_zimbabwe
+drawable game_icon
 drawable google_png
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
@@ -2031,6 +2032,7 @@ drawable notify_panel_notification_icon_bg
 drawable overflow_selector
 drawable progress_bar_layer_list
 drawable quora_png
+drawable qureka_icon
 drawable refresh_selector
 drawable ripple
 drawable round_corner_shape_light
@@ -2493,6 +2495,7 @@ id versionTxt
 id view_offset_helper
 id visible
 id webIcon
+id webview01
 id whilelist_add
 id whilelist_edit
 id whilelist_item_cancel
@@ -2561,6 +2564,7 @@ layout activity_recent
 layout activity_sign_in
 layout activity_sign_up
 layout activity_suggested_apps
+layout activity_web_view
 layout album
 layout autostart_dialog
 layout block_list_item

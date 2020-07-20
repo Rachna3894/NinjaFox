@@ -1,7 +1,7 @@
-#Tue Mar 03 18:44:17 IST 2020
-base.0=D\:\\StudioProjects\\NinjaFox\\JmmBrowser\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\out\\classes.dex
+#Fri Jul 10 17:13:29 IST 2020
+base.0=G\:\\NinjaUrlTest\\NinjaFox\\JmmBrowser\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\out\\classes.dex
 path.1=classes2.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=D\:\\StudioProjects\\NinjaFox\\JmmBrowser\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\out\\classes2.dex
+base.1=G\:\\NinjaUrlTest\\NinjaFox\\JmmBrowser\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\out\\classes2.dex

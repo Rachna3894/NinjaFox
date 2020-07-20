@@ -1,777 +1,771 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="com.mojodigi.ninjafox"
-4    android:versionCode="29"
-5    android:versionName="3.8" >
+4    android:versionCode="43"
+5    android:versionName="5.2" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml
-9        android:targetSdkVersion="28" />
-9-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml
-10    <!-- Permission -->
-11    <uses-permission android:name="android.permission.INTERNET" />
-11-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:6:5-67
-11-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:6:22-64
-12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-12-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:7:5-79
-12-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:7:22-76
-13    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-13-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:8:5-81
-13-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:8:22-78
-14    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-14-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:9:5-79
-14-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:9:22-76
-15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-15-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:10:5-80
-15-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:10:22-77
-16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-16-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:11:5-81
-16-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:11:22-78
-17    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-17-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:12:5-76
-17-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:12:22-73
-18    <uses-permission android:name="android.permission.CALL_PHONE" />
-18-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:13:5-69
-18-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:13:22-66
-19    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-19-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:14:5-78
-19-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:14:22-75
-20    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-20-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:15:5-77
-20-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:15:22-74
-21
-22    <!-- Optional permission for Analytics to run. -->
-23    <uses-permission android:name="android.permission.WAKE_LOCK" />
-23-->[com.google.android.gms:play-services-analytics:16.0.7] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\e642be4a9d1cdd27ddd48bf62d596e8f\play-services-analytics-16.0.7\AndroidManifest.xml:27:5-68
-23-->[com.google.android.gms:play-services-analytics:16.0.7] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\e642be4a9d1cdd27ddd48bf62d596e8f\play-services-analytics-16.0.7\AndroidManifest.xml:27:22-65
-24    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-24-->[com.android.installreferrer:installreferrer:1.1.1] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\d4b2804e6be59a3ebfbe46f7b0ce3c04\installreferrer-1.1.1\AndroidManifest.xml:5:5-110
-24-->[com.android.installreferrer:installreferrer:1.1.1] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\d4b2804e6be59a3ebfbe46f7b0ce3c04\installreferrer-1.1.1\AndroidManifest.xml:5:22-107
-25    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
-26    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-26-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f812aa0c82fadb0bc8e1403264ebbc81\firebase-iid-17.0.4\AndroidManifest.xml:26:5-82
-26-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f812aa0c82fadb0bc8e1403264ebbc81\firebase-iid-17.0.4\AndroidManifest.xml:26:22-79
-27
-28    <application
-28-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:17:5-204:19
-29        android:name="com.mojodigi.ninjafox.Application.MyApplication"
-29-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:18:9-50
-30        android:allowBackup="true"
-30-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:19:9-35
-31        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
-31-->[com.android.support:support-compat:28.0.0] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\895559d2bf708e950c8f9daa6bb1fb41\support-compat-28.0.0\AndroidManifest.xml:22:18-91
-32        android:debuggable="true"
-33        android:enabled="true"
-33-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:20:9-31
-34        android:icon="@drawable/ic_launcher"
-34-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:21:9-45
-35        android:label="@string/app_name"
-35-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:22:9-41
-36        android:largeHeap="true"
-36-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:23:9-33
-37        android:roundIcon="@drawable/ic_launcher_round"
-37-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:24:9-56
-38        android:testOnly="true"
-39        android:usesCleartextTraffic="true" >
-39-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:25:9-44
-40        <activity
-40-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:27:9-30:59
-41            android:name="com.mojodigi.ninjafox.Activity.SignInActivity"
-41-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:28:13-52
-42            android:screenOrientation="portrait"
-42-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:29:13-49
-43            android:theme="@style/BrowserActivityTheme2" />
-43-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:30:13-57
-44        <activity
-44-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:31:9-34:60
-45            android:name="com.mojodigi.ninjafox.Activity.SignUpActivity"
-45-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:32:13-52
-46            android:screenOrientation="portrait"
-46-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:33:13-49
-47            android:theme="@style/BrowserActivityTheme2" />
-47-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:34:13-57
-48        <activity
-48-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:36:9-39:59
-49            android:name="com.mojodigi.ninjafox.Activity.SuggestedAppsActivity"
-49-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:37:13-59
-50            android:screenOrientation="portrait"
-50-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:38:13-49
-51            android:theme="@style/BrowserActivityTheme" />
-51-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:39:13-56
-52        <activity
-52-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:41:9-56:20
-53            android:name="com.mojodigi.ninjafox.Activity.HolderActivity"
-53-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:42:13-52
-54            android:label="@string/app_name"
-54-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:43:13-45
-55            android:launchMode="singleTask"
-55-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:44:13-44
-56            android:screenOrientation="portrait"
-56-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:45:13-49
-57            android:theme="@style/BrowserActivityTheme" >
-57-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:46:13-56
-58            <intent-filter>
-58-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:47:13-55:29
-59                <action android:name="android.intent.action.VIEW" />
-59-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:48:17-69
-59-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:48:25-66
-60
-61                <category android:name="android.intent.category.DEFAULT" />
-61-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:50:17-76
-61-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:50:27-73
-62                <category android:name="android.intent.category.BROWSABLE" />
-62-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:51:17-78
-62-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:51:27-75
-63
-64                <data android:scheme="@string/app_scheme_http" />
-64-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:53:17-66
-64-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:53:23-63
-65                <data android:scheme="@string/app_scheme_https" />
-65-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:53:17-66
-65-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:53:23-63
-66            </intent-filter>
-67        </activity> <!-- HolderService -->
-68        <service
-68-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:57:9-60:48
-69            android:name="com.mojodigi.ninjafox.Service.HolderService"
-69-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:58:13-50
-70            android:icon="@drawable/ic_launcher"
-70-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:59:13-49
-71            android:label="@string/app_name" /> <!-- MainActivity -->
-71-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:60:13-45
-72        <activity
-72-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:61:9-69:20
-73            android:name="com.mojodigi.ninjafox.Activity.SplashActivity"
-73-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:62:13-52
-74            android:screenOrientation="portrait"
-74-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:63:13-49
-75            android:theme="@style/Theme.AppCompat.NoActionBar" >
-75-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:64:13-63
-76            <intent-filter>
-76-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:65:13-68:29
-77                <action android:name="android.intent.action.MAIN" />
-77-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:66:17-69
-77-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:66:25-66
-78
-79                <category android:name="android.intent.category.LAUNCHER" />
-79-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:67:17-77
-79-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:67:27-74
-80            </intent-filter>
-81        </activity>
-82        <!-- android:windowSoftInputMode="adjustResize" -->
-83        <!-- android:launchMode="singleInstance"    from mainActivity -->
+8-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml
+10
+11    <!-- Permission -->
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:8:5-67
+12-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:8:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:9:5-79
+13-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:9:22-76
+14    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+14-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:10:5-81
+14-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:10:22-78
+15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+15-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:11:5-79
+15-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:11:22-76
+16    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+16-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:12:5-80
+16-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:12:22-77
+17    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+17-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:13:5-81
+17-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:13:22-78
+18    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+18-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:14:5-76
+18-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:14:22-73
+19    <uses-permission android:name="android.permission.CALL_PHONE" />
+19-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:15:5-69
+19-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:15:22-66
+20    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+20-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:16:5-78
+20-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:16:22-75
+21    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+21-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:17:5-77
+21-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:17:22-74
+22    <uses-permission android:name="android.permission.READ_CONTACTS" />
+22-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:18:5-72
+22-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:18:22-69
+23
+24    <!-- Optional permission for Analytics to run. -->
+25    <uses-permission android:name="android.permission.WAKE_LOCK" />
+25-->[com.google.android.gms:play-services-analytics:16.0.7] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\e642be4a9d1cdd27ddd48bf62d596e8f\play-services-analytics-16.0.7\AndroidManifest.xml:27:5-68
+25-->[com.google.android.gms:play-services-analytics:16.0.7] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\e642be4a9d1cdd27ddd48bf62d596e8f\play-services-analytics-16.0.7\AndroidManifest.xml:27:22-65
+26    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+26-->[com.android.installreferrer:installreferrer:1.1.2] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\117f4642c9bd1bd05e58a5f16dbd2ba0\installreferrer-1.1.2\AndroidManifest.xml:9:5-110
+26-->[com.android.installreferrer:installreferrer:1.1.2] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\117f4642c9bd1bd05e58a5f16dbd2ba0\installreferrer-1.1.2\AndroidManifest.xml:9:22-107
+27    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+27-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f812aa0c82fadb0bc8e1403264ebbc81\firebase-iid-17.0.4\AndroidManifest.xml:26:5-82
+27-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f812aa0c82fadb0bc8e1403264ebbc81\firebase-iid-17.0.4\AndroidManifest.xml:26:22-79
+28
+29    <application
+29-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:20:5-213:19
+30        android:name="com.mojodigi.ninjafox.Application.MyApplication"
+30-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:21:9-50
+31        android:allowBackup="true"
+31-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:22:9-35
+32        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+32-->[com.android.support:support-compat:28.0.0] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\895559d2bf708e950c8f9daa6bb1fb41\support-compat-28.0.0\AndroidManifest.xml:22:18-91
+33        android:debuggable="true"
+34        android:enabled="true"
+34-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:23:9-31
+35        android:icon="@drawable/ic_launcher"
+35-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:24:9-45
+36        android:label="@string/app_name"
+36-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:25:9-41
+37        android:largeHeap="true"
+37-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:26:9-33
+38        android:requestLegacyExternalStorage="true"
+38-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:29:9-52
+39        android:roundIcon="@drawable/ic_launcher_round"
+39-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:27:9-56
+40        android:testOnly="true"
+41        android:usesCleartextTraffic="true" >
+41-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:28:9-44
+42        <activity
+42-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:32:9-35:59
+43            android:name="com.mojodigi.ninjafox.Activity.SignInActivity"
+43-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:33:13-52
+44            android:screenOrientation="portrait"
+44-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:34:13-49
+45            android:theme="@style/BrowserActivityTheme2" />
+45-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:35:13-57
+46        <activity
+46-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:36:9-39:60
+47            android:name="com.mojodigi.ninjafox.Activity.SignUpActivity"
+47-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:37:13-52
+48            android:screenOrientation="portrait"
+48-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:38:13-49
+49            android:theme="@style/BrowserActivityTheme2" />
+49-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:39:13-57
+50        <activity
+50-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:41:9-44:59
+51            android:name="com.mojodigi.ninjafox.Activity.SuggestedAppsActivity"
+51-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:42:13-59
+52            android:screenOrientation="portrait"
+52-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:43:13-49
+53            android:theme="@style/BrowserActivityTheme" />
+53-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:44:13-56
+54        <activity
+54-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:46:9-61:20
+55            android:name="com.mojodigi.ninjafox.Activity.HolderActivity"
+55-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:47:13-52
+56            android:label="@string/app_name"
+56-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:48:13-45
+57            android:launchMode="singleTask"
+57-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:49:13-44
+58            android:screenOrientation="portrait"
+58-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:50:13-49
+59            android:theme="@style/BrowserActivityTheme" >
+59-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:51:13-56
+60            <intent-filter>
+60-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:52:13-60:29
+61                <action android:name="android.intent.action.VIEW" />
+61-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:53:17-69
+61-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:53:25-66
+62
+63                <category android:name="android.intent.category.DEFAULT" />
+63-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:55:17-76
+63-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:55:27-73
+64                <category android:name="android.intent.category.BROWSABLE" />
+64-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:56:17-78
+64-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:56:27-75
+65
+66                <data android:scheme="@string/app_scheme_http" />
+66-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:58:17-66
+66-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:58:23-63
+67                <data android:scheme="@string/app_scheme_https" />
+67-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:58:17-66
+67-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:58:23-63
+68            </intent-filter>
+69        </activity> <!-- HolderService -->
+70        <service
+70-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:62:9-65:48
+71            android:name="com.mojodigi.ninjafox.Service.HolderService"
+71-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:63:13-50
+72            android:icon="@drawable/ic_launcher"
+72-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:64:13-49
+73            android:label="@string/app_name" /> <!-- MainActivity -->
+73-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:65:13-45
+74        <activity
+74-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:66:9-74:20
+75            android:name="com.mojodigi.ninjafox.Activity.SplashActivity"
+75-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:67:13-52
+76            android:screenOrientation="portrait"
+76-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:68:13-49
+77            android:theme="@style/Theme.AppCompat.NoActionBar" >
+77-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:69:13-63
+78            <intent-filter>
+78-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:70:13-73:29
+79                <action android:name="android.intent.action.MAIN" />
+79-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:71:17-69
+79-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:71:25-66
+80
+81                <category android:name="android.intent.category.LAUNCHER" />
+81-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:72:17-77
+81-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:72:27-74
+82            </intent-filter>
+83        </activity>
 84        <activity
-84-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:72:9-90:20
-85            android:name="com.mojodigi.ninjafox.Activity.MainActivity"
-85-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:73:13-50
-86            android:configChanges="orientation|keyboardHidden|screenSize"
-86-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:74:13-74
-87            android:label="@string/app_name"
-87-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:75:13-45
-88            android:launchMode="singleTop"
-88-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:76:13-43
-89            android:screenOrientation="portrait"
-89-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:77:13-49
-90            android:theme="@style/BrowserActivityTheme2"
-90-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:78:13-57
-91            android:windowSoftInputMode="adjustNothing" >
-91-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:79:13-56
-92            <intent-filter>
-92-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:80:13-85:29
-93
-94                <!-- <action android:name="android.intent.action.MAIN"/> -->
-95                <action android:name="android.intent.action.WEB_SEARCH" />
-95-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:82:17-75
-95-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:82:25-72
-96
-97                <category android:name="android.intent.category.DEFAULT" />
-97-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:50:17-76
-97-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:50:27-73
-98                <!-- <category android:name="android.intent.category.LAUNCHER"/> -->
-99            </intent-filter>
+84-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:76:9-77:61
+85            android:name="com.mojodigi.ninjafox.Activity.WebViewActivity"
+85-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:76:19-59
+86            android:screenOrientation="portrait"
+86-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:77:13-49
+87            android:theme="@style/BrowserActivityTheme" />
+87-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:76:61-104
+88
+89        <!-- android:windowSoftInputMode="adjustResize" -->
+90        <!-- android:launchMode="singleInstance"    from mainActivity -->
+91        <activity
+91-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:81:9-99:20
+92            android:name="com.mojodigi.ninjafox.Activity.MainActivity"
+92-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:82:13-50
+93            android:configChanges="orientation|keyboardHidden|screenSize"
+93-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:83:13-74
+94            android:label="@string/app_name"
+94-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:84:13-45
+95            android:launchMode="singleTop"
+95-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:85:13-43
+96            android:screenOrientation="portrait"
+96-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:86:13-49
+97            android:theme="@style/BrowserActivityTheme2"
+97-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:87:13-57
+98            android:windowSoftInputMode="adjustNothing" >
+98-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:88:13-56
+99            <intent-filter>
+99-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:89:13-94:29
 100
-101            <meta-data
-101-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:87:13-89:54
-102                android:name="android.app.searchable"
-102-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:88:17-54
-103                android:resource="@xml/searchable" />
-103-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:89:17-51
-104        </activity> <!-- SettingActivity -->
-105        <activity
-105-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:91:9-95:59
-106            android:name="com.mojodigi.ninjafox.Activity.SettingActivity"
-106-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:92:13-53
-107            android:label="@string/setting_label"
-107-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:93:13-50
-108            android:screenOrientation="portrait"
-108-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:94:13-49
-109            android:theme="@style/SettingActivityTheme" />
-109-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:95:13-56
-110        <activity
-110-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:96:9-100:59
-111            android:name="com.mojodigi.ninjafox.Activity.DownLoadSettingActivity"
-111-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:97:13-61
-112            android:label="@string/download_settings_label"
-112-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:98:13-60
-113            android:screenOrientation="portrait"
-113-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:99:13-49
-114            android:theme="@style/SettingActivityTheme" />
-114-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:100:13-56
-115        <activity
-115-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:101:9-105:59
-116            android:name="com.mojodigi.ninjafox.Activity.FeedBackActivity"
-116-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:102:13-54
-117            android:label="Feedback"
-117-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:103:13-37
-118            android:screenOrientation="portrait"
-118-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:104:13-49
-119            android:theme="@style/SettingActivityTheme" />
-119-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:105:13-56
-120        <activity
-120-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:106:9-109:59
-121            android:name="com.mojodigi.ninjafox.Activity.RecentListActivity"
-121-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:107:13-56
-122            android:screenOrientation="portrait"
-122-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:108:13-49
-123            android:theme="@style/BrowserActivityTheme" />
-123-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:109:13-56
-124        <activity
-124-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:110:9-113:59
-125            android:name="com.mojodigi.ninjafox.Activity.MostVisistedActiity"
-125-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:111:13-57
-126            android:screenOrientation="portrait"
-126-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:112:13-49
-127            android:theme="@style/BrowserActivityTheme" />
-127-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:113:13-56
-128        <activity
-128-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:114:9-117:59
-129            android:name="com.mojodigi.ninjafox.Activity.BlockListActivity"
-129-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:115:13-55
-130            android:screenOrientation="portrait"
-130-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:116:13-49
-131            android:theme="@style/BrowserActivityTheme" />
-131-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:117:13-56
-132        <activity
-132-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:118:9-121:59
-133            android:name="com.mojodigi.ninjafox.Activity.LanguagePrefsActivity"
-133-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:119:13-59
-134            android:screenOrientation="portrait"
-134-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:120:13-49
-135            android:theme="@style/BrowserActivityTheme" />
-135-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:121:13-56
-136        <activity
-136-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:123:9-126:52
-137            android:name="com.facebook.ads.AudienceNetworkActivity"
-137-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:124:13-68
-138            android:configChanges="keyboardHidden|orientation|screenSize"
-138-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:125:13-74
-139            android:exported="false"
-139-->[com.facebook.android:audience-network-sdk:5.6.1] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\72c47fbadcc6dca0e37e26dc1c27ef75\audience-network-sdk-5.6.1\AndroidManifest.xml:18:13-37
-140            android:screenOrientation="portrait"
-140-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:126:13-49
-141            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-141-->[com.facebook.android:audience-network-sdk:5.6.1] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\72c47fbadcc6dca0e37e26dc1c27ef75\audience-network-sdk-5.6.1\AndroidManifest.xml:19:13-72
-142        <!-- to  show  interesitial adds uisng smaato -->
-143        <!-- WhitelistActivity -->
-144        <activity
-144-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:129:9-133:61
-145            android:name="com.mojodigi.ninjafox.Activity.WhitelistActivity"
-145-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:130:13-55
-146            android:label="@string/whitelist_label"
-146-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:131:13-52
+101                <!-- <action android:name="android.intent.action.MAIN"/> -->
+102                <action android:name="android.intent.action.WEB_SEARCH" />
+102-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:91:17-75
+102-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:91:25-72
+103
+104                <category android:name="android.intent.category.DEFAULT" />
+104-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:55:17-76
+104-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:55:27-73
+105                <!-- <category android:name="android.intent.category.LAUNCHER"/> -->
+106            </intent-filter>
+107
+108            <meta-data
+108-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:96:13-98:54
+109                android:name="android.app.searchable"
+109-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:97:17-54
+110                android:resource="@xml/searchable" />
+110-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:98:17-51
+111        </activity> <!-- SettingActivity -->
+112        <activity
+112-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:100:9-104:59
+113            android:name="com.mojodigi.ninjafox.Activity.SettingActivity"
+113-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:101:13-53
+114            android:label="@string/setting_label"
+114-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:102:13-50
+115            android:screenOrientation="portrait"
+115-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:103:13-49
+116            android:theme="@style/SettingActivityTheme" />
+116-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:104:13-56
+117        <activity
+117-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:105:9-109:59
+118            android:name="com.mojodigi.ninjafox.Activity.DownLoadSettingActivity"
+118-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:106:13-61
+119            android:label="@string/download_settings_label"
+119-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:107:13-60
+120            android:screenOrientation="portrait"
+120-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:108:13-49
+121            android:theme="@style/SettingActivityTheme" />
+121-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:109:13-56
+122        <activity
+122-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:110:9-114:59
+123            android:name="com.mojodigi.ninjafox.Activity.FeedBackActivity"
+123-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:111:13-54
+124            android:label="Feedback"
+124-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:112:13-37
+125            android:screenOrientation="portrait"
+125-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:113:13-49
+126            android:theme="@style/SettingActivityTheme" />
+126-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:114:13-56
+127        <activity
+127-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:115:9-118:59
+128            android:name="com.mojodigi.ninjafox.Activity.RecentListActivity"
+128-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:116:13-56
+129            android:screenOrientation="portrait"
+129-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:117:13-49
+130            android:theme="@style/BrowserActivityTheme" />
+130-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:118:13-56
+131        <activity
+131-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:119:9-122:59
+132            android:name="com.mojodigi.ninjafox.Activity.MostVisistedActiity"
+132-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:120:13-57
+133            android:screenOrientation="portrait"
+133-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:121:13-49
+134            android:theme="@style/BrowserActivityTheme" />
+134-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:122:13-56
+135        <activity
+135-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:123:9-126:59
+136            android:name="com.mojodigi.ninjafox.Activity.BlockListActivity"
+136-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:124:13-55
+137            android:screenOrientation="portrait"
+137-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:125:13-49
+138            android:theme="@style/BrowserActivityTheme" />
+138-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:126:13-56
+139        <activity
+139-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:127:9-130:59
+140            android:name="com.mojodigi.ninjafox.Activity.LanguagePrefsActivity"
+140-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:128:13-59
+141            android:screenOrientation="portrait"
+141-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:129:13-49
+142            android:theme="@style/BrowserActivityTheme" />
+142-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:130:13-56
+143        <activity
+143-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:132:9-135:52
+144            android:name="com.facebook.ads.AudienceNetworkActivity"
+144-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:133:13-68
+145            android:configChanges="keyboardHidden|orientation|screenSize"
+145-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:134:13-74
+146            android:exported="false"
+146-->[com.facebook.android:audience-network-sdk:5.7.1] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\6bb5657e2bb51f1088d4052cc585a9ba\audience-network-sdk-5.7.1\AndroidManifest.xml:18:13-37
 147            android:screenOrientation="portrait"
-147-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:132:13-49
-148            android:theme="@style/WhitelistActivityTheme" />
-148-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:133:13-58
-149        <!-- TokenActivity -->
-150        <activity
-150-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:135:9-139:57
-151            android:name="com.mojodigi.ninjafox.Activity.TokenActivity"
-151-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:136:13-51
-152            android:label="@string/token_label"
-152-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:137:13-48
-153            android:screenOrientation="portrait"
-153-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:138:13-49
-154            android:theme="@style/TokenActivityTheme" />
-154-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:139:13-54
-155        <!-- ClearActivity -->
-156        <activity
-156-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:141:9-145:57
-157            android:name="com.mojodigi.ninjafox.Activity.ClearActivity"
-157-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:142:13-51
-158            android:label="@string/clear_label"
-158-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:143:13-48
-159            android:screenOrientation="portrait"
-159-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:144:13-49
-160            android:theme="@style/ClearActivityTheme" />
-160-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:145:13-54
-161        <!-- ClearService -->
-162        <service
-162-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:147:9-150:48
-163            android:name="com.mojodigi.ninjafox.Service.ClearService"
-163-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:148:13-49
-164            android:icon="@drawable/ic_launcher"
-164-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:149:13-49
-165            android:label="@string/app_name" />
-165-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:150:13-45
-166        <!-- firebase  messaging -->
-167        <service
-167-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:152:9-160:19
-168            android:name="com.mojodigi.ninjafox.firebase.MyFirebaseMessagingService"
-168-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:153:13-64
-169            android:enabled="true"
-169-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:154:13-35
-170            android:stopWithTask="false" >
-170-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:155:13-41
-171            <intent-filter>
-171-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:156:13-159:29
-172                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-172-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:157:17-78
-172-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:157:25-75
-173                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-173-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:158:17-81
-173-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:158:25-78
-174            </intent-filter>
-175        </service>
-176
-177        <!-- for pushNotification -->
-178        <meta-data
-178-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:163:9-165:56
-179            android:name="com.google.firebase.messaging.default_notification_icon"
-179-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:164:13-83
-180            android:resource="@drawable/ic_fcm_icon" />
-180-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:165:13-53
-181        <meta-data
-181-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:166:9-168:52
-182            android:name="com.google.firebase.messaging.default_notification_color"
-182-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:167:13-84
-183            android:resource="@color/color_icon" />
-183-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:168:13-49
-184
-185        <!-- for pushNotification -->
-186
-187
-188        <!-- for google location api -->
-189        <meta-data
-189-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:173:9-175:69
-190            android:name="com.google.android.gms.version"
-190-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:174:13-58
-191            android:value="@integer/google_play_services_version" />
-191-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:175:13-66
-192        <meta-data
-192-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:176:9-178:54
-193            android:name="com.google.android.geo.API_KEY"
-193-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:177:13-58
-194            android:value="@string/google_api_key" />
-194-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:178:13-51
-195
-196        <service
-196-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:180:9-182:40
-197            android:name="com.mojodigi.ninjafox.Service.GetAddressIntentService"
-197-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:181:13-60
-198            android:exported="false" />
-198-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:182:13-37
-199        <!-- for google location api -->
-200
-201
-202        <!-- for job intent class -->
+147-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:135:13-49
+148            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+148-->[com.facebook.android:audience-network-sdk:5.7.1] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\6bb5657e2bb51f1088d4052cc585a9ba\audience-network-sdk-5.7.1\AndroidManifest.xml:19:13-72
+149        <!-- to  show  interesitial adds uisng smaato -->
+150        <!-- WhitelistActivity -->
+151        <activity
+151-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:138:9-142:61
+152            android:name="com.mojodigi.ninjafox.Activity.WhitelistActivity"
+152-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:139:13-55
+153            android:label="@string/whitelist_label"
+153-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:140:13-52
+154            android:screenOrientation="portrait"
+154-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:141:13-49
+155            android:theme="@style/WhitelistActivityTheme" />
+155-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:142:13-58
+156        <!-- TokenActivity -->
+157        <activity
+157-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:144:9-148:57
+158            android:name="com.mojodigi.ninjafox.Activity.TokenActivity"
+158-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:145:13-51
+159            android:label="@string/token_label"
+159-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:146:13-48
+160            android:screenOrientation="portrait"
+160-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:147:13-49
+161            android:theme="@style/TokenActivityTheme" />
+161-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:148:13-54
+162        <!-- ClearActivity -->
+163        <activity
+163-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:150:9-154:57
+164            android:name="com.mojodigi.ninjafox.Activity.ClearActivity"
+164-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:151:13-51
+165            android:label="@string/clear_label"
+165-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:152:13-48
+166            android:screenOrientation="portrait"
+166-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:153:13-49
+167            android:theme="@style/ClearActivityTheme" />
+167-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:154:13-54
+168        <!-- ClearService -->
+169        <service
+169-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:156:9-159:48
+170            android:name="com.mojodigi.ninjafox.Service.ClearService"
+170-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:157:13-49
+171            android:icon="@drawable/ic_launcher"
+171-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:158:13-49
+172            android:label="@string/app_name" />
+172-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:159:13-45
+173        <!-- firebase  messaging -->
+174        <service
+174-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:161:9-169:19
+175            android:name="com.mojodigi.ninjafox.firebase.MyFirebaseMessagingService"
+175-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:162:13-64
+176            android:enabled="true"
+176-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:163:13-35
+177            android:stopWithTask="false" >
+177-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:164:13-41
+178            <intent-filter>
+178-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:165:13-168:29
+179                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+179-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:166:17-78
+179-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:166:25-75
+180                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+180-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:167:17-81
+180-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:167:25-78
+181            </intent-filter>
+182        </service>
+183
+184        <!-- for pushNotification -->
+185        <meta-data
+185-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:172:9-174:56
+186            android:name="com.google.firebase.messaging.default_notification_icon"
+186-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:173:13-83
+187            android:resource="@drawable/ic_fcm_icon" />
+187-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:174:13-53
+188        <meta-data
+188-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:175:9-177:52
+189            android:name="com.google.firebase.messaging.default_notification_color"
+189-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:176:13-84
+190            android:resource="@color/color_icon" />
+190-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:177:13-49
+191
+192        <!-- for pushNotification -->
+193
+194
+195        <!-- for google location api -->
+196        <meta-data
+196-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:182:9-184:69
+197            android:name="com.google.android.gms.version"
+197-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:183:13-58
+198            android:value="@integer/google_play_services_version" />
+198-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:184:13-66
+199        <meta-data
+199-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:185:9-187:54
+200            android:name="com.google.android.geo.API_KEY"
+200-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:186:13-58
+201            android:value="@string/google_api_key" />
+201-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:187:13-51
+202
 203        <service
-203-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:186:9-189:72
-204            android:name="com.mojodigi.ninjafox.Service.getAddressJobIntentService"
-204-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:187:13-63
-205            android:exported="false"
-205-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:188:13-37
-206            android:permission="android.permission.BIND_JOB_SERVICE" />
-206-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:189:13-69
+203-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:189:9-191:40
+204            android:name="com.mojodigi.ninjafox.Service.GetAddressIntentService"
+204-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:190:13-60
+205            android:exported="false" />
+205-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:191:13-37
+206        <!-- for google location api -->
 207
-208        <receiver
-208-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:191:9-196:20
-209            android:name="com.mojodigi.ninjafox.BroadCast.DownloadReceiver"
-209-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:192:13-55
-210            android:label="DownloadReceiver" >
-210-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:193:13-45
-211        </receiver>
-212
-213        <service
-213-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:198:9-201:40
-214            android:name="com.mojodigi.ninjafox.DownlaodModule.DownloadService"
-214-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:199:13-59
-215            android:enabled="true"
-215-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:200:13-35
-216            android:exported="false" />
-216-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:201:13-37
-217
-218        <!--
-219             FirebaseMessagingService performs security checks at runtime,
-220             no need for explicit permissions despite exported="true"
-221        -->
-222        <service
-222-->[com.google.firebase:firebase-messaging:17.3.4] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\867110f9d52010542d15c324d0eb9dee\firebase-messaging-17.3.4\AndroidManifest.xml:28:9-34:19
-223            android:name="com.google.firebase.messaging.FirebaseMessagingService"
-223-->[com.google.firebase:firebase-messaging:17.3.4] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\867110f9d52010542d15c324d0eb9dee\firebase-messaging-17.3.4\AndroidManifest.xml:29:13-82
-224            android:exported="true" >
-224-->[com.google.firebase:firebase-messaging:17.3.4] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\867110f9d52010542d15c324d0eb9dee\firebase-messaging-17.3.4\AndroidManifest.xml:30:13-36
-225            <intent-filter android:priority="-500" >
-225-->[com.google.firebase:firebase-messaging:17.3.4] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\867110f9d52010542d15c324d0eb9dee\firebase-messaging-17.3.4\AndroidManifest.xml:31:13-33:29
-225-->[com.google.firebase:firebase-messaging:17.3.4] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\867110f9d52010542d15c324d0eb9dee\firebase-messaging-17.3.4\AndroidManifest.xml:31:28-51
-226                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-226-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:157:17-78
-226-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:157:25-75
-227            </intent-filter>
-228        </service>
-229
-230        <receiver
-230-->[com.google.android.gms:play-services-analytics:16.0.7] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\e642be4a9d1cdd27ddd48bf62d596e8f\play-services-analytics-16.0.7\AndroidManifest.xml:30:9-34:20
-231            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
-231-->[com.google.android.gms:play-services-analytics:16.0.7] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\e642be4a9d1cdd27ddd48bf62d596e8f\play-services-analytics-16.0.7\AndroidManifest.xml:31:13-78
-232            android:enabled="true"
-232-->[com.google.android.gms:play-services-analytics:16.0.7] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\e642be4a9d1cdd27ddd48bf62d596e8f\play-services-analytics-16.0.7\AndroidManifest.xml:32:13-35
-233            android:exported="false" >
-233-->[com.google.android.gms:play-services-analytics:16.0.7] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\e642be4a9d1cdd27ddd48bf62d596e8f\play-services-analytics-16.0.7\AndroidManifest.xml:33:13-37
-234        </receiver>
-235
-236        <service
-236-->[com.google.android.gms:play-services-analytics:16.0.7] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\e642be4a9d1cdd27ddd48bf62d596e8f\play-services-analytics-16.0.7\AndroidManifest.xml:36:9-39:40
-237            android:name="com.google.android.gms.analytics.AnalyticsService"
-237-->[com.google.android.gms:play-services-analytics:16.0.7] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\e642be4a9d1cdd27ddd48bf62d596e8f\play-services-analytics-16.0.7\AndroidManifest.xml:37:13-77
-238            android:enabled="true"
-238-->[com.google.android.gms:play-services-analytics:16.0.7] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\e642be4a9d1cdd27ddd48bf62d596e8f\play-services-analytics-16.0.7\AndroidManifest.xml:38:13-35
-239            android:exported="false" />
-239-->[com.google.android.gms:play-services-analytics:16.0.7] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\e642be4a9d1cdd27ddd48bf62d596e8f\play-services-analytics-16.0.7\AndroidManifest.xml:39:13-37
-240        <service
-240-->[com.google.android.gms:play-services-analytics:16.0.7] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\e642be4a9d1cdd27ddd48bf62d596e8f\play-services-analytics-16.0.7\AndroidManifest.xml:40:9-44:72
-241            android:name="com.google.android.gms.analytics.AnalyticsJobService"
-241-->[com.google.android.gms:play-services-analytics:16.0.7] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\e642be4a9d1cdd27ddd48bf62d596e8f\play-services-analytics-16.0.7\AndroidManifest.xml:41:13-80
-242            android:enabled="true"
-242-->[com.google.android.gms:play-services-analytics:16.0.7] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\e642be4a9d1cdd27ddd48bf62d596e8f\play-services-analytics-16.0.7\AndroidManifest.xml:42:13-35
-243            android:exported="false"
-243-->[com.google.android.gms:play-services-analytics:16.0.7] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\e642be4a9d1cdd27ddd48bf62d596e8f\play-services-analytics-16.0.7\AndroidManifest.xml:43:13-37
-244            android:permission="android.permission.BIND_JOB_SERVICE" />
-244-->[com.google.android.gms:play-services-analytics:16.0.7] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\e642be4a9d1cdd27ddd48bf62d596e8f\play-services-analytics-16.0.7\AndroidManifest.xml:44:13-69
-245
-246        <activity
-246-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\6ac6735473ac39f6fdccb1ce3c615248\firebase-auth-16.0.5\AndroidManifest.xml:24:9-31:50
-247            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
-247-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\6ac6735473ac39f6fdccb1ce3c615248\firebase-auth-16.0.5\AndroidManifest.xml:25:13-85
-248            android:excludeFromRecents="true"
-248-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\6ac6735473ac39f6fdccb1ce3c615248\firebase-auth-16.0.5\AndroidManifest.xml:26:13-46
-249            android:exported="true"
-249-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\6ac6735473ac39f6fdccb1ce3c615248\firebase-auth-16.0.5\AndroidManifest.xml:27:13-36
-250            android:launchMode="singleTask"
-250-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\6ac6735473ac39f6fdccb1ce3c615248\firebase-auth-16.0.5\AndroidManifest.xml:28:13-44
-251            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
-251-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\6ac6735473ac39f6fdccb1ce3c615248\firebase-auth-16.0.5\AndroidManifest.xml:29:13-102
-252            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-252-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\6ac6735473ac39f6fdccb1ce3c615248\firebase-auth-16.0.5\AndroidManifest.xml:30:13-72
-253
-254        <service
-254-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\6ac6735473ac39f6fdccb1ce3c615248\firebase-auth-16.0.5\AndroidManifest.xml:33:9-39:19
-255            android:name="com.google.firebase.components.ComponentDiscoveryService"
-255-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\6ac6735473ac39f6fdccb1ce3c615248\firebase-auth-16.0.5\AndroidManifest.xml:34:13-84
-256            android:exported="false" >
-256-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\6ac6735473ac39f6fdccb1ce3c615248\firebase-auth-16.0.5\AndroidManifest.xml:35:13-37
-257            <meta-data
-257-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\6ac6735473ac39f6fdccb1ce3c615248\firebase-auth-16.0.5\AndroidManifest.xml:36:13-38:85
-258                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-258-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\6ac6735473ac39f6fdccb1ce3c615248\firebase-auth-16.0.5\AndroidManifest.xml:37:17-109
-259                android:value="com.google.firebase.components.ComponentRegistrar" />
-259-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\6ac6735473ac39f6fdccb1ce3c615248\firebase-auth-16.0.5\AndroidManifest.xml:38:17-82
-260            <meta-data
-260-->[com.google.firebase:firebase-measurement-connector-impl:17.0.5] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\68ca5b100168c7c7f8a2abd6c9a22441\firebase-measurement-connector-impl-17.0.5\AndroidManifest.xml:28:13-30:85
-261                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-261-->[com.google.firebase:firebase-measurement-connector-impl:17.0.5] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\68ca5b100168c7c7f8a2abd6c9a22441\firebase-measurement-connector-impl-17.0.5\AndroidManifest.xml:29:17-139
-262                android:value="com.google.firebase.components.ComponentRegistrar" />
-262-->[com.google.firebase:firebase-measurement-connector-impl:17.0.5] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\68ca5b100168c7c7f8a2abd6c9a22441\firebase-measurement-connector-impl-17.0.5\AndroidManifest.xml:30:17-82
-263            <meta-data
-263-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f812aa0c82fadb0bc8e1403264ebbc81\firebase-iid-17.0.4\AndroidManifest.xml:32:13-34:85
-264                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
-264-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f812aa0c82fadb0bc8e1403264ebbc81\firebase-iid-17.0.4\AndroidManifest.xml:33:17-96
-265                android:value="com.google.firebase.components.ComponentRegistrar" />
-265-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f812aa0c82fadb0bc8e1403264ebbc81\firebase-iid-17.0.4\AndroidManifest.xml:34:17-82
-266        </service>
-267
-268        <activity
-268-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\2c125e4e6215e2d9080e93179133e3b8\play-services-auth-16.0.1\AndroidManifest.xml:23:9-27:75
-269            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-269-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\2c125e4e6215e2d9080e93179133e3b8\play-services-auth-16.0.1\AndroidManifest.xml:24:13-93
-270            android:excludeFromRecents="true"
-270-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\2c125e4e6215e2d9080e93179133e3b8\play-services-auth-16.0.1\AndroidManifest.xml:25:13-46
-271            android:exported="false"
-271-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\2c125e4e6215e2d9080e93179133e3b8\play-services-auth-16.0.1\AndroidManifest.xml:26:13-37
-272            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-272-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\2c125e4e6215e2d9080e93179133e3b8\play-services-auth-16.0.1\AndroidManifest.xml:27:13-72
-273        <!--
-274            Service handling Google Sign-In user revocation. For apps that do not integrate with
-275            Google Sign-In, this service will never be started.
-276        -->
-277        <service
-277-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\2c125e4e6215e2d9080e93179133e3b8\play-services-auth-16.0.1\AndroidManifest.xml:33:9-36:110
-278            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-278-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\2c125e4e6215e2d9080e93179133e3b8\play-services-auth-16.0.1\AndroidManifest.xml:34:13-89
-279            android:exported="true"
-279-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\2c125e4e6215e2d9080e93179133e3b8\play-services-auth-16.0.1\AndroidManifest.xml:35:13-36
-280            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" /> <!-- Yandex Mobile Metrica Analytics: common service -->
-280-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\2c125e4e6215e2d9080e93179133e3b8\play-services-auth-16.0.1\AndroidManifest.xml:36:13-107
-281        <service
-281-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:26:9-43:19
-282            android:name="com.yandex.metrica.MetricaService"
-282-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:27:13-61
-283            android:enabled="true"
-283-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:28:13-35
-284            android:exported="true"
-284-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:29:13-36
-285            android:process=":Metrica" >
-285-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:30:13-39
-286            <intent-filter>
-286-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:32:13-38:29
-287                <category android:name="android.intent.category.DEFAULT" />
-287-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:50:17-76
-287-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:50:27-73
-288
-289                <action android:name="com.yandex.metrica.IMetricaService" />
-289-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:35:17-77
-289-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:35:25-74
-290
-291                <data android:scheme="metrica" />
-291-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:53:17-66
-291-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:53:23-63
-292            </intent-filter>
-293
-294            <meta-data
-294-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:40:13-42:38
-295                android:name="metrica:api:level"
-295-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:41:17-49
-296                android:value="76" />
-296-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:42:17-35
-297        </service>
-298        <service
-298-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:44:9-60:19
-299            android:name="com.yandex.metrica.ConfigurationService"
-299-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:45:13-67
-300            android:enabled="true"
-300-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:46:13-35
-301            android:exported="false"
-301-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:47:13-37
-302            android:process=":Metrica" >
-302-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:48:13-39
-303            <meta-data
-303-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:50:13-52:37
-304                android:name="metrica:configuration:api:level"
-304-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:51:17-63
-305                android:value="3" />
-305-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:52:17-34
-306
-307            <intent-filter>
-307-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:54:13-59:29
-308
-309                <!-- This action was used by old background location collecting and should not be used again -->
-310                <!-- <action android:name="com.yandex.metrica.configuration.ACTION_START"/> -->
-311                <action android:name="com.yandex.metrica.configuration.ACTION_INIT" />
-311-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:58:17-87
-311-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:58:25-84
-312            </intent-filter>
-313        </service>
-314        <service
-314-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:61:9-67:19
-315            android:name="com.yandex.metrica.ConfigurationJobService"
-315-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:62:13-70
-316            android:enabled="true"
-316-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:63:13-35
-317            android:exported="false"
-317-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:64:13-37
-318            android:permission="android.permission.BIND_JOB_SERVICE"
-318-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:65:13-69
-319            android:process=":Metrica" >
-319-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:66:13-39
-320        </service> <!-- Yandex Mobile Metrica Analytics: main receiver -->
-321        <receiver
-321-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:70:9-78:20
-322            android:name="com.yandex.metrica.MetricaEventHandler"
-322-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:71:13-66
+208
+209        <!-- for job intent class -->
+210        <service
+210-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:195:9-198:72
+211            android:name="com.mojodigi.ninjafox.Service.getAddressJobIntentService"
+211-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:196:13-63
+212            android:exported="false"
+212-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:197:13-37
+213            android:permission="android.permission.BIND_JOB_SERVICE" />
+213-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:198:13-69
+214
+215        <receiver
+215-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:200:9-205:20
+216            android:name="com.mojodigi.ninjafox.BroadCast.DownloadReceiver"
+216-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:201:13-55
+217            android:label="DownloadReceiver" >
+217-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:202:13-45
+218        </receiver>
+219
+220        <service
+220-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:207:9-210:40
+221            android:name="com.mojodigi.ninjafox.DownlaodModule.DownloadService"
+221-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:208:13-59
+222            android:enabled="true"
+222-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:209:13-35
+223            android:exported="false" />
+223-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:210:13-37
+224
+225        <!--
+226             FirebaseMessagingService performs security checks at runtime,
+227             no need for explicit permissions despite exported="true"
+228        -->
+229        <service
+229-->[com.google.firebase:firebase-messaging:17.3.4] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\867110f9d52010542d15c324d0eb9dee\firebase-messaging-17.3.4\AndroidManifest.xml:28:9-34:19
+230            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+230-->[com.google.firebase:firebase-messaging:17.3.4] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\867110f9d52010542d15c324d0eb9dee\firebase-messaging-17.3.4\AndroidManifest.xml:29:13-82
+231            android:exported="true" >
+231-->[com.google.firebase:firebase-messaging:17.3.4] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\867110f9d52010542d15c324d0eb9dee\firebase-messaging-17.3.4\AndroidManifest.xml:30:13-36
+232            <intent-filter android:priority="-500" >
+232-->[com.google.firebase:firebase-messaging:17.3.4] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\867110f9d52010542d15c324d0eb9dee\firebase-messaging-17.3.4\AndroidManifest.xml:31:13-33:29
+232-->[com.google.firebase:firebase-messaging:17.3.4] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\867110f9d52010542d15c324d0eb9dee\firebase-messaging-17.3.4\AndroidManifest.xml:31:28-51
+233                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+233-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:166:17-78
+233-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:166:25-75
+234            </intent-filter>
+235        </service>
+236
+237        <receiver
+237-->[com.google.android.gms:play-services-analytics:16.0.7] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\e642be4a9d1cdd27ddd48bf62d596e8f\play-services-analytics-16.0.7\AndroidManifest.xml:30:9-34:20
+238            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+238-->[com.google.android.gms:play-services-analytics:16.0.7] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\e642be4a9d1cdd27ddd48bf62d596e8f\play-services-analytics-16.0.7\AndroidManifest.xml:31:13-78
+239            android:enabled="true"
+239-->[com.google.android.gms:play-services-analytics:16.0.7] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\e642be4a9d1cdd27ddd48bf62d596e8f\play-services-analytics-16.0.7\AndroidManifest.xml:32:13-35
+240            android:exported="false" >
+240-->[com.google.android.gms:play-services-analytics:16.0.7] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\e642be4a9d1cdd27ddd48bf62d596e8f\play-services-analytics-16.0.7\AndroidManifest.xml:33:13-37
+241        </receiver>
+242
+243        <service
+243-->[com.google.android.gms:play-services-analytics:16.0.7] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\e642be4a9d1cdd27ddd48bf62d596e8f\play-services-analytics-16.0.7\AndroidManifest.xml:36:9-39:40
+244            android:name="com.google.android.gms.analytics.AnalyticsService"
+244-->[com.google.android.gms:play-services-analytics:16.0.7] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\e642be4a9d1cdd27ddd48bf62d596e8f\play-services-analytics-16.0.7\AndroidManifest.xml:37:13-77
+245            android:enabled="true"
+245-->[com.google.android.gms:play-services-analytics:16.0.7] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\e642be4a9d1cdd27ddd48bf62d596e8f\play-services-analytics-16.0.7\AndroidManifest.xml:38:13-35
+246            android:exported="false" />
+246-->[com.google.android.gms:play-services-analytics:16.0.7] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\e642be4a9d1cdd27ddd48bf62d596e8f\play-services-analytics-16.0.7\AndroidManifest.xml:39:13-37
+247        <service
+247-->[com.google.android.gms:play-services-analytics:16.0.7] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\e642be4a9d1cdd27ddd48bf62d596e8f\play-services-analytics-16.0.7\AndroidManifest.xml:40:9-44:72
+248            android:name="com.google.android.gms.analytics.AnalyticsJobService"
+248-->[com.google.android.gms:play-services-analytics:16.0.7] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\e642be4a9d1cdd27ddd48bf62d596e8f\play-services-analytics-16.0.7\AndroidManifest.xml:41:13-80
+249            android:enabled="true"
+249-->[com.google.android.gms:play-services-analytics:16.0.7] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\e642be4a9d1cdd27ddd48bf62d596e8f\play-services-analytics-16.0.7\AndroidManifest.xml:42:13-35
+250            android:exported="false"
+250-->[com.google.android.gms:play-services-analytics:16.0.7] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\e642be4a9d1cdd27ddd48bf62d596e8f\play-services-analytics-16.0.7\AndroidManifest.xml:43:13-37
+251            android:permission="android.permission.BIND_JOB_SERVICE" />
+251-->[com.google.android.gms:play-services-analytics:16.0.7] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\e642be4a9d1cdd27ddd48bf62d596e8f\play-services-analytics-16.0.7\AndroidManifest.xml:44:13-69
+252
+253        <activity
+253-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\6ac6735473ac39f6fdccb1ce3c615248\firebase-auth-16.0.5\AndroidManifest.xml:24:9-31:50
+254            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+254-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\6ac6735473ac39f6fdccb1ce3c615248\firebase-auth-16.0.5\AndroidManifest.xml:25:13-85
+255            android:excludeFromRecents="true"
+255-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\6ac6735473ac39f6fdccb1ce3c615248\firebase-auth-16.0.5\AndroidManifest.xml:26:13-46
+256            android:exported="true"
+256-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\6ac6735473ac39f6fdccb1ce3c615248\firebase-auth-16.0.5\AndroidManifest.xml:27:13-36
+257            android:launchMode="singleTask"
+257-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\6ac6735473ac39f6fdccb1ce3c615248\firebase-auth-16.0.5\AndroidManifest.xml:28:13-44
+258            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+258-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\6ac6735473ac39f6fdccb1ce3c615248\firebase-auth-16.0.5\AndroidManifest.xml:29:13-102
+259            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+259-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\6ac6735473ac39f6fdccb1ce3c615248\firebase-auth-16.0.5\AndroidManifest.xml:30:13-72
+260
+261        <service
+261-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\6ac6735473ac39f6fdccb1ce3c615248\firebase-auth-16.0.5\AndroidManifest.xml:33:9-39:19
+262            android:name="com.google.firebase.components.ComponentDiscoveryService"
+262-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\6ac6735473ac39f6fdccb1ce3c615248\firebase-auth-16.0.5\AndroidManifest.xml:34:13-84
+263            android:exported="false" >
+263-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\6ac6735473ac39f6fdccb1ce3c615248\firebase-auth-16.0.5\AndroidManifest.xml:35:13-37
+264            <meta-data
+264-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\6ac6735473ac39f6fdccb1ce3c615248\firebase-auth-16.0.5\AndroidManifest.xml:36:13-38:85
+265                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+265-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\6ac6735473ac39f6fdccb1ce3c615248\firebase-auth-16.0.5\AndroidManifest.xml:37:17-109
+266                android:value="com.google.firebase.components.ComponentRegistrar" />
+266-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\6ac6735473ac39f6fdccb1ce3c615248\firebase-auth-16.0.5\AndroidManifest.xml:38:17-82
+267            <meta-data
+267-->[com.google.firebase:firebase-measurement-connector-impl:17.0.5] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\68ca5b100168c7c7f8a2abd6c9a22441\firebase-measurement-connector-impl-17.0.5\AndroidManifest.xml:28:13-30:85
+268                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+268-->[com.google.firebase:firebase-measurement-connector-impl:17.0.5] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\68ca5b100168c7c7f8a2abd6c9a22441\firebase-measurement-connector-impl-17.0.5\AndroidManifest.xml:29:17-139
+269                android:value="com.google.firebase.components.ComponentRegistrar" />
+269-->[com.google.firebase:firebase-measurement-connector-impl:17.0.5] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\68ca5b100168c7c7f8a2abd6c9a22441\firebase-measurement-connector-impl-17.0.5\AndroidManifest.xml:30:17-82
+270            <meta-data
+270-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f812aa0c82fadb0bc8e1403264ebbc81\firebase-iid-17.0.4\AndroidManifest.xml:32:13-34:85
+271                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+271-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f812aa0c82fadb0bc8e1403264ebbc81\firebase-iid-17.0.4\AndroidManifest.xml:33:17-96
+272                android:value="com.google.firebase.components.ComponentRegistrar" />
+272-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f812aa0c82fadb0bc8e1403264ebbc81\firebase-iid-17.0.4\AndroidManifest.xml:34:17-82
+273        </service>
+274
+275        <activity
+275-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\2c125e4e6215e2d9080e93179133e3b8\play-services-auth-16.0.1\AndroidManifest.xml:23:9-27:75
+276            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+276-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\2c125e4e6215e2d9080e93179133e3b8\play-services-auth-16.0.1\AndroidManifest.xml:24:13-93
+277            android:excludeFromRecents="true"
+277-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\2c125e4e6215e2d9080e93179133e3b8\play-services-auth-16.0.1\AndroidManifest.xml:25:13-46
+278            android:exported="false"
+278-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\2c125e4e6215e2d9080e93179133e3b8\play-services-auth-16.0.1\AndroidManifest.xml:26:13-37
+279            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+279-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\2c125e4e6215e2d9080e93179133e3b8\play-services-auth-16.0.1\AndroidManifest.xml:27:13-72
+280        <!--
+281            Service handling Google Sign-In user revocation. For apps that do not integrate with
+282            Google Sign-In, this service will never be started.
+283        -->
+284        <service
+284-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\2c125e4e6215e2d9080e93179133e3b8\play-services-auth-16.0.1\AndroidManifest.xml:33:9-36:110
+285            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+285-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\2c125e4e6215e2d9080e93179133e3b8\play-services-auth-16.0.1\AndroidManifest.xml:34:13-89
+286            android:exported="true"
+286-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\2c125e4e6215e2d9080e93179133e3b8\play-services-auth-16.0.1\AndroidManifest.xml:35:13-36
+287            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" /> <!-- Yandex Mobile Metrica Analytics: common service -->
+287-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\2c125e4e6215e2d9080e93179133e3b8\play-services-auth-16.0.1\AndroidManifest.xml:36:13-107
+288        <service
+288-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:26:9-43:19
+289            android:name="com.yandex.metrica.MetricaService"
+289-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:27:13-61
+290            android:enabled="true"
+290-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:28:13-35
+291            android:exported="true"
+291-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:29:13-36
+292            android:process=":Metrica" >
+292-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:30:13-39
+293            <intent-filter>
+293-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:32:13-38:29
+294                <category android:name="android.intent.category.DEFAULT" />
+294-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:55:17-76
+294-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:55:27-73
+295
+296                <action android:name="com.yandex.metrica.IMetricaService" />
+296-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:35:17-77
+296-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:35:25-74
+297
+298                <data android:scheme="metrica" />
+298-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:58:17-66
+298-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:58:23-63
+299            </intent-filter>
+300
+301            <meta-data
+301-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:40:13-42:38
+302                android:name="metrica:api:level"
+302-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:41:17-49
+303                android:value="76" />
+303-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:42:17-35
+304        </service>
+305        <service
+305-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:44:9-60:19
+306            android:name="com.yandex.metrica.ConfigurationService"
+306-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:45:13-67
+307            android:enabled="true"
+307-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:46:13-35
+308            android:exported="false"
+308-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:47:13-37
+309            android:process=":Metrica" >
+309-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:48:13-39
+310            <meta-data
+310-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:50:13-52:37
+311                android:name="metrica:configuration:api:level"
+311-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:51:17-63
+312                android:value="3" />
+312-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:52:17-34
+313
+314            <intent-filter>
+314-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:54:13-59:29
+315
+316                <!-- This action was used by old background location collecting and should not be used again -->
+317                <!-- <action android:name="com.yandex.metrica.configuration.ACTION_START"/> -->
+318                <action android:name="com.yandex.metrica.configuration.ACTION_INIT" />
+318-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:58:17-87
+318-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:58:25-84
+319            </intent-filter>
+320        </service>
+321        <service
+321-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:61:9-67:19
+322            android:name="com.yandex.metrica.ConfigurationJobService"
+322-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:62:13-70
 323            android:enabled="true"
-323-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:72:13-35
-324            android:exported="true" >
-324-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:73:13-36
-325            <intent-filter>
-325-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:75:13-77:29
-326                <action android:name="com.android.vending.INSTALL_REFERRER" />
-326-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:76:17-79
-326-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:76:25-76
-327            </intent-filter>
-328        </receiver>
-329
-330        <activity
-330-->[com.facebook.android:audience-network-sdk:5.6.1] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\72c47fbadcc6dca0e37e26dc1c27ef75\audience-network-sdk-5.6.1\AndroidManifest.xml:20:9-25:75
-331            android:name="com.facebook.ads.internal.ipc.RemoteANActivity"
-331-->[com.facebook.android:audience-network-sdk:5.6.1] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\72c47fbadcc6dca0e37e26dc1c27ef75\audience-network-sdk-5.6.1\AndroidManifest.xml:21:13-74
-332            android:configChanges="keyboardHidden|orientation|screenSize"
-332-->[com.facebook.android:audience-network-sdk:5.6.1] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\72c47fbadcc6dca0e37e26dc1c27ef75\audience-network-sdk-5.6.1\AndroidManifest.xml:22:13-74
-333            android:exported="false"
-333-->[com.facebook.android:audience-network-sdk:5.6.1] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\72c47fbadcc6dca0e37e26dc1c27ef75\audience-network-sdk-5.6.1\AndroidManifest.xml:23:13-37
-334            android:process=":adnw"
-334-->[com.facebook.android:audience-network-sdk:5.6.1] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\72c47fbadcc6dca0e37e26dc1c27ef75\audience-network-sdk-5.6.1\AndroidManifest.xml:24:13-36
-335            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-335-->[com.facebook.android:audience-network-sdk:5.6.1] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\72c47fbadcc6dca0e37e26dc1c27ef75\audience-network-sdk-5.6.1\AndroidManifest.xml:25:13-72
+323-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:63:13-35
+324            android:exported="false"
+324-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:64:13-37
+325            android:permission="android.permission.BIND_JOB_SERVICE"
+325-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:65:13-69
+326            android:process=":Metrica" >
+326-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:66:13-39
+327        </service> <!-- Yandex Mobile Metrica Analytics: main receiver -->
+328        <receiver
+328-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:70:9-78:20
+329            android:name="com.yandex.metrica.MetricaEventHandler"
+329-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:71:13-66
+330            android:enabled="true"
+330-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:72:13-35
+331            android:exported="true" >
+331-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:73:13-36
+332            <intent-filter>
+332-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:75:13-77:29
+333                <action android:name="com.android.vending.INSTALL_REFERRER" />
+333-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:76:17-79
+333-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:76:25-76
+334            </intent-filter>
+335        </receiver>
 336
-337        <service
-337-->[com.facebook.android:audience-network-sdk:5.6.1] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\72c47fbadcc6dca0e37e26dc1c27ef75\audience-network-sdk-5.6.1\AndroidManifest.xml:27:9-29:40
-338            android:name="com.facebook.ads.internal.ipc.AdsProcessPriorityService"
-338-->[com.facebook.android:audience-network-sdk:5.6.1] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\72c47fbadcc6dca0e37e26dc1c27ef75\audience-network-sdk-5.6.1\AndroidManifest.xml:28:13-83
-339            android:exported="false" />
-339-->[com.facebook.android:audience-network-sdk:5.6.1] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\72c47fbadcc6dca0e37e26dc1c27ef75\audience-network-sdk-5.6.1\AndroidManifest.xml:29:13-37
-340        <service
-340-->[com.facebook.android:audience-network-sdk:5.6.1] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\72c47fbadcc6dca0e37e26dc1c27ef75\audience-network-sdk-5.6.1\AndroidManifest.xml:30:9-33:39
-341            android:name="com.facebook.ads.internal.ipc.AdsMessengerService"
-341-->[com.facebook.android:audience-network-sdk:5.6.1] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\72c47fbadcc6dca0e37e26dc1c27ef75\audience-network-sdk-5.6.1\AndroidManifest.xml:31:13-77
-342            android:exported="false"
-342-->[com.facebook.android:audience-network-sdk:5.6.1] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\72c47fbadcc6dca0e37e26dc1c27ef75\audience-network-sdk-5.6.1\AndroidManifest.xml:32:13-37
-343            android:process=":adnw" />
-343-->[com.facebook.android:audience-network-sdk:5.6.1] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\72c47fbadcc6dca0e37e26dc1c27ef75\audience-network-sdk-5.6.1\AndroidManifest.xml:33:13-36
-344
-345        <provider
-345-->[com.facebook.android:audience-network-sdk:5.6.1] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\72c47fbadcc6dca0e37e26dc1c27ef75\audience-network-sdk-5.6.1\AndroidManifest.xml:35:9-38:40
-346            android:name="com.facebook.ads.AudienceNetworkContentProvider"
-346-->[com.facebook.android:audience-network-sdk:5.6.1] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\72c47fbadcc6dca0e37e26dc1c27ef75\audience-network-sdk-5.6.1\AndroidManifest.xml:36:13-75
-347            android:authorities="com.mojodigi.ninjafox.AudienceNetworkContentProvider"
-347-->[com.facebook.android:audience-network-sdk:5.6.1] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\72c47fbadcc6dca0e37e26dc1c27ef75\audience-network-sdk-5.6.1\AndroidManifest.xml:37:13-82
-348            android:exported="false" /> <!-- The activity will be merged into the manifest of the hosting app. -->
-348-->[com.facebook.android:audience-network-sdk:5.6.1] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\72c47fbadcc6dca0e37e26dc1c27ef75\audience-network-sdk-5.6.1\AndroidManifest.xml:38:13-37
-349        <activity
-349-->[com.google.android.play:core:1.6.4] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\c9ee5f94cdf216a3b362c30b03583734\core-1.6.4\AndroidManifest.xml:8:5-271
-350            android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity"
-350-->[com.google.android.play:core:1.6.4] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\c9ee5f94cdf216a3b362c30b03583734\core-1.6.4\AndroidManifest.xml:8:15-102
-351            android:enabled="false"
-351-->[com.google.android.play:core:1.6.4] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\c9ee5f94cdf216a3b362c30b03583734\core-1.6.4\AndroidManifest.xml:8:103-126
-352            android:exported="false"
-352-->[com.google.android.play:core:1.6.4] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\c9ee5f94cdf216a3b362c30b03583734\core-1.6.4\AndroidManifest.xml:8:127-151
-353            android:launchMode="singleInstance"
-353-->[com.google.android.play:core:1.6.4] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\c9ee5f94cdf216a3b362c30b03583734\core-1.6.4\AndroidManifest.xml:8:204-239
-354            android:process=":playcore_missing_splits_activity"
-354-->[com.google.android.play:core:1.6.4] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\c9ee5f94cdf216a3b362c30b03583734\core-1.6.4\AndroidManifest.xml:8:152-203
-355            android:stateNotNeeded="true" />
-355-->[com.google.android.play:core:1.6.4] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\c9ee5f94cdf216a3b362c30b03583734\core-1.6.4\AndroidManifest.xml:8:240-269
-356        <activity
-356-->[com.google.android.play:core:1.6.4] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\c9ee5f94cdf216a3b362c30b03583734\core-1.6.4\AndroidManifest.xml:9:5-278
-357            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
-357-->[com.google.android.play:core:1.6.4] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\c9ee5f94cdf216a3b362c30b03583734\core-1.6.4\AndroidManifest.xml:9:15-95
-358            android:enabled="false"
-358-->[com.google.android.play:core:1.6.4] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\c9ee5f94cdf216a3b362c30b03583734\core-1.6.4\AndroidManifest.xml:9:96-119
-359            android:exported="false"
-359-->[com.google.android.play:core:1.6.4] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\c9ee5f94cdf216a3b362c30b03583734\core-1.6.4\AndroidManifest.xml:9:120-144
-360            android:process=":playcore_dialog_wrapper_activity"
-360-->[com.google.android.play:core:1.6.4] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\c9ee5f94cdf216a3b362c30b03583734\core-1.6.4\AndroidManifest.xml:9:175-226
-361            android:stateNotNeeded="true"
-361-->[com.google.android.play:core:1.6.4] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\c9ee5f94cdf216a3b362c30b03583734\core-1.6.4\AndroidManifest.xml:9:145-174
-362            android:theme="@style/Theme.PlayCore.Transparent" />
-362-->[com.google.android.play:core:1.6.4] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\c9ee5f94cdf216a3b362c30b03583734\core-1.6.4\AndroidManifest.xml:9:227-276
-363
-364        <receiver
-364-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\582822dc5404538564e47213fa2dc50c\firebase-analytics-16.3.0\AndroidManifest.xml:29:9-33:20
-365            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-365-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\582822dc5404538564e47213fa2dc50c\firebase-analytics-16.3.0\AndroidManifest.xml:30:13-85
-366            android:enabled="true"
-366-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\582822dc5404538564e47213fa2dc50c\firebase-analytics-16.3.0\AndroidManifest.xml:31:13-35
-367            android:exported="false" >
-367-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\582822dc5404538564e47213fa2dc50c\firebase-analytics-16.3.0\AndroidManifest.xml:32:13-37
-368        </receiver>
-369        <receiver
-369-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\582822dc5404538564e47213fa2dc50c\firebase-analytics-16.3.0\AndroidManifest.xml:34:9-42:20
-370            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
-370-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\582822dc5404538564e47213fa2dc50c\firebase-analytics-16.3.0\AndroidManifest.xml:35:13-100
-371            android:enabled="true"
-371-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\582822dc5404538564e47213fa2dc50c\firebase-analytics-16.3.0\AndroidManifest.xml:36:13-35
-372            android:exported="true"
-372-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\582822dc5404538564e47213fa2dc50c\firebase-analytics-16.3.0\AndroidManifest.xml:37:13-36
-373            android:permission="android.permission.INSTALL_PACKAGES" >
-373-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\582822dc5404538564e47213fa2dc50c\firebase-analytics-16.3.0\AndroidManifest.xml:38:13-69
-374            <intent-filter>
-374-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:75:13-77:29
-375                <action android:name="com.android.vending.INSTALL_REFERRER" />
-375-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:76:17-79
-375-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:76:25-76
-376            </intent-filter>
-377        </receiver>
-378
+337        <provider
+337-->[com.facebook.android:audience-network-sdk:5.7.1] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\6bb5657e2bb51f1088d4052cc585a9ba\audience-network-sdk-5.7.1\AndroidManifest.xml:21:9-24:40
+338            android:name="com.facebook.ads.AudienceNetworkContentProvider"
+338-->[com.facebook.android:audience-network-sdk:5.7.1] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\6bb5657e2bb51f1088d4052cc585a9ba\audience-network-sdk-5.7.1\AndroidManifest.xml:22:13-75
+339            android:authorities="com.mojodigi.ninjafox.AudienceNetworkContentProvider"
+339-->[com.facebook.android:audience-network-sdk:5.7.1] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\6bb5657e2bb51f1088d4052cc585a9ba\audience-network-sdk-5.7.1\AndroidManifest.xml:23:13-82
+340            android:exported="false" /> <!-- The activities will be merged into the manifest of the hosting app. -->
+340-->[com.facebook.android:audience-network-sdk:5.7.1] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\6bb5657e2bb51f1088d4052cc585a9ba\audience-network-sdk-5.7.1\AndroidManifest.xml:24:13-37
+341        <activity
+341-->[com.google.android.play:core:1.7.0] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\482974302fae38faa2249340c05843a7\core-1.7.0\AndroidManifest.xml:8:5-271
+342            android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity"
+342-->[com.google.android.play:core:1.7.0] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\482974302fae38faa2249340c05843a7\core-1.7.0\AndroidManifest.xml:8:15-102
+343            android:enabled="false"
+343-->[com.google.android.play:core:1.7.0] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\482974302fae38faa2249340c05843a7\core-1.7.0\AndroidManifest.xml:8:103-126
+344            android:exported="false"
+344-->[com.google.android.play:core:1.7.0] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\482974302fae38faa2249340c05843a7\core-1.7.0\AndroidManifest.xml:8:127-151
+345            android:launchMode="singleInstance"
+345-->[com.google.android.play:core:1.7.0] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\482974302fae38faa2249340c05843a7\core-1.7.0\AndroidManifest.xml:8:204-239
+346            android:process=":playcore_missing_splits_activity"
+346-->[com.google.android.play:core:1.7.0] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\482974302fae38faa2249340c05843a7\core-1.7.0\AndroidManifest.xml:8:152-203
+347            android:stateNotNeeded="true" />
+347-->[com.google.android.play:core:1.7.0] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\482974302fae38faa2249340c05843a7\core-1.7.0\AndroidManifest.xml:8:240-269
+348        <activity
+348-->[com.google.android.play:core:1.7.0] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\482974302fae38faa2249340c05843a7\core-1.7.0\AndroidManifest.xml:9:5-278
+349            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+349-->[com.google.android.play:core:1.7.0] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\482974302fae38faa2249340c05843a7\core-1.7.0\AndroidManifest.xml:9:15-95
+350            android:enabled="false"
+350-->[com.google.android.play:core:1.7.0] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\482974302fae38faa2249340c05843a7\core-1.7.0\AndroidManifest.xml:9:96-119
+351            android:exported="false"
+351-->[com.google.android.play:core:1.7.0] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\482974302fae38faa2249340c05843a7\core-1.7.0\AndroidManifest.xml:9:120-144
+352            android:process=":playcore_dialog_wrapper_activity"
+352-->[com.google.android.play:core:1.7.0] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\482974302fae38faa2249340c05843a7\core-1.7.0\AndroidManifest.xml:9:175-226
+353            android:stateNotNeeded="true"
+353-->[com.google.android.play:core:1.7.0] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\482974302fae38faa2249340c05843a7\core-1.7.0\AndroidManifest.xml:9:145-174
+354            android:theme="@style/Theme.PlayCore.Transparent" /> <!-- The service will be merged into the manifest of the hosting app. -->
+354-->[com.google.android.play:core:1.7.0] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\482974302fae38faa2249340c05843a7\core-1.7.0\AndroidManifest.xml:9:227-276
+355        <service
+355-->[com.google.android.play:core:1.7.0] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\482974302fae38faa2249340c05843a7\core-1.7.0\AndroidManifest.xml:12:5-145
+356            android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService"
+356-->[com.google.android.play:core:1.7.0] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\482974302fae38faa2249340c05843a7\core-1.7.0\AndroidManifest.xml:12:14-95
+357            android:enabled="false"
+357-->[com.google.android.play:core:1.7.0] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\482974302fae38faa2249340c05843a7\core-1.7.0\AndroidManifest.xml:12:96-119
+358            android:exported="true" />
+358-->[com.google.android.play:core:1.7.0] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\482974302fae38faa2249340c05843a7\core-1.7.0\AndroidManifest.xml:12:120-143
+359
+360        <receiver
+360-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\582822dc5404538564e47213fa2dc50c\firebase-analytics-16.3.0\AndroidManifest.xml:29:9-33:20
+361            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+361-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\582822dc5404538564e47213fa2dc50c\firebase-analytics-16.3.0\AndroidManifest.xml:30:13-85
+362            android:enabled="true"
+362-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\582822dc5404538564e47213fa2dc50c\firebase-analytics-16.3.0\AndroidManifest.xml:31:13-35
+363            android:exported="false" >
+363-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\582822dc5404538564e47213fa2dc50c\firebase-analytics-16.3.0\AndroidManifest.xml:32:13-37
+364        </receiver>
+365        <receiver
+365-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\582822dc5404538564e47213fa2dc50c\firebase-analytics-16.3.0\AndroidManifest.xml:34:9-42:20
+366            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+366-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\582822dc5404538564e47213fa2dc50c\firebase-analytics-16.3.0\AndroidManifest.xml:35:13-100
+367            android:enabled="true"
+367-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\582822dc5404538564e47213fa2dc50c\firebase-analytics-16.3.0\AndroidManifest.xml:36:13-35
+368            android:exported="true"
+368-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\582822dc5404538564e47213fa2dc50c\firebase-analytics-16.3.0\AndroidManifest.xml:37:13-36
+369            android:permission="android.permission.INSTALL_PACKAGES" >
+369-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\582822dc5404538564e47213fa2dc50c\firebase-analytics-16.3.0\AndroidManifest.xml:38:13-69
+370            <intent-filter>
+370-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:75:13-77:29
+371                <action android:name="com.android.vending.INSTALL_REFERRER" />
+371-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:76:17-79
+371-->[com.yandex.android:mobmetricalib:3.5.3] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f6624481c63800e7b49ff829b26d8d7c\mobmetricalib-3.5.3\AndroidManifest.xml:76:25-76
+372            </intent-filter>
+373        </receiver>
+374
+375        <service
+375-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\582822dc5404538564e47213fa2dc50c\firebase-analytics-16.3.0\AndroidManifest.xml:44:9-47:40
+376            android:name="com.google.android.gms.measurement.AppMeasurementService"
+376-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\582822dc5404538564e47213fa2dc50c\firebase-analytics-16.3.0\AndroidManifest.xml:45:13-84
+377            android:enabled="true"
+377-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\582822dc5404538564e47213fa2dc50c\firebase-analytics-16.3.0\AndroidManifest.xml:46:13-35
+378            android:exported="false" />
+378-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\582822dc5404538564e47213fa2dc50c\firebase-analytics-16.3.0\AndroidManifest.xml:47:13-37
 379        <service
-379-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\582822dc5404538564e47213fa2dc50c\firebase-analytics-16.3.0\AndroidManifest.xml:44:9-47:40
-380            android:name="com.google.android.gms.measurement.AppMeasurementService"
-380-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\582822dc5404538564e47213fa2dc50c\firebase-analytics-16.3.0\AndroidManifest.xml:45:13-84
+379-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\582822dc5404538564e47213fa2dc50c\firebase-analytics-16.3.0\AndroidManifest.xml:48:9-52:72
+380            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+380-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\582822dc5404538564e47213fa2dc50c\firebase-analytics-16.3.0\AndroidManifest.xml:49:13-87
 381            android:enabled="true"
-381-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\582822dc5404538564e47213fa2dc50c\firebase-analytics-16.3.0\AndroidManifest.xml:46:13-35
-382            android:exported="false" />
-382-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\582822dc5404538564e47213fa2dc50c\firebase-analytics-16.3.0\AndroidManifest.xml:47:13-37
-383        <service
-383-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\582822dc5404538564e47213fa2dc50c\firebase-analytics-16.3.0\AndroidManifest.xml:48:9-52:72
-384            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-384-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\582822dc5404538564e47213fa2dc50c\firebase-analytics-16.3.0\AndroidManifest.xml:49:13-87
-385            android:enabled="true"
-385-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\582822dc5404538564e47213fa2dc50c\firebase-analytics-16.3.0\AndroidManifest.xml:50:13-35
-386            android:exported="false"
-386-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\582822dc5404538564e47213fa2dc50c\firebase-analytics-16.3.0\AndroidManifest.xml:51:13-37
-387            android:permission="android.permission.BIND_JOB_SERVICE" />
-387-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\582822dc5404538564e47213fa2dc50c\firebase-analytics-16.3.0\AndroidManifest.xml:52:13-69
-388
-389        <receiver
-389-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f812aa0c82fadb0bc8e1403264ebbc81\firebase-iid-17.0.4\AndroidManifest.xml:37:9-44:20
-390            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-390-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f812aa0c82fadb0bc8e1403264ebbc81\firebase-iid-17.0.4\AndroidManifest.xml:38:13-78
-391            android:exported="true"
-391-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f812aa0c82fadb0bc8e1403264ebbc81\firebase-iid-17.0.4\AndroidManifest.xml:39:13-36
-392            android:permission="com.google.android.c2dm.permission.SEND" >
-392-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f812aa0c82fadb0bc8e1403264ebbc81\firebase-iid-17.0.4\AndroidManifest.xml:40:13-73
-393            <intent-filter>
-393-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f812aa0c82fadb0bc8e1403264ebbc81\firebase-iid-17.0.4\AndroidManifest.xml:41:13-43:29
-394                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-394-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:158:17-81
-394-->D:\StudioProjects\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:158:25-78
-395            </intent-filter>
-396        </receiver>
-397        <!--
-398             FirebaseInstanceIdService performs security checks at runtime,
-399             no need for explicit permissions despite exported="true"
-400        -->
-401        <service
-401-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f812aa0c82fadb0bc8e1403264ebbc81\firebase-iid-17.0.4\AndroidManifest.xml:50:9-56:19
-402            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
-402-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f812aa0c82fadb0bc8e1403264ebbc81\firebase-iid-17.0.4\AndroidManifest.xml:51:13-77
-403            android:exported="true" >
-403-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f812aa0c82fadb0bc8e1403264ebbc81\firebase-iid-17.0.4\AndroidManifest.xml:52:13-36
-404            <intent-filter android:priority="-500" >
-404-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f812aa0c82fadb0bc8e1403264ebbc81\firebase-iid-17.0.4\AndroidManifest.xml:53:13-55:29
-404-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f812aa0c82fadb0bc8e1403264ebbc81\firebase-iid-17.0.4\AndroidManifest.xml:53:28-51
-405                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
-405-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f812aa0c82fadb0bc8e1403264ebbc81\firebase-iid-17.0.4\AndroidManifest.xml:54:17-80
-405-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\f812aa0c82fadb0bc8e1403264ebbc81\firebase-iid-17.0.4\AndroidManifest.xml:54:25-77
-406            </intent-filter>
-407        </service>
-408
-409        <provider
-409-->[com.google.firebase:firebase-common:16.0.3] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\a48782d3fd02d5ce5e143923d5cc08c6\firebase-common-16.0.3\AndroidManifest.xml:10:9-14:39
-410            android:name="com.google.firebase.provider.FirebaseInitProvider"
-410-->[com.google.firebase:firebase-common:16.0.3] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\a48782d3fd02d5ce5e143923d5cc08c6\firebase-common-16.0.3\AndroidManifest.xml:11:13-77
-411            android:authorities="com.mojodigi.ninjafox.firebaseinitprovider"
-411-->[com.google.firebase:firebase-common:16.0.3] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\a48782d3fd02d5ce5e143923d5cc08c6\firebase-common-16.0.3\AndroidManifest.xml:12:13-72
-412            android:exported="false"
-412-->[com.google.firebase:firebase-common:16.0.3] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\a48782d3fd02d5ce5e143923d5cc08c6\firebase-common-16.0.3\AndroidManifest.xml:13:13-37
-413            android:initOrder="100" />
-413-->[com.google.firebase:firebase-common:16.0.3] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\a48782d3fd02d5ce5e143923d5cc08c6\firebase-common-16.0.3\AndroidManifest.xml:14:13-36
-414
-415        <activity
-415-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\b9ffff42fac733baed479ce77a508552\play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
-416            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-416-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\b9ffff42fac733baed479ce77a508552\play-services-base-16.0.1\AndroidManifest.xml:24:13-79
-417            android:exported="false"
-417-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\b9ffff42fac733baed479ce77a508552\play-services-base-16.0.1\AndroidManifest.xml:25:13-37
-418            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-418-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\b9ffff42fac733baed479ce77a508552\play-services-base-16.0.1\AndroidManifest.xml:26:13-72
-419
-420        <meta-data
-420-->[com.android.support:support-v4:26.1.0] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\6b407c900b1ead6e3743b71fbe19b5d5\support-v4-26.1.0\AndroidManifest.xml:26:9-28:38
-421            android:name="android.support.VERSION"
-421-->[com.android.support:support-v4:26.1.0] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\6b407c900b1ead6e3743b71fbe19b5d5\support-v4-26.1.0\AndroidManifest.xml:27:13-51
-422            android:value="26.1.0" />
-422-->[com.android.support:support-v4:26.1.0] C:\Users\JMM\.gradle\caches\transforms-2\files-2.1\6b407c900b1ead6e3743b71fbe19b5d5\support-v4-26.1.0\AndroidManifest.xml:28:13-35
-423    </application>
-424
-425</manifest>
+381-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\582822dc5404538564e47213fa2dc50c\firebase-analytics-16.3.0\AndroidManifest.xml:50:13-35
+382            android:exported="false"
+382-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\582822dc5404538564e47213fa2dc50c\firebase-analytics-16.3.0\AndroidManifest.xml:51:13-37
+383            android:permission="android.permission.BIND_JOB_SERVICE" />
+383-->[com.google.firebase:firebase-analytics:16.3.0] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\582822dc5404538564e47213fa2dc50c\firebase-analytics-16.3.0\AndroidManifest.xml:52:13-69
+384
+385        <receiver
+385-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f812aa0c82fadb0bc8e1403264ebbc81\firebase-iid-17.0.4\AndroidManifest.xml:37:9-44:20
+386            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+386-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f812aa0c82fadb0bc8e1403264ebbc81\firebase-iid-17.0.4\AndroidManifest.xml:38:13-78
+387            android:exported="true"
+387-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f812aa0c82fadb0bc8e1403264ebbc81\firebase-iid-17.0.4\AndroidManifest.xml:39:13-36
+388            android:permission="com.google.android.c2dm.permission.SEND" >
+388-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f812aa0c82fadb0bc8e1403264ebbc81\firebase-iid-17.0.4\AndroidManifest.xml:40:13-73
+389            <intent-filter>
+389-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f812aa0c82fadb0bc8e1403264ebbc81\firebase-iid-17.0.4\AndroidManifest.xml:41:13-43:29
+390                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+390-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:167:17-81
+390-->G:\NinjaUrlTest\NinjaFox\JmmBrowser\app\src\main\AndroidManifest.xml:167:25-78
+391            </intent-filter>
+392        </receiver>
+393        <!--
+394             FirebaseInstanceIdService performs security checks at runtime,
+395             no need for explicit permissions despite exported="true"
+396        -->
+397        <service
+397-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f812aa0c82fadb0bc8e1403264ebbc81\firebase-iid-17.0.4\AndroidManifest.xml:50:9-56:19
+398            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+398-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f812aa0c82fadb0bc8e1403264ebbc81\firebase-iid-17.0.4\AndroidManifest.xml:51:13-77
+399            android:exported="true" >
+399-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f812aa0c82fadb0bc8e1403264ebbc81\firebase-iid-17.0.4\AndroidManifest.xml:52:13-36
+400            <intent-filter android:priority="-500" >
+400-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f812aa0c82fadb0bc8e1403264ebbc81\firebase-iid-17.0.4\AndroidManifest.xml:53:13-55:29
+400-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f812aa0c82fadb0bc8e1403264ebbc81\firebase-iid-17.0.4\AndroidManifest.xml:53:28-51
+401                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+401-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f812aa0c82fadb0bc8e1403264ebbc81\firebase-iid-17.0.4\AndroidManifest.xml:54:17-80
+401-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\f812aa0c82fadb0bc8e1403264ebbc81\firebase-iid-17.0.4\AndroidManifest.xml:54:25-77
+402            </intent-filter>
+403        </service>
+404
+405        <provider
+405-->[com.google.firebase:firebase-common:16.0.3] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\a48782d3fd02d5ce5e143923d5cc08c6\firebase-common-16.0.3\AndroidManifest.xml:10:9-14:39
+406            android:name="com.google.firebase.provider.FirebaseInitProvider"
+406-->[com.google.firebase:firebase-common:16.0.3] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\a48782d3fd02d5ce5e143923d5cc08c6\firebase-common-16.0.3\AndroidManifest.xml:11:13-77
+407            android:authorities="com.mojodigi.ninjafox.firebaseinitprovider"
+407-->[com.google.firebase:firebase-common:16.0.3] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\a48782d3fd02d5ce5e143923d5cc08c6\firebase-common-16.0.3\AndroidManifest.xml:12:13-72
+408            android:exported="false"
+408-->[com.google.firebase:firebase-common:16.0.3] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\a48782d3fd02d5ce5e143923d5cc08c6\firebase-common-16.0.3\AndroidManifest.xml:13:13-37
+409            android:initOrder="100" />
+409-->[com.google.firebase:firebase-common:16.0.3] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\a48782d3fd02d5ce5e143923d5cc08c6\firebase-common-16.0.3\AndroidManifest.xml:14:13-36
+410
+411        <activity
+411-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\b9ffff42fac733baed479ce77a508552\play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
+412            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+412-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\b9ffff42fac733baed479ce77a508552\play-services-base-16.0.1\AndroidManifest.xml:24:13-79
+413            android:exported="false"
+413-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\b9ffff42fac733baed479ce77a508552\play-services-base-16.0.1\AndroidManifest.xml:25:13-37
+414            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+414-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\b9ffff42fac733baed479ce77a508552\play-services-base-16.0.1\AndroidManifest.xml:26:13-72
+415
+416        <meta-data
+416-->[com.android.support:support-v4:26.1.0] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\6b407c900b1ead6e3743b71fbe19b5d5\support-v4-26.1.0\AndroidManifest.xml:26:9-28:38
+417            android:name="android.support.VERSION"
+417-->[com.android.support:support-v4:26.1.0] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\6b407c900b1ead6e3743b71fbe19b5d5\support-v4-26.1.0\AndroidManifest.xml:27:13-51
+418            android:value="26.1.0" />
+418-->[com.android.support:support-v4:26.1.0] C:\Users\user55\.gradle\caches\transforms-2\files-2.1\6b407c900b1ead6e3743b71fbe19b5d5\support-v4-26.1.0\AndroidManifest.xml:28:13-35
+419    </application>
+420
+421</manifest>

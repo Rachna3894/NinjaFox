@@ -12,6 +12,8 @@ public class AppConstants {
     public static final String API_RESPONSE_CODE = "apiResponseCode";
 
 
+        public static final String PREFS_REDIRECT_URL="redirectUrl";
+        public static final String PREFS_CAPTURE_STR="captureStr";
     public static final String PREFS_USER_ID = "userId";
     public static final String PREFS_EMAIL = "email";
     public static final String PREFS_TOKEN = "token";
@@ -64,6 +66,9 @@ public class AppConstants {
     public static final int logoutApiRequestCode=7;
     public static final int deleteAccountApiRequestCode=8;
     public static final int addDetailsApiCode=10;
+
+
+
     public static String dummyRespose = "{\n" +
             "  \"status\": \"true\",\n" +
             "  \"message\": \"success\",\n" +

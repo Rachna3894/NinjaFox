@@ -45,6 +45,7 @@
 
         android:drawSelectorOnTop="true">
     </ListView>
+
     <TextView android:id="@+id/record_list_empty"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

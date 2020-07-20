@@ -23,6 +23,7 @@ public class ApiRequestTask extends AsyncTask<String,String,String>{
     boolean dispProgress;
     String msg;
     int mRequestCode;/*determine  the  request api  on activity  in onJsonLoad function*/
+
     public  interface JsonLoadListener
     {
        void onJsonLoad(String json, int mRequestCode);

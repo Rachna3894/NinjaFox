@@ -55,6 +55,7 @@ public class MyApplication  extends android.support.multidex.MultiDexApplication
     public String getProcessName(Context context) {
         if (context == null) return null;
         ActivityManager manager = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
+        assert manager != null;
         for (ActivityManager.RunningAppProcessInfo processInfo : manager.getRunningAppProcesses()) {
             if (processInfo.pid == android.os.Process.myPid()) {
                 return processInfo.processName;
