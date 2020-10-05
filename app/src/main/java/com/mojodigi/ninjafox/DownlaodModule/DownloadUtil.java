@@ -29,6 +29,7 @@ public class DownloadUtil {
     private static com.mojodigi.ninjafox.DownlaodModule.DownloadManager downloadManager = null;
 
     private static OkHttpClient okHttpClient = new OkHttpClient();
+    private static int oldDownloadProgress;
 
     public static com.mojodigi.ninjafox.DownlaodModule.DownloadManager getDownloadManager() {
         return downloadManager;
@@ -124,12 +125,19 @@ public class DownloadUtil {
                             totalReadLength = totalReadLength + readLength;
 
                             int downloadProgress = (int) ((totalReadLength + existLocalFileLength) * 100 / downloadFileLength);
+                            int diff=downloadProgress-oldDownloadProgress;
 
-                            getDownloadManager().updateTaskProgress(downloadProgress);
+                            if(downloadProgress==0 || diff>=5) {
+                                oldDownloadProgress=downloadProgress;
+                                getDownloadManager().updateTaskProgress(downloadProgress);
+                            }
 
                             readLength = bufferedInputStream.read(data);
                         }
                     }
+                }
+                else {
+                    ret=DownloadUtil.DOWNLOAD_FAILED;
                 }
             }
 

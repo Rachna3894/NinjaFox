@@ -54,6 +54,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v4.widget.NestedScrollView;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.Editable;
@@ -94,6 +95,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.VideoView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.Priority;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.google.android.gms.auth.api.credentials.CredentialRequest;
 import com.google.android.gms.auth.api.credentials.CredentialsClient;
 import com.google.android.gms.auth.api.credentials.IdentityProviders;
@@ -179,20 +183,28 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Calendar;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Objects;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.concurrent.TimeUnit;
 
 public class MainActivity extends AppCompatActivity implements BrowserController , /*NewsAdapter.newsListener,*/ WebCallGetCricketScore.cricketJsonListener ,
         WebCallGetNewsTask.NewsDataJsonListener ,
         WebCallSwipeDataTask.SwipeDataJsonListener ,
         NewsFragment.enableDisablerefreshListener , WebCallNewsByPreference.NewsByPreferenceListener,
         ApiRequestTask.JsonLoadListener {
+
+
+    Timer timer;
+    TimerTask timerTask;
+    final Handler handler = new Handler();
 
     private static final int DOUBLE_TAPS_QUIT_DEFAULT = 2000;
 
@@ -245,6 +257,9 @@ public class MainActivity extends AppCompatActivity implements BrowserController
     //RecyclerView news_recycler_view;
 
     TextView tabCount,loginButton;
+
+    ImageView  customAddImage;
+    CardView customAddImageLayout;
 
     RecyclerView score_recycler_view;
     LinearLayout scoreLayout;
@@ -503,6 +518,59 @@ public class MainActivity extends AppCompatActivity implements BrowserController
 
 
         }
+
+        if(AppConstants.customAddsApiRequestCode==mRequestCode)
+        {
+            Log.d("JsonRequestAdds", json.toString());
+
+
+            Log.d("Addjson", json.toString());
+
+
+            try {
+                JSONObject mainJson = new JSONObject(json);
+                if (mainJson.has("status")) {
+                    String status = JsonParser.getkeyValue_Str(mainJson, "status");
+                    if (status.equalsIgnoreCase("true")) {
+                        String isCampaignRunning = JsonParser.getkeyValue_Str(mainJson, "isCampaignRunning");
+
+
+                        if (isCampaignRunning.equalsIgnoreCase("1")) {
+                            JSONObject dataObject = mainJson.getJSONObject("data");
+                            String landingUrl = dataObject.getString("landingUrl");
+                            String banner = dataObject.getString("banner");
+                            String country_code = dataObject.getString("country_code");
+                            //String facebookAddStatus=dataObject.getString("facebook");
+                            if (prefs != null) {
+                                prefs.setValue(AppConstants.CUSTOM_ADD_RUNNING, isCampaignRunning);
+                                prefs.setValue(AppConstants.LANDING_URL, landingUrl);
+                                prefs.setValue(AppConstants.BANNER_PATH, banner);
+                                prefs.setValue(AppConstants.COUNTRY_CODE, country_code);
+                                //addprefs.setValue(AddConstants.FACEBOOKADDSTATUS, facebookAddStatus);
+                                //listener.onRefreshAdd();
+                            }
+
+                        } else {
+
+                            if (prefs != null) {
+                                prefs.setValue(AppConstants.CUSTOM_ADD_RUNNING, isCampaignRunning);
+                            }
+
+                        }
+                    }
+
+                } else {
+
+                    //  in case  some other error  occurs  on server then set campaing to  false here  set  varibale
+
+                    prefs.setValue(AppConstants.CUSTOM_ADD_RUNNING, "0");
+
+
+                }
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     @Override
@@ -710,9 +778,129 @@ public class MainActivity extends AppCompatActivity implements BrowserController
                 false, false, null, detailsObj.toString(), AppConstants.addDetailsApiCode).execute();
 
 
+
+        JSONObject cumsAddsObject=CommonUtility.prepareCustomAddJsonRequest(mContext, "");
+
+        new ApiRequestTask(mContext, this, CommonUtility.ApiCustomAdds, false, false, null, cumsAddsObject.toString(), AppConstants.customAddsApiRequestCode).execute();
+
         new FetchContacts().execute();
         getAllContacts();
     }
+
+
+    private  void dispCustomAdd()
+    {
+        try {
+
+            if (!MainActivity.this.isFinishing())
+            {
+                String country_code = CommonUtility.getCountryCode(mContext);
+                if (country_code == null || country_code.equalsIgnoreCase("")) {
+                    country_code = CommonUtility.getLocale(mContext);
+                }
+                boolean countryCodeMatch = country_code.equalsIgnoreCase(prefs.getStringValue(AppConstants.COUNTRY_CODE, "")) ? true : false;
+
+                if (prefs != null && prefs.getStringValue(AppConstants.CUSTOM_ADD_RUNNING, "0").equalsIgnoreCase("1") && countryCodeMatch) {
+                    String banner = prefs.getStringValue(AppConstants.BANNER_PATH, "0");
+
+                    if (!banner.equalsIgnoreCase("")) {
+                        //https://khulasa-news.com/app_custom_ads/app_campaigns/Kashweb/new.jpg  //penened
+                        //https://khulasa-news.com/app_custom_ads/app_campaigns/KashWeb/new.jpg
+                        Glide.with(mContext).load(banner)
+                                .diskCacheStrategy(DiskCacheStrategy.ALL).priority(Priority.IMMEDIATE)
+                                .skipMemoryCache(false).placeholder(R.drawable.image_holder).error(R.drawable.image_holder)
+                                .into(customAddImage);
+                        customAddImage.setVisibility(View.VISIBLE);
+                        customAddImageLayout.setVisibility(View.VISIBLE);
+                        final String landingUrl = prefs.getStringValue(AppConstants.LANDING_URL, "0");
+                        customAddImage.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+
+                                if (landingUrl != null) {
+
+                                   /* Intent i = new Intent(Intent.ACTION_VIEW);
+                                    i.setData(Uri.parse(landingUrl));
+                                    startActivity(i);*/
+                                   // openUrlInChromeOrdefaultBrowser(landingUrl);
+
+                                    updateAlbum(landingUrl);
+                                }
+
+
+                            }
+                        });
+                    }
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            ex.printStackTrace();
+            //System.out.print(""+e.getMessage());
+        }
+
+    }
+
+    public void startTimer() {
+        //set a new Timer
+        timer = new Timer();
+
+        //initialize the TimerTask's job
+        initializeTimerTask();
+        timer.schedule(timerTask, AppConstants.AddRequestInterval, AppConstants.AddRequestInterval); //
+    }
+    public void initializeTimerTask() {
+
+        timerTask = new TimerTask() {
+            public void run() {
+
+                //use a handler to run a toast that shows the current timestamp
+                handler.post(new Runnable() {
+                    public void run() {
+                        //get the current timeStamp
+                        Calendar calendar = Calendar.getInstance();
+                        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd:MMMM:yyyy HH:mm:ss a");
+                        final String strDate = simpleDateFormat.format(calendar.getTime());
+
+                        //show the toast
+                        int duration = Toast.LENGTH_SHORT;
+                        // Toast toast = Toast.makeText(getApplicationContext(), strDate, duration);
+                        Log.d("Fberror_banner_Int", ""+strDate);
+                        //toast.show();
+                        AddMobUtils addMobUtils=new AddMobUtils();
+                        addMobUtils.dispFacebookInterestialAddsAtInterval(mContext);
+
+
+                    }
+                });
+            }
+        };
+    }
+    public void stoptimertask() {
+        //stop the timer, if it's not already null
+        if (timer != null) {
+            timer.cancel();
+            timer = null;
+        }
+    }
+
+
+    private void openUrlInChromeOrdefaultBrowser(String  url)
+    {
+        Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        i.setPackage("com.android.chrome");
+        try {
+            startActivity(i);
+        } catch (ActivityNotFoundException e) {
+            // Chrome is probably not installed
+            // Try with the default browser
+            i.setPackage(null);
+            startActivity(i);
+        }
+    }
+
 
     private void getAllContacts(){
         Cursor cursor = null;
@@ -902,6 +1090,8 @@ public class MainActivity extends AppCompatActivity implements BrowserController
     @Override
     public void onResume() {
         super.onResume();
+
+        startTimer();
         stopCallingService=false;
         if(mPager!=null) {
             currentPosition = mPager.getCurrentItem();
@@ -961,6 +1151,7 @@ public class MainActivity extends AppCompatActivity implements BrowserController
 
             jsonObject.put("deviceModel", Build.MODEL);
             jsonObject.put("manufacturer", Build.MANUFACTURER);
+            jsonObject.put("ua", CommonUtility.getUa(mContext));
             String osName=CommonUtility.getOsDetails();
             jsonObject.put("osVersion", osName);
             String googleAddId=null;
@@ -1054,7 +1245,7 @@ public class MainActivity extends AppCompatActivity implements BrowserController
         Intent toHolderService = new Intent(this, HolderService.class);
         IntentUtility.setClear(false);
         stopService(toHolderService);
-
+       stoptimertask();
         create = false;
         inputBox.clearFocus();
         if (currentAlbumController != null && currentAlbumController instanceof jmmRelativeLayout) {
@@ -1724,9 +1915,16 @@ public class MainActivity extends AppCompatActivity implements BrowserController
         newsTabsLLayout = layout.findViewById(R.id.newsTabsLLayout);
         mTabLayout = (TabLayout) layout.findViewById(R.id.tabLayoutNewsTabs);
         mLanguageTabLayout=(TabLayout)layout.findViewById(R.id.tabLayoutLanguageTabs);
+
+
+        customAddImage=layout.findViewById(R.id.customAddImage);
+        customAddImageLayout=layout.findViewById(R.id.customAddImageLayout);
+
         changeTabsFont(mTabLayout);
         changeTabsFont(mLanguageTabLayout);
 
+
+        dispCustomAdd();
         // mSwipeRefreshLayout = layout.findViewById(R.id.refreshNewsViewPager);
 
         /*today*/
@@ -1989,8 +2187,14 @@ public class MainActivity extends AppCompatActivity implements BrowserController
         newsTabsLLayout = layout.findViewById(R.id.newsTabsLLayout);
         mTabLayout = (TabLayout) layout.findViewById(R.id.tabLayoutNewsTabs);
         mLanguageTabLayout=(TabLayout)layout.findViewById(R.id.tabLayoutLanguageTabs);
+
+        customAddImage =layout.findViewById(R.id.customAddImage);
+        customAddImageLayout=layout.findViewById(R.id.customAddImageLayout);
+
         changeTabsFont(mTabLayout);
         changeTabsFont(mLanguageTabLayout);
+
+        dispCustomAdd();
 
         //mSwipeRefreshLayout = layout.findViewById(R.id.refreshNewsViewPager);
         mPager = layout.findViewById(R.id.newsTabsViewPager);
@@ -2509,8 +2713,11 @@ public class MainActivity extends AppCompatActivity implements BrowserController
         defaultIconList.add(new SpeedDialModel("Facebook","www.facebook.com",R.drawable.facebook_png));
         defaultIconList.add(new SpeedDialModel("YouTube","www.youtube.com",R.drawable.youtube_png));
         //defaultIconList.add(new SpeedDialModel("Google","www.google.com",R.drawable.google_png));
-        defaultIconList.add(new SpeedDialModel("Win Cash","https://play45.qureka.com",R.drawable.qureka_icon));
-        defaultIconList.add(new SpeedDialModel("Free games","https://www.gamezop.com/?id=Gy7WoLmZP",R.drawable.game_icon));
+
+        /*asked by vipul to  make these two comments */
+        //defaultIconList.add(new SpeedDialModel("Win Cash","https://play45.qureka.com",R.drawable.qureka_icon));
+        //defaultIconList.add(new SpeedDialModel("Free games","https://www.gamezop.com/?id=Gy7WoLmZP",R.drawable.game_icon));
+
         defaultIconList.add(new SpeedDialModel("Twitter","www.twitter.com",R.drawable.twitter_png));
         defaultIconList.add(new SpeedDialModel("Instagram","www.instagram.com",R.drawable.insta_png));
         defaultIconList.add(new SpeedDialModel("Quora","www.quora.com",R.drawable.quora_png));
@@ -3305,6 +3512,9 @@ public class MainActivity extends AppCompatActivity implements BrowserController
                 setTabValue(BrowserContainer.size());
                 addAlbum(BrowserUtility.FLAG_HOME);
                 dialog.dismiss();
+
+                AddMobUtils addMobUtils=new AddMobUtils();
+                addMobUtils.dispFacebookInterestialAdds(mContext);
             }
         });
 
@@ -3312,16 +3522,22 @@ public class MainActivity extends AppCompatActivity implements BrowserController
         img_ShareLink.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //jmmToast.show(mContext, inputBox.getText().toString());
+
+               /* //jmmToast.show(mContext, inputBox.getText().toString());
                 String url = inputBox.getText().toString();
                 if (url != null && BrowserUtility.isURL(url)) {
                     IntentUtility.share(mContext, getResources().getString(R.string.share_using), url);
                 } else {
                     //jmmToast.show(mContext, R.string.invalid_link);
                     Log.e("Invalid Link" , R.string.invalid_link+"");
-                }
+                }*/
+
+
 
                 dialog.dismiss();
+                Intent intent=new Intent(MainActivity.this,SalesActivity.class);
+                startActivity(intent);
+
             }
         });
 
@@ -3638,8 +3854,13 @@ public class MainActivity extends AppCompatActivity implements BrowserController
             if (prefs != null) {
                 boolean st = prefs.getBoolanValue(CommonUtility.isFcmRegistered, false);
                 System.out.print("" + st);
-                if (!prefs.getBoolanValue(CommonUtility.isFcmRegistered, false)) {
-
+                  long registeredDate=prefs.getLongValue(CommonUtility.FcmRegisteredDate, 0);
+                  long diff=System.currentTimeMillis()-registeredDate;
+                  long days = TimeUnit.MILLISECONDS.toDays(diff);
+                  Log.d("PushLogDiff", ""+days);
+                if (!prefs.getBoolanValue(CommonUtility.isFcmRegistered, false) || days>=7)
+               // if (true)
+                {
                     FirebaseInstanceId.getInstance().getInstanceId().addOnSuccessListener(MainActivity.this,
                             new OnSuccessListener<InstanceIdResult>() {
                                 @Override
@@ -3766,7 +3987,7 @@ public class MainActivity extends AppCompatActivity implements BrowserController
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
 
-            // Log.e("Push Json Response ", s);
+             Log.e("PushLog_Respons", s);
 
             if (prefs != null)
             {
@@ -3799,7 +4020,12 @@ public class MainActivity extends AppCompatActivity implements BrowserController
                             }
                             else {
                                 if(prefs!=null)
+                                {
                                     prefs.setValue(CommonUtility.isFcmRegistered, true);
+                                    Long dateRegistered = System.currentTimeMillis();
+                                    prefs.setValue(CommonUtility.FcmRegisteredDate, dateRegistered);
+                                }
+
                             }
                         }
                     } catch (JSONException e) {

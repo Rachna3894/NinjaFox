@@ -321,9 +321,9 @@ public class jmmWebView extends WebView implements AlbumController {
             return;
         }
            //fix here the url  issue
-        /* the below line as commented to  prevent google search  for user redirect task told by vipul on  25-05-2020*/
+        /* the below line is commented to  prevent google search  for user redirect task told by vipul on  25-05-2020*/
 
-        //url = BrowserUtility.queryWrapper(context, url.trim());
+          url = BrowserUtility.queryWrapper(context, url.trim());
 
         if (url.startsWith(BrowserUtility.URL_SCHEME_MAIL_TO)) {
             Intent intent = IntentUtility.getEmailIntent(MailTo.parse(url));

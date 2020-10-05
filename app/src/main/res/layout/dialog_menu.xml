@@ -218,14 +218,13 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content">
         <ImageView
-            android:src="@drawable/dialog_ic_share"
+            android:src="@drawable/ic_shop_now"
             android:layout_width="@dimen/layout_height_32dp"
             android:layout_height="@dimen/layout_height_32dp" />
-
             <TextView
                 android:gravity="center"
                 android:id="@+id/txt_ShareLink"
-                android:text="@string/menu_new_share"
+                android:text="@string/menu_new_buy_now"
                 android:layout_marginTop="@dimen/layout_margin_4dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />

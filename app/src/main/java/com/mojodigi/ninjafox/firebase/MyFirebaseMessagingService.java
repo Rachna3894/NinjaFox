@@ -1,5 +1,6 @@
 package com.mojodigi.ninjafox.firebase;
 
+import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -66,6 +67,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
     private void sendPushNotification(JSONObject json) {
         //optionally we can display the json into log
         Log.e(TAG, "Notification JSON " + json.toString());
+        Intent intent=null;
         try {
             //getting the json data
             JSONObject data = json.getJSONObject("data");
@@ -88,8 +90,10 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
             //creating an intent for the notification
 
              //Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-            Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse(webUrl));
-            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+
+             intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse(webUrl));
+             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+             intent.setPackage("com.android.chrome");
 
             //if there is no image
             if(imageUrl.equals("null")){
@@ -106,9 +110,32 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
         } catch (JSONException e) {
             Log.e(TAG, "Json Exception: " + e.getMessage());
-        } catch (Exception e) {
+        } catch (ActivityNotFoundException e)
+        {
+            // Chrome is probably not installed
+            // Try with the default browser
+            intent.setPackage(null);
+            startActivity(intent);
+        }
+        catch (Exception e) {
             Log.e(TAG, "Exception: " + e.getMessage());
         }
     }
+
+    private void openUrlInChromeOrdefaultBrowser(String  url)
+    {
+        Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        i.setPackage("com.android.chrome");
+        try {
+            startActivity(i);
+        } catch (ActivityNotFoundException e) {
+            // Chrome is probably not installed
+            // Try with the default browser
+            i.setPackage(null);
+            startActivity(i);
+        }
+    }
+
 
 }

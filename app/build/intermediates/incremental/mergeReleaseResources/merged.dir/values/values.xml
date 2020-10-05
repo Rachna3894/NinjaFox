@@ -1479,6 +1479,7 @@
     <dimen name="dp5">5dp</dimen>
     <dimen name="dp50">50dp</dimen>
     <dimen name="dp6">6dp</dimen>
+    <dimen name="dp60">60dp</dimen>
     <dimen name="dp8">8dp</dimen>
     <dimen name="elevation_1dp">1dp</dimen>
     <dimen name="elevation_2dp">2dp</dimen>
@@ -1820,7 +1821,7 @@
     <string name="custom_ui">custom UI disables certain standard permissions needed by</string>
     <string name="default_browser_error">can\'t set on this device</string>
     <string name="default_set_msg">tap Browser app and select ninja fox</string>
-    <string name="default_web_client_id" translatable="false">973525050368-nqve5oujh727bl4g702v4994kd0k1g38.apps.googleusercontent.com</string>
+    <string name="default_web_client_id" translatable="false">354470898316-66q6c8por0pbol1v9qe5g60mdvrdvv5n.apps.googleusercontent.com</string>
     <string name="delete_account_summary">Delete your account from Ninja Fox </string>
     <string name="delete_desc">-History\n-Location info\n-Cached data\n-Cookies</string>
     <string name="dialog_button_custom">
@@ -1890,13 +1891,13 @@
     <string name="fcm_fallback_notification_channel_label">Miscellaneous</string>
     <string name="filenotcreated">file not created</string>
     <string name="fill_details">Please fill details</string>
-    <string name="firebase_database_url" translatable="false">https://nonjafox.firebaseio.com</string>
+    <string name="firebase_database_url" translatable="false">https://ninjafox-f0fb0.firebaseio.com</string>
     <string name="forgot_password"><u>Forgot Password</u></string>
-    <string name="gcm_defaultSenderId" translatable="false">973525050368</string>
-    <string name="google_api_key" translatable="false">AIzaSyC1y0Z1xwCkYzH2-NaysIBKbwq08GXqXEo</string>
-    <string name="google_app_id" translatable="false">1:973525050368:android:03beff8882170118f8e4e5</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyC1y0Z1xwCkYzH2-NaysIBKbwq08GXqXEo</string>
-    <string name="google_storage_bucket" translatable="false">nonjafox.appspot.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">354470898316</string>
+    <string name="google_api_key" translatable="false">AIzaSyBn2iJyUGZ570mD09CtZUfsTRj-AaqwN-8</string>
+    <string name="google_app_id" translatable="false">1:354470898316:android:ade27ee1e3cdc6163aa9a9</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBn2iJyUGZ570mD09CtZUfsTRj-AaqwN-8</string>
+    <string name="google_storage_bucket" translatable="false">ninjafox-f0fb0.appspot.com</string>
     <string name="gps_msg">Your GPS seems to be disabled, do you want to enable it?</string>
     <string name="grant">Grant</string>
     <string name="grant_storage">Go to Permissions to Grant storage access</string>
@@ -1952,6 +1953,7 @@
     </string>
     <string name="menu_new_blocked_list">Blocked sites</string>
     <string name="menu_new_bookmark">Bookmarks</string>
+    <string name="menu_new_buy_now">Shop</string>
     <string name="menu_new_delete">Delete</string>
     <string name="menu_new_find_in_page">Find in page</string>
     <string name="menu_new_history">History</string>
@@ -1986,7 +1988,7 @@
     <string name="privacy_policy">
         Privacy Policy
     </string>
-    <string name="project_id" translatable="false">nonjafox</string>
+    <string name="project_id" translatable="false">ninjafox-f0fb0</string>
     <string name="prompt_valid_url">
        please write valid url
    </string>

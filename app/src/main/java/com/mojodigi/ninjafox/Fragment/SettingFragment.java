@@ -15,6 +15,7 @@ import android.location.LocationManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
+import android.os.Handler;
 import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.MultiSelectListPreference;
@@ -67,16 +68,24 @@ import org.json.JSONObject;
 
 import java.io.File;
 import java.io.InterruptedIOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class SettingFragment extends PreferenceFragment implements SharedPreferences.OnSharedPreferenceChangeListener, ApiRequestTask.JsonLoadListener {
 
     private ListPreference mDownLoadPrefs,mShowImagesPrefs   /*, mShowLanguagePrefs*/;
     private MultiSelectListPreference mClearDataPrefs;
+
+    Timer timer;
+    TimerTask timerTask;
+    final Handler handler = new Handler();
 
     Preference feedback;
     Preference default_browserPrefs;
@@ -252,13 +261,54 @@ public class SettingFragment extends PreferenceFragment implements SharedPrefere
     }
 
 
+    public void startTimer() {
+        //set a new Timer
+        timer = new Timer();
 
+        //initialize the TimerTask's job
+        initializeTimerTask();
+        timer.schedule(timerTask, AppConstants.AddRequestInterval, AppConstants.AddRequestInterval); //
+    }
+    public void initializeTimerTask() {
+
+        timerTask = new TimerTask() {
+            public void run() {
+
+                //use a handler to run a toast that shows the current timestamp
+                handler.post(new Runnable() {
+                    public void run() {
+                        //get the current timeStamp
+                        Calendar calendar = Calendar.getInstance();
+                        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd:MMMM:yyyy HH:mm:ss a");
+                        final String strDate = simpleDateFormat.format(calendar.getTime());
+
+                        //show the toast
+                        int duration = Toast.LENGTH_SHORT;
+                        // Toast toast = Toast.makeText(getApplicationContext(), strDate, duration);
+                        Log.d("Fberror_banner_Int", ""+strDate);
+                        //toast.show();
+                        AddMobUtils addMobUtils=new AddMobUtils();
+                        addMobUtils.dispFacebookInterestialAddsAtInterval(getActivity());
+
+
+                    }
+                });
+            }
+        };
+    }
+    public void stoptimertask() {
+        //stop the timer, if it's not already null
+        if (timer != null) {
+            timer.cancel();
+            timer = null;
+        }
+    }
 
 
     @Override
     public void onResume() {
         super.onResume();
-
+ startTimer();
         settingsPrefs = PreferenceManager.getDefaultSharedPreferences(getActivity());
         final SharedPreferences sp = getPreferenceScreen().getSharedPreferences();
         sp.registerOnSharedPreferenceChangeListener(this);
@@ -1256,6 +1306,7 @@ public class SettingFragment extends PreferenceFragment implements SharedPrefere
     @Override
     public void onPause() {
         super.onPause();
+        stoptimertask();
         getPreferenceScreen().getSharedPreferences().unregisterOnSharedPreferenceChangeListener(this);
     }
 

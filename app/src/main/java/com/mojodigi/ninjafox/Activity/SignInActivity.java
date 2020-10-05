@@ -338,7 +338,9 @@ public class SignInActivity extends AppCompatActivity implements ApiRequestTask.
                 //authenticating with firebase
                 firebaseAuthWithGoogle(account);
             } catch (ApiException e) {
-                Toast.makeText(SignInActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                String string = e.getMessage();
+                Log.d("ErrorCode", ""+string);
+                Toast.makeText(SignInActivity.this, string, Toast.LENGTH_SHORT).show();
             }
         }
 

@@ -17,7 +17,7 @@
 
     <dimen name="layout_width_40dp">40dp</dimen>
     <dimen name="layout_height_40dp">40dp</dimen>
-
+    <dimen name="dp60">60dp</dimen>
     <dimen name="layout_height_141dp">141dp</dimen>
     <dimen name="layout_height_117dp">117dp</dimen>
     <dimen name="layout_height_108dp">108dp</dimen>

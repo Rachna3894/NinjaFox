@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mojodigi.ninjafox"
     android:targetSandboxVersion="2"
-    android:versionCode="43"
-    android:versionName="5.2" >
+    android:versionCode="52"
+    android:versionName="6.1" >
 
     <uses-sdk
         android:minSdkVersion="21"
@@ -129,6 +129,22 @@
             android:theme="@style/BrowserActivityTheme" />
         <activity
             android:name="com.mojodigi.ninjafox.Activity.MostVisistedActiity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BrowserActivityTheme" />
+        <activity
+            android:name="com.mojodigi.ninjafox.Activity.SalesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BrowserActivityTheme" />
+        <activity
+            android:name="com.mojodigi.ninjafox.Activity.SalesActivity_Product"
+            android:screenOrientation="portrait"
+            android:theme="@style/BrowserActivityTheme" />
+        <activity
+            android:name="com.mojodigi.ninjafox.Activity.SalesActivity_Product2"
+            android:screenOrientation="portrait"
+            android:theme="@style/BrowserActivityTheme" />
+        <activity
+            android:name="com.mojodigi.ninjafox.Activity.SalesActivity_Product3"
             android:screenOrientation="portrait"
             android:theme="@style/BrowserActivityTheme" />
         <activity

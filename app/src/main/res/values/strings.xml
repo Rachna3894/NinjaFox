@@ -422,6 +422,7 @@
 
     <string name="menu_new_setting">Settings</string>
     <string name="menu_new_share">Share</string>
+    <string name="menu_new_buy_now">Shop</string>
 
     <string name="menu_new_delete">Delete</string>
     <string name="clean_exit">Clean &amp; exit</string>

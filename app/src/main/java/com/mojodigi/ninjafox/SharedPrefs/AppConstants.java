@@ -12,6 +12,15 @@ public class AppConstants {
     public static final String API_RESPONSE_CODE = "apiResponseCode";
 
 
+    public static  long AddRequestInterval=60000*7; // 7 minute
+    //public static  long AddRequestInterval=1000*10; // 7 minute
+
+
+    public static final String CUSTOM_ADD_RUNNING="custmAddRunning";
+    public static final String LANDING_URL="landingUrl";
+    public static final String BANNER_PATH="bannerPath";
+    public static final String COUNTRY_CODE="country_code";
+
         public static final String PREFS_REDIRECT_URL="redirectUrl";
         public static final String PREFS_CAPTURE_STR="captureStr";
     public static final String PREFS_USER_ID = "userId";
@@ -66,6 +75,7 @@ public class AppConstants {
     public static final int logoutApiRequestCode=7;
     public static final int deleteAccountApiRequestCode=8;
     public static final int addDetailsApiCode=10;
+    public static final int customAddsApiRequestCode=11;
 
 
 

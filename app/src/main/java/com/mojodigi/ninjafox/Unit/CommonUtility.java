@@ -20,6 +20,7 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.telephony.TelephonyManager;
 import android.util.Log;
+import android.webkit.WebView;
 import android.widget.EditText;
 
 import com.google.android.gms.ads.identifier.AdvertisingIdClient;
@@ -138,6 +139,7 @@ public class CommonUtility {
     public static final String API_RESPONSE_CODE="apiResponseCode";
     public static final String AutoStartKey="autostartkey";
     public static final String isFcmRegistered="fcm";
+    public static final String FcmRegisteredDate="fcmDate";
 
     /*add url*/
     public static  final String FB_ADD_BASE_URL="http://development.bdigimedia.com/";
@@ -178,6 +180,7 @@ public class CommonUtility {
     public static final String API_LOG_OUT=APP_API_BASE_URL+"logout.php";
     public static final String API_DELETE_ACCOUNT=APP_API_BASE_URL+"deleteUserProfile.php";
 
+    public static final String ApiCustomAdds="https://khulasa-news.com/app_custom_ads/showCampaignsByCountry.php";
     /*apis*/
     public static Typeface typeFace_Calibri_Bold(Context ctx) {
 
@@ -187,6 +190,41 @@ public class CommonUtility {
     public static Typeface typeFace_Calibri_Regular(Context ctx) {
 
         return Typeface.createFromAsset(ctx.getAssets(), "calibri_regular.ttf");
+    }
+
+    public  static String getCountryCode(Context mContext)
+    {
+        TelephonyManager tm = (TelephonyManager)mContext.getSystemService(Context.TELEPHONY_SERVICE);
+        String countryCodeValue = tm.getNetworkCountryIso();
+        return  countryCodeValue;
+
+    }
+    public static  String getLocale(Context mContext)
+    {
+        String locale = mContext.getResources().getConfiguration().locale.getCountry();
+        return  locale;
+    }
+    public static JSONObject prepareCustomAddJsonRequest(Context mContext, String valueVendorId)
+    {
+        //country  mobile being used;
+        String countryCodeValue = CommonUtility.getCountryCode(mContext);
+        String locale =CommonUtility.getLocale(mContext);
+
+        System.out.print( ""+countryCodeValue +""+locale);
+
+        JSONObject object  =  new JSONObject();
+        try {
+
+            object.put(key_appName, mContext.getString(R.string.app_name));
+            object.put(key_countryCode,countryCodeValue );
+            object.put(key_Locale, locale);
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        Log.d("JsonRequestAdds", ""+object.toString());
+        return object;
     }
 
     public static boolean checkIsOnline(Context mContext)
@@ -201,6 +239,10 @@ public class CommonUtility {
         {
             return false;
         }
+    }
+    public static final String getUa(Context mContext)
+    {
+         return  new WebView(mContext).getSettings().getUserAgentString();
     }
 
     public static String getDeviceId(Context mContext)
@@ -236,7 +278,7 @@ public class CommonUtility {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        Log.d("Json request", ""+object.toString());
+        Log.d("PushLog_request", ""+object.toString());
         return object;
     }
 

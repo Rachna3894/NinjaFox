@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout android:orientation="vertical"
+    android:weightSum="6"
+    android:background="@drawable/sale_back"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/toolbar"
+        app:cardElevation="@dimen/padding_4dp"
+        app:cardBackgroundColor="@color/clear_all_back_color"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:background="@drawable/ripple"
+            android:id="@+id/backButton"
+            android:padding="@dimen/layout_margin_2dp"
+            android:gravity="left"
+            android:layout_gravity="left|center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/ic_chevron_left_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:gravity="center"
+                android:id="@+id/title_txt"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_18sp"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <ImageView
+        android:id="@+id/prodImage"
+        android:visibility="visible"
+        android:src="@drawable/sales_product_power"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+    </ImageView>
+
+    <LinearLayout
+        android:padding="@dimen/_10sdp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/prod_head"
+            android:textSize="@dimen/_20sdp"
+            android:text="Power Mantra"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+        <TextView
+            android:id="@+id/prodSdesc"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_10sdp"
+            android:text=""
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:gravity="center"
+            android:id="@+id/prodLdesc"
+            android:textSize="@dimen/_13sdp"
+            android:text="Increase Blood Flow To Your Penis.Enjoy Bigger, Stronger, Harder Erections."
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_10sdp"
+            android:visibility="visible"
+            android:padding="@dimen/_5sdp"
+            android:gravity="center"
+            android:background="@drawable/layout_border_sales"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/prodqtyTxt"
+                android:gravity="center"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="@color/white"
+                android:text="Product quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+            <TextView
+                android:id="@+id/prodcapBox"
+                android:gravity="center"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/white"
+                android:text="60 cap/box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+                    <RadioGroup
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                   <RadioButton
+                       android:id="@+id/rad1"
+                    android:textSize="@dimen/_14sdp"
+                    android:buttonTint="@color/white"
+                    android:textColor="@color/white"
+                    android:text="1 Box = 2,117 INR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/rad2"
+                    android:textSize="@dimen/_14sdp"
+                    android:buttonTint="@color/white"
+                    android:textColor="@color/white"
+                    android:text="2 Box = 3,984 INR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/rad3"
+                    android:textSize="@dimen/_14sdp"
+                    android:buttonTint="@color/white"
+                    android:textColor="@color/white"
+                    android:text="3 Box = 5,602 INR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></RadioButton>
+
+                    </RadioGroup>
+
+        </LinearLayout>
+<!--name layout-->
+       <LinearLayout
+           android:weightSum="2"
+    android:layout_marginTop="@dimen/dp10"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_weight="1"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/black"
+        android:text="Name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"></TextView>
+
+
+    <EditText
+
+        android:layout_weight="1"
+        android:layout_gravity="right"
+        android:padding="@dimen/dp10"
+        android:background="@drawable/layout_border"
+        android:imeOptions="actionNext"
+        android:textColorHint="@color/black"
+        android:id="@+id/edit_Name"
+        android:theme="@style/EditTextTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>
+        <!--name  layout-->
+
+      <!--address  layout-->
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_marginTop="@dimen/dp10"
+            android:orientation="horizontal"
+            android:gravity="center|left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_gravity="top"
+                android:id="@+id/txtAddress"
+                android:layout_weight="1"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/black"
+                android:text="Address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"></TextView>
+
+
+            <EditText
+                android:gravity="top"
+                android:layout_weight="1"
+                android:layout_gravity="right"
+                android:padding="@dimen/dp10"
+                android:background="@drawable/layout_border"
+                android:imeOptions="actionNext"
+                android:textColorHint="@color/black"
+                android:minHeight="80dp"
+                android:id="@+id/edit_address"
+                android:theme="@style/EditTextTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+        <!--address  layout-->
+
+        <!--pin layout-->
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_marginTop="@dimen/dp10"
+            android:orientation="horizontal"
+            android:gravity="center|left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/pinTxt"
+                android:layout_weight="1"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/black"
+                android:text="Pin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"></TextView>
+
+
+            <EditText
+                android:layout_weight="1"
+                android:padding="@dimen/dp10"
+                android:background="@drawable/layout_border"
+                android:imeOptions="actionNext"
+                android:textColorHint="@color/black"
+                android:id="@+id/edit_pin"
+                android:inputType="number"
+                android:theme="@style/EditTextTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+        <!--pin layout-->
+        <!--mobile layout -->
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_marginTop="@dimen/dp10"
+            android:orientation="horizontal"
+            android:gravity="center|left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtMobile"
+                android:layout_weight="1"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/black"
+                android:text="Mobile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"></TextView>
+
+
+            <EditText
+                android:layout_weight="1"
+                android:padding="@dimen/dp10"
+                android:background="@drawable/layout_border"
+                android:imeOptions="actionNext"
+                android:textColorHint="@color/black"
+                android:id="@+id/edit_mobile"
+                android:theme="@style/EditTextTheme"
+                android:layout_width="0dp"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+        <!--mobile layout -->
+
+
+
+        <Button
+            android:id="@+id/buttonPay"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:text="    Pay    "
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:background="@drawable/button_buy_now"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></Button>
+    </LinearLayout>
+
+
+</LinearLayout>
+</ScrollView>

@@ -50,17 +50,22 @@ public class WebCallGetNewsTask extends AsyncTask<String, String, String> {
     protected String doInBackground(String... strings) {
         try {
             if(CommonUtility.isLoggedInUser(addprefs)) {
-                 String userCredentialis= "userId="+addprefs.getStringValue(AppConstants.PREFS_USER_ID, "0")+"&token="+addprefs.getStringValue(AppConstants.PREFS_TOKEN, "0");
+                 String userCredentialis= "userId="+addprefs.getStringValue(AppConstants.PREFS_USER_ID, "0")+"&token="+addprefs.getStringValue(AppConstants.PREFS_TOKEN, "0")+"&location="+CommonUtility.getLocale(mContext);
+                Log.d("apiNews", CommonUtility.API_URL_USER_CREDENTIALS_NEWS_DATA + userCredentialis);
                  if(forceCacheResponse)
                     return OkhttpMethods.CallApiGetMethodForcedCached(mContext, CommonUtility.API_URL_USER_CREDENTIALS_NEWS_DATA + userCredentialis); //language news with Cache
                  else
                     return OkhttpMethods.CallApiGetMethodCached(mContext, CommonUtility.API_URL_USER_CREDENTIALS_NEWS_DATA + userCredentialis); //language news with Cache
             }
             else {
-                  String location=addprefs.getStringValue(AppConstants.PREFS_LOCATION_STATE, "delhi");
+                 // String location=addprefs.getStringValue(AppConstants.PREFS_LOCATION_STATE, "delhi");
+                  String location=CommonUtility.getLocale(mContext);
+                  Log.d("apiNews", CommonUtility.API_URL_STATE_NEWS_DATA + location);
                    if(forceCacheResponse)
+                    //return OkhttpMethods.CallApiGetMethodForcedCached(mContext, CommonUtility.API_URL_STATE_NEWS_DATA + location);
                     return OkhttpMethods.CallApiGetMethodForcedCached(mContext, CommonUtility.API_URL_STATE_NEWS_DATA + location);
                    else
+                    // return OkhttpMethods.CallApiGetMethodCached(mContext, CommonUtility.API_URL_STATE_NEWS_DATA + location);
                      return OkhttpMethods.CallApiGetMethodCached(mContext, CommonUtility.API_URL_STATE_NEWS_DATA + location);
             }
 

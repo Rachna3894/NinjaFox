@@ -181,5 +181,65 @@ public class AddMobUtils extends Activity {
 
     }
 
+    public void dispFacebookInterestialAddsAtInterval(Context mContext) {
+        SharedPreferenceUtil prefs = new SharedPreferenceUtil(mContext);
+        String interestialAddid = "373667519996875_597188990978059";//prefs.getStringValue(AppConstants.INTERESTIAL_ADD_ID, "0");
+        boolean showAdd = prefs.getBoolanValue(AppConstants.SHOW_ADD, false);
+
+
+        if (showAdd) {
+            final String TAG = AddMobUtils.class.getSimpleName();
+            final com.facebook.ads.InterstitialAd interstitialAd = new com.facebook.ads.InterstitialAd(mContext, interestialAddid);
+
+            // Set listeners for the Interstitial Ad
+            interstitialAd.setAdListener(new com.facebook.ads.InterstitialAdListener() {
+                @Override
+                public void onInterstitialDisplayed(Ad ad) {
+                    // Interstitial ad displayed callback
+                    Log.e(TAG, "Interstitial ad displayed.");
+                }
+
+                @Override
+                public void onInterstitialDismissed(Ad ad) {
+                    // Interstitial dismissed callback
+                    Log.e(TAG, "Interstitial ad dismissed.");
+                }
+
+                @Override
+                public void onError(Ad ad, AdError adError) {
+                    // Ad error callback
+                    Log.e(TAG, "Fberror_banner_Int " + adError.getErrorMessage());
+                }
+
+                @Override
+                public void onAdLoaded(Ad ad) {
+                    // Interstitial ad is loaded and ready to be displayed
+                    Log.d(TAG, "Interstitial ad is loaded and ready to be displayed!");
+                    // Show the ad
+                    interstitialAd.show();
+
+                    //showAdWithDelay();
+                }
+
+                @Override
+                public void onAdClicked(Ad ad) {
+                    // Ad clicked callback
+                    Log.d(TAG, "Interstitial ad clicked!");
+                }
+
+                @Override
+                public void onLoggingImpression(Ad ad) {
+                    // Ad impression logged callback
+                    Log.d(TAG, "Interstitial ad impression logged!");
+                }
+            });
+
+            // For auto play video ads, it's recommended to load the ad
+            // at least 30 seconds before it is shown
+            interstitialAd.loadAd();
+        }
+
+    }
+
     }
 

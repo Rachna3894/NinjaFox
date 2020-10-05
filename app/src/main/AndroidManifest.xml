@@ -120,6 +120,26 @@
             android:name=".Activity.MostVisistedActiity"
             android:screenOrientation="portrait"
             android:theme="@style/BrowserActivityTheme" />
+
+        <activity
+            android:name=".Activity.SalesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BrowserActivityTheme" />
+        <activity
+            android:name=".Activity.SalesActivity_Product"
+            android:screenOrientation="portrait"
+            android:theme="@style/BrowserActivityTheme" />
+
+        <activity
+            android:name=".Activity.SalesActivity_Product2"
+            android:screenOrientation="portrait"
+            android:theme="@style/BrowserActivityTheme" />
+
+        <activity
+            android:name=".Activity.SalesActivity_Product3"
+            android:screenOrientation="portrait"
+            android:theme="@style/BrowserActivityTheme" />
+
         <activity
             android:name=".Activity.BlockListActivity"
             android:screenOrientation="portrait"
