@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "G:\\NinjaUrlTest\\NinjaFox\\JmmBrowser\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ca\\values-ca.xml",
+            "outputFile": "G:\\ishu@ninjaBack\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ca\\values-ca.xml",
             "map": [
                 {
                     "source": "C:\\Users\\user55\\.gradle\\caches\\transforms-2\\files-2.1\\b9ffff42fac733baed479ce77a508552\\play-services-base-16.0.1\\res\\values-ca\\values.xml",

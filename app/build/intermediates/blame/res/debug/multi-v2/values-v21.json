@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "G:\\NinjaUrlTest\\NinjaFox\\JmmBrowser\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
+            "outputFile": "G:\\ishu@ninjaBack\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
             "map": [
                 {
                     "source": "C:\\Users\\user55\\.gradle\\caches\\transforms-2\\files-2.1\\6c2164896ca319583b40d5b80aa35763\\design-28.0.0\\res\\values-v21\\values-v21.xml",
@@ -61,14 +61,14 @@
                     }
                 },
                 {
-                    "source": "G:\\NinjaUrlTest\\NinjaFox\\JmmBrowser\\app\\src\\main\\res\\values-v21\\styles.xml",
+                    "source": "G:\\ishu@ninjaBack\\app\\src\\main\\res\\values-v21\\styles.xml",
                     "from": {
                         "startLines": "71,84,85,66,4,56,18,77,24,46,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "3790,4264,4355,3534,57,2958,873,4016,1097,2392,1821",
+                        "startOffsets": "3861,4348,4440,3600,61,3014,891,4093,1121,2438,1857",
                         "endLines": "74,84,85,69,16,64,22,82,34,54,44",
                         "endColumns": "12,90,80,12,12,12,12,12,12,12,12",
-                        "endOffsets": "4009,4350,4431,3784,867,3528,1091,4258,1815,2952,2386"
+                        "endOffsets": "4083,4434,4516,3853,883,3592,1113,4340,1849,3006,2430"
                     },
                     "to": {
                         "startLines": "6,10,11,12,235,248,257,262,306,365,374",

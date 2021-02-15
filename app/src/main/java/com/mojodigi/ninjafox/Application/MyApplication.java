@@ -48,6 +48,7 @@ public class MyApplication  extends android.support.multidex.MultiDexApplication
         AudienceNetworkAds.isInAdsProcess(getApplicationContext());
 
         AnalyticsTrackers.initialize(this);
+
         AnalyticsTrackers.getInstance().get(AnalyticsTrackers.Target.APP);
 
     }

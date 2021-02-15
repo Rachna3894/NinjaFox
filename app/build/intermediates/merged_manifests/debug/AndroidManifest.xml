@@ -37,7 +37,6 @@
         android:largeHeap="true"
         android:requestLegacyExternalStorage="true"
         android:roundIcon="@drawable/ic_launcher_round"
-        android:testOnly="true"
         android:usesCleartextTraffic="true" >
         <activity
             android:name="com.mojodigi.ninjafox.Activity.SignInActivity"

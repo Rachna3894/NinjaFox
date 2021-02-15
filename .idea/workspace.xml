@@ -64,79 +64,14 @@
     </library-updates>
     <last-search-timestamp>1566386257923</last-search-timestamp>
   </component>
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/MainActivity.java" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="25c5fef8-dd38-4352-a7a3-36eaf0f4d302" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/google-services.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/google-services.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/release/app-release.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/release/app-release.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/release/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/release/output.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/MostVisistedActiity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/MostVisistedActiity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/RecentListActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/RecentListActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/SignInActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/SignInActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/SignUpActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/SignUpActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Adapter/NewsAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Adapter/NewsAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Adapter/NewsViewPagerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Adapter/NewsViewPagerAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/AddsUtility/AddMobUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/AddsUtility/AddMobUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Application/MyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Application/MyApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/BroadCast/DownloadReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/BroadCast/DownloadReceiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Browser/BrowserContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Browser/BrowserContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Browser/jmmDownloadListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Browser/jmmDownloadListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Database/RecordAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Database/RecordAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/DownlaodModule/DownloadBinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/DownlaodModule/DownloadBinder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/DownlaodModule/DownloadListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/DownlaodModule/DownloadListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/DownlaodModule/DownloadManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/DownlaodModule/DownloadManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/DownlaodModule/DownloadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/DownlaodModule/DownloadService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/DownlaodModule/DownloadUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/DownlaodModule/DownloadUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Fragment/SettingFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Fragment/SettingFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Service/GetAddressIntentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Service/GetAddressIntentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Service/getAddressJobIntentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Service/getAddressJobIntentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/SharedPrefs/AppConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/SharedPrefs/AppConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/ApiRequestTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/ApiRequestTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/ImportBookmarksTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/ImportBookmarksTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/ImportWhitelistTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/ImportWhitelistTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/ScreenshotTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/ScreenshotTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/WebCallGetCricketScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/WebCallGetCricketScore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/WebCallGetNewsTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/WebCallGetNewsTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/WebCallNewsByPreference.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/WebCallNewsByPreference.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/WebCallSwipeDataTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/WebCallSwipeDataTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Unit/BrowserUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Unit/BrowserUtility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Unit/CommonUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Unit/CommonUtility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/View/CompleteAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/View/CompleteAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/View/CustomProgressDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/View/CustomProgressDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/View/DialogAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/View/DialogAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/View/GridAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/View/GridAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/View/SwitcherPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/View/SwitcherPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/View/WhitelistAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/View/WhitelistAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/View/jmmWebView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/View/jmmWebView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/firebase/MyFirebaseMessagingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/firebase/MyFirebaseMessagingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_most_visited.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_most_visited.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_recent.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_recent.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_sign_in.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_sign_in.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/home.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/news_item_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/news_item_view.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/preference_settings_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/preference_settings_layout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/record_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/record_list.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings_app.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings_app.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-    </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="25c5fef8-dd38-4352-a7a3-36eaf0f4d302" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
-  </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="ZF6222JMKX" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="0eea08ed" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -167,106 +102,6 @@
   </component>
   <component name="FavoritesManager">
     <favorites_list name="JmmBrowser" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="2242" selection-start-line="2242" selection-end-line="2242" />
-              <folding>
-                <element signature="e#11876#15027#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Service/getAddressJobIntentService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-357">
-              <caret line="44" column="9" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Service/GetAddressIntentService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="52" column="19" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/WebCallGetNewsTask.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="77" column="13" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/WebCallGetCricketScore.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="56" column="13" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/WebCallNewsByPreference.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="50" selection-start-line="50" selection-end-line="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/WebCallSwipeDataTask.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="51" column="16" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Application/MyApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/ImportBookmarksTask.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -356,68 +191,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_most_visited.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_recent.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/record_list.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/home.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/preference_settings_layout.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/SignUpActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/SignInActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_sign_in.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/AddsUtility/AddMobUtils.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Browser/BrowserContainer.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/View/jmmWebView.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/ImportWhitelistTask.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/BroadCast/DownloadReceiver.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/DownlaodModule/DownloadListener.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/View/CustomProgressDialog.java" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/news_item_view.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Analytics/AnalyticsTrackers.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/xml/app_tracker.xml" />
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Database/RecordAction.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Unit/BrowserUtility.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/DownlaodModule/DownloadBinder.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/DownlaodModule/DownloadService.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/View/GridAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/View/DialogAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/View/WhitelistAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Adapter/NewsViewPagerAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Fragment/SettingFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/View/CompleteAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/View/SwitcherPanel.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Browser/jmmDownloadListener.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Unit/CommonUtility.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Adapter/NewsAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/ApiRequestTask.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/ScreenshotTask.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/ImportBookmarksTask.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Service/getAddressJobIntentService.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Service/GetAddressIntentService.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/WebCallSwipeDataTask.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/WebCallNewsByPreference.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/WebCallGetNewsTask.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/WebCallGetCricketScore.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/firebase/MyFirebaseMessagingService.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/DownlaodModule/DownloadUtil.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/DownlaodModule/DownloadManager.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/MainActivity.java" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Application/MyApplication.java" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="1370" />
-    <option name="height" value="735" />
-  </component>
+  <component name="ProjectId" id="1oVLjTLdPfaeqDFdbtU5MEmqIVO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -542,18 +316,6 @@
       <recent name="G:\WorkingDirectory\NinjaFoxSurya\NinjaFox\JmmBrowser\app" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager" selected="Android App.app">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
@@ -577,8 +339,6 @@
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
       <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
       <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
       <option name="DEBUGGER_TYPE" value="Auto" />
@@ -719,76 +479,6 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info id="Captures" order="0" sideWeight="0.375" side_tool="true" weight="0.19062027" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.7884232" visible="true" weight="0.2927383" />
-      <window_info id="Structure" order="2" sideWeight="0.3880597" side_tool="true" weight="0.16490166" />
-      <window_info id="Favorites" order="3" sideWeight="0.3880597" side_tool="true" weight="0.16490166" />
-      <window_info id="Build Variants" order="4" sideWeight="0.21157685" side_tool="true" weight="0.19818456" />
-      <window_info id="Image Layers" order="5" />
-      <window_info id="Designer" order="6" />
-      <window_info id="Resources Explorer" order="7" />
-      <window_info id="Capture Tool" order="8" />
-      <window_info anchor="bottom" id="Run" order="0" sideWeight="0.8343419" weight="0.10801964" />
-      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.8772727" weight="0.10310966" />
-      <window_info anchor="bottom" id="TODO" order="2" sideWeight="0.4977307" weight="0.3289689" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.6739788" weight="0.5237316" />
-      <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.49848714" weight="0.5527211" />
-      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.16187595" side_tool="true" weight="0.36734694" />
-      <window_info anchor="bottom" id="Version Control" order="6" sideWeight="0.49924356" weight="0.46088436" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.83812404" visible="true" weight="0.09165303" />
-      <window_info anchor="bottom" id="Find" order="8" sideWeight="0.49621785" weight="0.108843535" />
-      <window_info anchor="bottom" id="Android Profiler" order="9" sideWeight="0.49924356" weight="0.39115646" />
-      <window_info anchor="bottom" id="Flutter Performance" order="10" side_tool="true" />
-      <window_info anchor="right" id="Capture Analysis" order="0" />
-      <window_info anchor="right" id="Gradle" order="1" weight="0.20801815" />
-      <window_info anchor="right" id="Theme Preview" order="2" />
-      <window_info anchor="right" id="Preview" order="3" weight="0.33282906" />
-      <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" x="0" y="0" width="292" height="512" id="Documentation" order="5" side_tool="true" weight="0.32954547" />
-      <window_info anchor="right" id="Flutter Inspector" order="6" weight="0.32980332" />
-      <window_info anchor="right" id="Assistant" order="7" weight="0.32980332" />
-      <window_info anchor="right" id="StringPreview" order="8" />
-      <window_info anchor="right" id="Flutter Outline" order="9" weight="0.27987897" />
-      <window_info anchor="right" id="Device File Explorer" order="10" weight="0.1860817" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="Captures" order="0" sideWeight="0.375" side_tool="true" weight="0.19062027" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.7884232" visible="true" weight="0.19818456" />
-      <window_info id="Structure" order="2" sideWeight="0.3880597" side_tool="true" weight="0.16490166" />
-      <window_info id="Favorites" order="3" sideWeight="0.3880597" side_tool="true" weight="0.16490166" />
-      <window_info id="Build Variants" order="4" sideWeight="0.21157685" side_tool="true" visible="true" weight="0.19818456" />
-      <window_info id="Image Layers" order="5" />
-      <window_info id="Designer" order="6" />
-      <window_info id="Resources Explorer" order="7" />
-      <window_info id="Capture Tool" order="8" />
-      <window_info anchor="bottom" id="Run" order="0" sideWeight="0.83560604" weight="0.39795917" />
-      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.8772727" weight="0.1802721" />
-      <window_info anchor="bottom" id="TODO" order="2" sideWeight="0.4977307" weight="0.3289689" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.6739788" visible="true" weight="0.14795919" />
-      <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.49848714" weight="0.3289689" />
-      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.16439395" side_tool="true" weight="0.052910052" />
-      <window_info anchor="bottom" id="Version Control" order="6" sideWeight="0.49924356" weight="0.46153846" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.8757576" weight="0.3707483" />
-      <window_info anchor="bottom" id="Find" order="8" sideWeight="0.49621785" weight="0.058919802" />
-      <window_info anchor="bottom" id="Android Profiler" order="9" sideWeight="0.49924356" weight="0.3289689" />
-      <window_info anchor="bottom" id="Flutter Performance" order="10" side_tool="true" />
-      <window_info anchor="right" id="Capture Analysis" order="0" />
-      <window_info anchor="right" id="Gradle" order="1" weight="0.21482602" />
-      <window_info anchor="right" id="Theme Preview" order="2" />
-      <window_info anchor="right" id="Preview" order="3" weight="0.301059" />
-      <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" x="0" y="0" width="292" height="512" id="Documentation" order="5" side_tool="true" weight="0.32954547" />
-      <window_info anchor="right" id="Flutter Inspector" order="6" />
-      <window_info anchor="right" id="Flutter Outline" order="7" weight="0.2806354" />
-      <window_info anchor="right" id="Assistant" order="8" weight="0.32980332" />
-      <window_info anchor="right" id="StringPreview" order="9" />
-      <window_info anchor="right" id="Device File Explorer" order="10" weight="0.32980332" />
-    </layout-to-restore>
-  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="with  bookmark ,history and downlaods;" />
@@ -798,643 +488,543 @@
     <MESSAGE value="custom download manager and issues resolved." />
     <option name="LAST_COMMIT_MESSAGE" value="custom download manager and issues resolved." />
   </component>
+  <component name="WindowStateProjectService">
+    <state x="191" y="0" key="CommitChangelistDialog2" timestamp="1613367092166">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="191" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1613367092166" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Database/RecordAction.java</url>
           <line>371</line>
-          <properties />
           <option name="timeStamp" value="77" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Database/RecordAction.java</url>
           <line>103</line>
-          <properties />
           <option name="timeStamp" value="81" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/View/Album.java</url>
           <line>55</line>
-          <properties />
           <option name="timeStamp" value="118" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Browser/BrowserContainer.java</url>
           <line>13</line>
-          <properties />
           <option name="timeStamp" value="127" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Browser/BrowserContainer.java</url>
           <line>73</line>
-          <properties />
           <option name="timeStamp" value="132" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/View/jmmRelativeLayout.java</url>
           <line>29</line>
-          <properties />
           <option name="timeStamp" value="136" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Database/RecordAction.java</url>
           <line>208</line>
-          <properties />
           <option name="timeStamp" value="175" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Database/RecordAction.java</url>
           <line>476</line>
-          <properties />
           <option name="timeStamp" value="330" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Database/RecordAction.java</url>
           <line>466</line>
-          <properties />
           <option name="timeStamp" value="332" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Database/RecordAction.java</url>
           <line>470</line>
-          <properties />
           <option name="timeStamp" value="333" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/View/RecordAdapter.java</url>
           <line>102</line>
-          <properties />
           <option name="timeStamp" value="339" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/View/RecordAdapter.java</url>
           <line>105</line>
-          <properties />
           <option name="timeStamp" value="340" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/View/RecordAdapter.java</url>
           <line>103</line>
-          <properties />
           <option name="timeStamp" value="341" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/AddsUtility/AddMobUtils.java</url>
           <line>52</line>
-          <properties />
           <option name="timeStamp" value="371" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Adapter/BlockListAdapter.java</url>
           <line>70</line>
-          <properties />
           <option name="timeStamp" value="400" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Adapter/BlockListAdapter.java</url>
           <line>138</line>
-          <properties />
           <option name="timeStamp" value="401" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Adapter/BlockListAdapter.java</url>
           <line>137</line>
-          <properties />
           <option name="timeStamp" value="402" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Unit/CommonUtility.java</url>
           <line>356</line>
-          <properties />
           <option name="timeStamp" value="416" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/WebCallGetNewsTask.java</url>
           <line>91</line>
-          <properties />
           <option name="timeStamp" value="539" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Adapter/NewsCategoryAdapter.java</url>
           <line>98</line>
-          <properties />
           <option name="timeStamp" value="657" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Adapter/NewsCategoryAdapter.java</url>
           <line>99</line>
-          <properties />
           <option name="timeStamp" value="659" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Adapter/NewsCategoryAdapter.java</url>
           <line>101</line>
-          <properties />
           <option name="timeStamp" value="660" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Adapter/NewsCategoryAdapter.java</url>
           <line>102</line>
-          <properties />
           <option name="timeStamp" value="661" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Adapter/NewsCategoryAdapter.java</url>
           <line>113</line>
-          <properties />
           <option name="timeStamp" value="666" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Adapter/NewsCategoryAdapter.java</url>
           <line>111</line>
-          <properties />
           <option name="timeStamp" value="667" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Unit/CommonUtility.java</url>
           <line>727</line>
-          <properties />
           <option name="timeStamp" value="678" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/SignInActivity.java</url>
           <line>381</line>
-          <properties />
           <option name="timeStamp" value="712" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/SignInActivity.java</url>
           <line>486</line>
-          <properties />
           <option name="timeStamp" value="713" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/ApiRequestTask.java</url>
           <line>80</line>
-          <properties />
           <option name="timeStamp" value="722" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/LanguagePrefsActivity.java</url>
           <line>132</line>
-          <properties />
           <option name="timeStamp" value="727" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/LanguagePrefsActivity.java</url>
           <line>139</line>
-          <properties />
           <option name="timeStamp" value="728" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Unit/OkhttpMethods.java</url>
           <line>204</line>
-          <properties />
           <option name="timeStamp" value="730" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/LanguagePrefsActivity.java</url>
           <line>291</line>
-          <properties />
           <option name="timeStamp" value="731" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/LanguagePrefsActivity.java</url>
           <line>355</line>
-          <properties />
           <option name="timeStamp" value="733" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/LanguagePrefsActivity.java</url>
           <line>124</line>
-          <properties />
           <option name="timeStamp" value="735" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/LanguagePrefsActivity.java</url>
           <line>292</line>
-          <properties />
           <option name="timeStamp" value="738" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/WebCallSwipeDataTask.java</url>
           <line>67</line>
-          <properties />
           <option name="timeStamp" value="756" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/WebCallSwipeDataTask.java</url>
           <line>69</line>
-          <properties />
           <option name="timeStamp" value="757" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/LanguagePrefsActivity.java</url>
           <line>261</line>
-          <properties />
           <option name="timeStamp" value="762" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/SharedPrefs/SharedPreferenceUtil.java</url>
           <line>307</line>
-          <properties />
           <option name="timeStamp" value="766" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/SharedPrefs/SharedPreferenceUtil.java</url>
           <line>146</line>
-          <properties />
           <option name="timeStamp" value="768" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/LanguagePrefsActivity.java</url>
           <line>174</line>
-          <properties />
           <option name="timeStamp" value="775" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/LanguagePrefsActivity.java</url>
           <line>75</line>
-          <properties />
           <option name="timeStamp" value="776" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/SignInActivity.java</url>
           <line>260</line>
-          <properties />
           <option name="timeStamp" value="778" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/SignInActivity.java</url>
           <line>531</line>
-          <properties />
           <option name="timeStamp" value="779" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/LanguagePrefsActivity.java</url>
           <line>183</line>
-          <properties />
           <option name="timeStamp" value="780" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Fragment/SettingFragment.java</url>
           <line>1399</line>
-          <properties />
           <option name="timeStamp" value="799" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Fragment/SettingFragment.java</url>
           <line>268</line>
-          <properties />
           <option name="timeStamp" value="800" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/LanguagePrefsActivity.java</url>
           <line>214</line>
-          <properties />
           <option name="timeStamp" value="802" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/WebCallSwipeDataTask.java</url>
           <line>39</line>
-          <properties />
           <option name="timeStamp" value="809" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/WebCallGetNewsTask.java</url>
           <line>81</line>
-          <properties />
           <option name="timeStamp" value="812" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Unit/OkhttpMethods.java</url>
           <line>210</line>
-          <properties />
           <option name="timeStamp" value="821" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Unit/OkhttpMethods.java</url>
           <line>200</line>
-          <properties />
           <option name="timeStamp" value="822" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/WebCallGetNewsTask.java</url>
           <line>65</line>
-          <properties />
           <option name="timeStamp" value="831" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/WebCallSwipeDataTask.java</url>
           <line>47</line>
-          <properties />
           <option name="timeStamp" value="834" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/WebCallGetCricketScore.java</url>
           <line>56</line>
-          <properties />
           <option name="timeStamp" value="836" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Fragment/SettingFragment.java</url>
           <line>1070</line>
-          <properties />
           <option name="timeStamp" value="839" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Fragment/SettingFragment.java</url>
           <line>1080</line>
-          <properties />
           <option name="timeStamp" value="840" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/LanguagePrefsActivity.java</url>
           <line>331</line>
-          <properties />
           <option name="timeStamp" value="855" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/LanguagePrefsActivity.java</url>
           <line>313</line>
-          <properties />
           <option name="timeStamp" value="856" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/LanguagePrefsActivity.java</url>
           <line>273</line>
-          <properties />
           <option name="timeStamp" value="858" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/LanguagePrefsActivity.java</url>
           <line>345</line>
-          <properties />
           <option name="timeStamp" value="860" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/LanguagePrefsActivity.java</url>
           <line>352</line>
-          <properties />
           <option name="timeStamp" value="862" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/LanguagePrefsActivity.java</url>
           <line>350</line>
-          <properties />
           <option name="timeStamp" value="863" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Fragment/SettingFragment.java</url>
           <line>241</line>
-          <properties />
           <option name="timeStamp" value="872" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/WebCallGetNewsTask.java</url>
           <line>58</line>
-          <properties />
           <option name="timeStamp" value="874" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/LanguagePrefsActivity.java</url>
           <line>85</line>
-          <properties />
           <option name="timeStamp" value="910" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Service/GetAddressIntentService.java</url>
           <line>32</line>
-          <properties />
           <option name="timeStamp" value="959" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/LanguagePrefsActivity.java</url>
           <line>280</line>
-          <properties />
           <option name="timeStamp" value="969" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/LanguagePrefsActivity.java</url>
           <line>281</line>
-          <properties />
           <option name="timeStamp" value="970" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/LanguagePrefsActivity.java</url>
           <line>67</line>
-          <properties />
           <option name="timeStamp" value="971" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/LanguagePrefsActivity.java</url>
           <line>71</line>
-          <properties />
           <option name="timeStamp" value="972" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/LanguagePrefsActivity.java</url>
           <line>221</line>
-          <properties />
           <option name="timeStamp" value="974" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/LanguagePrefsActivity.java</url>
           <line>228</line>
-          <properties />
           <option name="timeStamp" value="975" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/LanguagePrefsActivity.java</url>
           <line>169</line>
-          <properties />
           <option name="timeStamp" value="977" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/LanguagePrefsActivity.java</url>
           <line>65</line>
-          <properties />
           <option name="timeStamp" value="980" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Unit/CommonUtility.java</url>
           <line>548</line>
-          <properties />
           <option name="timeStamp" value="986" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Unit/CommonUtility.java</url>
           <line>531</line>
-          <properties />
           <option name="timeStamp" value="987" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Unit/CommonUtility.java</url>
           <line>538</line>
-          <properties />
           <option name="timeStamp" value="988" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Unit/CommonUtility.java</url>
           <line>547</line>
-          <properties />
           <option name="timeStamp" value="989" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Service/HolderService.java</url>
           <line>75</line>
-          <properties />
           <option name="timeStamp" value="1016" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Fragment/SettingFragment.java</url>
           <line>1056</line>
-          <properties />
           <option name="timeStamp" value="1019" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/firebase/MyFirebaseMessagingService.java</url>
           <line>67</line>
-          <properties />
           <option name="timeStamp" value="1031" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/BroadCast/DownLoadUtility.java</url>
           <line>148</line>
-          <properties />
           <option name="timeStamp" value="1050" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/BroadCast/DownLoadUtility.java</url>
           <line>255</line>
-          <properties />
           <option name="timeStamp" value="1051" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/BroadCast/DownLoadUtility.java</url>
           <line>277</line>
-          <properties />
           <option name="timeStamp" value="1055" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/BroadCast/DownLoadUtility.java</url>
           <line>136</line>
-          <properties />
           <option name="timeStamp" value="1056" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/BroadCast/DownLoadUtility.java</url>
           <line>60</line>
-          <properties />
           <option name="timeStamp" value="1057" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/BroadCast/DownLoadUtility.java</url>
           <line>184</line>
-          <properties />
           <option name="timeStamp" value="1058" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Browser/jmmDownloadListener.java</url>
           <line>78</line>
-          <properties />
           <option name="timeStamp" value="1060" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/DownlaodModule/DownloadBinder.java</url>
           <line>64</line>
-          <properties />
           <option name="timeStamp" value="1063" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/DownlaodModule/DownloadManager.java</url>
           <line>91</line>
-          <properties />
           <option name="timeStamp" value="1064" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/DownlaodModule/DownloadManager.java</url>
           <line>121</line>
-          <properties />
           <option name="timeStamp" value="1067" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/DownlaodModule/DownloadManager.java</url>
           <line>128</line>
-          <properties />
           <option name="timeStamp" value="1068" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/DownlaodModule/DownloadManager.java</url>
           <line>96</line>
-          <properties />
           <option name="timeStamp" value="1069" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/DownlaodModule/DownloadBinder.java</url>
           <line>101</line>
-          <properties />
           <option name="timeStamp" value="1070" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/DownlaodModule/DownloadBinder.java</url>
           <line>76</line>
-          <properties />
           <option name="timeStamp" value="1071" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/DownlaodModule/DownloadBinder.java</url>
           <line>67</line>
-          <properties />
           <option name="timeStamp" value="1072" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/DownlaodModule/DownloadBinder.java</url>
           <line>75</line>
-          <properties />
           <option name="timeStamp" value="1075" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/DownlaodModule/DownloadListener.java</url>
           <line>77</line>
-          <properties />
           <option name="timeStamp" value="1081" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/AddsUtility/AddMobUtils.java</url>
           <line>34</line>
-          <properties />
           <option name="timeStamp" value="1094" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/SignInActivity.java</url>
           <line>165</line>
-          <properties />
           <option name="timeStamp" value="1097" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/SignInActivity.java</url>
           <line>151</line>
-          <properties />
           <option name="timeStamp" value="1098" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/AddsUtility/AddMobUtils.java</url>
           <line>82</line>
-          <properties />
           <option name="timeStamp" value="1113" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Browser/jmmDownloadListener.java</url>
           <line>55</line>
-          <properties />
           <option name="timeStamp" value="1116" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/MainActivity.java</url>
           <line>1573</line>
-          <properties />
           <option name="timeStamp" value="1122" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
@@ -1457,421 +1047,6 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Database/RecordAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="202" column="30" selection-start-line="202" selection-start-column="30" selection-end-line="202" selection-end-column="30" />
-          <folding>
-            <element signature="e#10771#10772#0" expanded="true" />
-            <element signature="e#10880#10881#0" expanded="true" />
-            <element signature="e#10991#10992#0" expanded="true" />
-            <element signature="e#11094#11095#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/DownlaodModule/DownloadManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2210">
-          <caret line="150" column="1" selection-start-line="150" selection-start-column="1" selection-end-line="150" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/DownlaodModule/DownloadListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/DownlaodModule/DownloadUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2227">
-          <caret line="143" column="1" selection-start-line="143" selection-start-column="1" selection-end-line="143" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/DownlaodModule/DownloadService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1700">
-          <caret line="113" column="13" selection-start-line="113" selection-start-column="13" selection-end-line="113" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Unit/BrowserUtility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4165">
-          <caret line="320" column="31" selection-start-line="320" selection-start-column="23" selection-end-line="320" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/View/CustomProgressDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/View/LinePagerIndicatorDecoration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/View/jmmWebView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/View/GridAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/View/DialogAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-139">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/View/FullscreenHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/View/WhitelistAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/java/util/concurrent/FutureTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="132" column="11" selection-start-line="132" selection-start-column="11" selection-end-line="132" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/statements/FailOnTimeout.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="120" column="44" lean-forward="true" selection-start-line="120" selection-start-column="44" selection-end-line="120" selection-end-column="44" />
-          <folding>
-            <element signature="e#4304#4315#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/com/android/server/job/JobSchedulerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="1077" column="22" selection-start-line="1077" selection-start-column="22" selection-end-line="1077" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/View/RecordAdapter_Rv_Mv.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Fragment/SettingFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="193" column="17" lean-forward="true" selection-start-line="193" selection-start-column="17" selection-end-line="193" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/widget/HorizontalScrollView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="1228" column="7" lean-forward="true" selection-start-line="1228" selection-start-column="7" selection-end-line="1228" selection-end-column="7" />
-          <folding>
-            <element signature="e#46453#46454#0" expanded="true" />
-            <element signature="e#46511#46512#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/View/CompleteAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2244">
-          <caret line="162" column="40" selection-start-line="162" selection-start-column="40" selection-end-line="162" selection-end-column="40" />
-          <folding>
-            <element signature="e#4592#4593#0" expanded="true" />
-            <element signature="e#4632#4633#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/DownlaodModule/DownloadBinder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="52" column="22" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/CustomControl/RelativeTimeTextView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/View/SwitcherPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="227" selection-start-line="227" selection-end-line="227" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Browser/jmmDownloadListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="99" column="52" selection-start-line="99" selection-start-column="52" selection-end-line="99" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3067#3724#0" expanded="true" />
-            <element signature="e#3052#3121#0" />
-            <element signature="e#3723#3724#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Unit/CommonUtility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="606" column="5" lean-forward="true" selection-start-line="606" selection-start-column="5" selection-end-line="606" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/DownLoadSettingActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/72c47fbadcc6dca0e37e26dc1c27ef75/audience-network-sdk-5.6.1/jars/classes.jar!/com/facebook/ads/AudienceNetworkActivity.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-818">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Adapter/NewsCategoryAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Adapter/LanguageAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Adapter/BlockListAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Analytics/AnalyticsTrackers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="35" selection-start-column="30" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#AnalyticsTrackers#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1312">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Adapter/NewsViewPagerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="36" column="54" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
-          <folding>
-            <element signature="e#1152#1153#0" expanded="true" />
-            <element signature="e#1188#1189#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Adapter/NewsAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="66" column="13" lean-forward="true" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Adapter/CategoryAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1124">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Adapter/CrickScoreAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/ApiRequestTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="89" selection-start-line="89" selection-end-line="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/ExportBookmarksTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-396">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/ImportWhitelistTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="e#959#1006#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/ScreenshotTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="53" column="9" lean-forward="true" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/ExportWhitelistTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-396">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/ImportBookmarksTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Service/getAddressJobIntentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-357">
-          <caret line="44" column="9" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Service/GetAddressIntentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="52" column="19" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/WebCallSwipeDataTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="51" column="16" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/WebCallNewsByPreference.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/WebCallGetNewsTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="77" column="13" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Task/WebCallGetCricketScore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="56" column="13" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Activity/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="2242" selection-start-line="2242" selection-end-line="2242" />
-          <folding>
-            <element signature="e#11876#15027#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/mojodigi/ninjafox/Application/MyApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
   <component name="masterDetails">
     <states>
